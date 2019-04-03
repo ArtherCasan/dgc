@@ -1,0 +1,67 @@
+spriteTypes = {	
+	#company
+	SpriteType = {
+		name = "GFX_idea_china_south"
+		texturefile = "gfx/interface/ideas/china/company/china_south.tga"
+	}
+	SpriteType = {
+		name = "GFX_idea_jiangnan_dockyard"
+		texturefile = "gfx/interface/ideas/china/company/jiangnan_dockyard.tga"
+	}
+	SpriteType = {
+		name = "GFX_idea_csic-1"
+		texturefile = "gfx/interface/ideas/china/company/csic.tga"
+	}
+	SpriteType = {
+		name = "GFX_idea_csic-2"
+		texturefile = "gfx/interface/ideas/china/company/csic.tga"
+	}	
+	SpriteType = {
+		name = "GFX_idea_csic-3"
+		texturefile = "gfx/interface/ideas/china/company/csic.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_avic-1"
+		texturefile = "gfx/interface/ideas/china/company/avic.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_avic-2"
+		texturefile = "gfx/interface/ideas/china/company/avic.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_aircraft_changhe"
+		texturefile = "gfx/interface/ideas/china/company/aircraft_changhe.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_hongdu"
+		texturefile = "gfx/interface/ideas/china/company/hongdu.tga"
+	}			
+	SpriteType = {
+		name = "GFX_idea_comac"
+		texturefile = "gfx/interface/ideas/china/company/comac.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_208_lab"
+		texturefile = "gfx/interface/ideas/china/company/208_lab.tga"
+	}	
+	SpriteType = {
+		name = "GFX_idea_china_manufacturer-1"
+		texturefile = "gfx/interface/ideas/china/company/china_manufacturer.tga"
+	}			
+	SpriteType = {
+		name = "GFX_idea_china_manufacturer-2"
+		texturefile = "gfx/interface/ideas/china/company/china_manufacturer.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_northern_industrial"
+		texturefile = "gfx/interface/ideas/china/company/northern_industrial.tga"
+	}		
+	SpriteType = {
+		name = "GFX_idea_huawei"
+		texturefile = "gfx/interface/ideas/china/company/huawei.png"
+	}		
+	SpriteType = {
+		name = "GFX_idea_ZTE"
+		texturefile = "gfx/interface/ideas/china/company/ZTE.tga"
+	}			
+}

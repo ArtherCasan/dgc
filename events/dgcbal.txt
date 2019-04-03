@@ -1,0 +1,213 @@
+add_namespace = dgcbal
+	
+		
+country_event = {
+	id = dgcbal.1
+	title = dgcbal.1.t
+	desc = dgcbal.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.1.a
+		ai_chance = {
+			factor = 25	
+		}
+		SWE = { 
+			puppet = ROOT
+		}
+	}
+
+	option = {
+		name = dgcbal.1.b
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				OR = {
+					has_idea = bal_economic_cooperation
+					AND = {
+						has_opinion = { target = SWE value > 99 }
+						SWE = {
+							has_army_manpower = { size > 199999 }
+						}
+					}
+				}
+			}
+		}
+		SWE = { 
+			remove_from_faction = ROOT
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = dgcbal.2
+	title = dgcbal.2.t
+	desc = dgcbal.2.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.2.a
+		every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10101
+							has_id = 10102
+							has_id = 10103
+						}
+					}
+					set_nationality = SWE
+		}
+		SWE = { 
+			annex_country = { target = NOR transfer_troops = yes }
+		}
+	}
+
+}
+
+country_event = {
+	id = dgcbal.3
+	title = dgcbal.3.t
+	desc = dgcbal.3.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.3.a
+		every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10201
+							has_id = 10202
+							has_id = 10203
+						}
+					}
+					set_nationality = SWE
+		}
+		SWE = { 
+			annex_country = { target = DEN transfer_troops = yes }
+		}
+	}
+
+}
+
+country_event = {
+	id = dgcbal.4
+	title = dgcbal.4.t
+	desc = dgcbal.4.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.4.a
+		every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10301
+							has_id = 10302
+							has_id = 10303
+							has_id = 10304
+							has_id = 10305
+							has_id = 10306
+						}
+					}
+					set_nationality = SWE
+		}
+		SWE = { 
+			annex_country = { target = FIN transfer_troops = yes }
+		}
+	}
+
+}
+
+country_event = {
+	id = dgcbal.5
+	title = dgcbal.5.t
+	desc = dgcbal.5.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.5.a
+		every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10401
+							has_id = 10402
+							has_id = 10403
+						}
+					}
+					set_nationality = SWE
+		}
+		SWE = { 
+			annex_country = { target = EST transfer_troops = yes }
+		}
+	}
+
+}
+
+country_event = {
+	id = dgcbal.6
+	title = dgcbal.6.t
+	desc = dgcbal.6.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.6.a
+		every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10501
+							has_id = 10502
+							has_id = 10503
+						}
+					}
+					set_nationality = SWE
+		}
+		SWE = { 
+			annex_country = { target = LAT transfer_troops = yes }
+		}
+	}
+
+}
+
+country_event = {
+	id = dgcbal.7
+	title = dgcbal.7.t
+	desc = dgcbal.7.d
+	picture = GFX_report_event_chinese_soldiers_fighting 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dgcbal.7.a
+		every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10601
+							has_id = 10602
+							has_id = 10603
+						}
+					}
+					set_nationality = SWE
+		}
+		SWE = { 
+			annex_country = { target = LIT transfer_troops = yes }
+		}
+	}
+
+}

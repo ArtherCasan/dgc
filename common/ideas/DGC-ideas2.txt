@@ -1,0 +1,619 @@
+ideas = {
+	country = {
+		shengshicai = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = SIK
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_acceptance = 45
+			}
+
+		}
+	
+		modaitianzi = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = PCH
+			}
+
+			removal_cost = -1
+
+			picture = DGC_mandate_heaven
+
+			modifier = {
+							political_power_factor = -0.1
+			}
+
+		}
+		jap_settlement = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				monthly_population = 0.25
+			}
+
+		}
+
+		man_culture_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = JAP
+			}
+
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+
+		kwantung_shc = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+
+			removal_cost = -1
+
+			picture = generic_secret_police
+
+			modifier = {
+				subversive_activites_upkeep = -1
+				#foreign_subversive_activities = 0.5
+				drift_defence_factor = 1
+				#justify_war_goal_time = 0.1
+				#training_time_factor = 0.1
+			}
+		}
+
+		CDDXF = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_constitutional_guarantees
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				democratic_drift = 0.1
+			}
+
+		}
+
+		DPJDHX = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_pp_unity_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+			}
+
+		}
+
+		HFWYH = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.075
+			}
+		}
+
+		GPJZ = {
+			allowed = {
+				always = yes
+			}
+
+			picture = jap_interservice_rivalry_balanced
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		ZBHL = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_foreign_capital
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		FZHZGH = {
+			allowed = {
+				always = yes
+			}
+
+			picture = man_five_year_plan_industry
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 100
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		NYBT = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_agrarian_society
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor =	0.1
+			}
+		}
+
+		NYBGS = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_agrarian_reform
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor =	-0.1
+			}
+		}
+
+		BWDDZF = {
+			allowed = {
+				always = yes
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.05
+			}
+		}
+
+		ZFGG = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_political_support
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor =	-0.1
+				political_power_factor = 0.05
+				democratic_drift = 0.1
+			}
+		}
+
+		JZDN = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor =	0.15
+				stability_factor = -0.03
+			}
+		}
+
+		SHANGHAIFZHYH = {
+			allowed = {
+				always = yes
+			}
+
+			picture = ger_mefo_bills_payment
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		KZCZ = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_hyper_inflation5
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		GJMT = {
+			allowed = {
+				always = yes
+			}
+
+			picture = FRA_national_mobilization_focus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				democratic_drift = 0.1
+				political_power_factor = 0.05
+			}
+		}
+
+		CCSDXC = {
+			allowed = {
+				always = yes
+			}
+
+			picture = man_five_year_plan_industry
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		MZZBYDJH = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_hyper_inflation5
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor =	0.1
+			}
+		}
+
+		JZSDJK_AR = {
+			allowed = {
+				always = yes
+			}
+
+			picture = man_five_year_plan_industry
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.075
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		HFDGH = {
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_volunteer_expedition_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		PCH_anti_CHI_idea_liang = {
+			
+			name = PCH_anti_CHI_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+			
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.1
+			}
+		}
+		
+		PCH_anti_MAN_idea_kang = {
+			
+			name = PCH_anti_MAN_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+			
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.2
+			}
+		}
+
+		PCH_BAIYING_idea = {
+		
+			name = PCH_BAIYING_idea_name
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+			
+		}
+		
+		PCH_WENDINGHUILV_idea = {
+			name = PCH_WENDINGHUILV_idea_name
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				min_export = -0.1
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+			
+		}
+		
+		PCH_JUNRENTUIWUFAAN_idea = {
+			name = PCH_JUNRENTUIWUFAAN_idea_name
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				democratic_drift = 0.05
+			}
+			
+		}
+		
+		PCH_HEZUOJINGSHEN_idea = {
+			name = PCH_HEZUOJINGSHEN_idea_name
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				stability_weekly = 0.05
+				democratic_drift = 0.07
+			}
+			
+		}
+		
+		PER_civil_unstable_idea = {
+			name = PER_civil_unstable_idea_name
+			
+			allowed_civil_war = {
+				allowed = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.25
+			}
+		}
+		
+	}
+}

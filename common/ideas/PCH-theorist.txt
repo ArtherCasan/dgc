@@ -1,0 +1,73 @@
+ideas = {
+
+	theorist = {
+
+
+		nzqiwu = {
+
+			allowed = {
+				original_tag = PCH
+			}
+
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+			
+		}
+
+		jianba = {
+
+			allowed = {
+				original_tag = PCH
+			}
+
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		id_zhaohe = {
+
+			allowed = {
+				original_tag = PCH
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		guojiguwen = {
+
+			
+			allowed = {
+				original_tag = PCH
+			}
+
+			cost = 300
+
+			available = {
+				has_completed_focus = SLJSLL
+			}
+
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { HOA_CHI_maneuver }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+	}
+
+
+}

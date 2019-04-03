@@ -1,0 +1,293 @@
+ideas = {
+
+	tank_manufacturer = { 
+	
+		designer = yes
+	
+		china_south = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}			
+			
+			available = {
+				has_completed_focus = tank_production
+			}
+			
+			cost = 200
+			research_bonus = {
+				armor = 0.10
+			}
+			traits = { pch_tank_manufacturer }
+			modifier = {
+			}
+		}
+		
+			
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		jiangnan_dockyard = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		csic-1 = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		avic-1 = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+			
+		
+		aircraft_changhe = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		hongdu = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		
+		comac = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		avic-2 = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		208_lab = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+			available = {
+				has_completed_focus = capital_support_208
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { PCH_ar_208_lab }
+			
+			modifier = {
+			}
+		}
+		
+		
+		china_manufacturer-1 = {
+			
+			cost = 250
+			allowed = {
+				original_tag = PCH
+			}
+			research_bonus = {
+				artillery = 0.10
+			}			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+      traits = { motorized_equipment_manufacturer }
+			traits = { artillery_manufacturer }
+			modifier = {
+			}
+		}
+	}
+	
+
+	
+	industrial_concern = {
+					
+		northern_industrial = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		huawei = {
+	
+			allowed = {
+				original_tag = PCH
+			}
+			cost = 175
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		ZTE = {
+			
+			cost = 125
+			allowed = {
+				original_tag = PCH
+			}
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	theorist = {
+			yunru = {
+			
+			
+			allowed = {
+				original_tag = PCH
+			}
+			cost = 250
+			research_bonus = {
+				nuclear = 0.10
+			}
+			research_bonus = {
+				rocketry = 0.10
+			}
+			traits = { rocket_scientist }
+			traits = { nuclear_scientist }
+		}
+}
+                   }

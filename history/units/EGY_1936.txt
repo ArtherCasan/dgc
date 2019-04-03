@@ -1,0 +1,26 @@
+﻿division_template = {
+	name = "埃及王立军团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+#obb
+units = {
+	division = {
+		name = "1 埃及王立军团"
+		location = 4076 
+		division_template = "埃及王立军团"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2 埃及王立军团"
+		location = 4076 
+		division_template = "埃及王立军团"
+		start_experience_factor = 0.2
+	}
+}

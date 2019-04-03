@@ -1,0 +1,25 @@
+spriteTypes = {	
+	
+	#advisor
+	SpriteType = {
+		name = "GFX_idea_SOV_lavrentiy_beria"
+		texturefile = "gfx/interface/ideas/SOV_lavrentiy_beria.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SOV_vyacheslav_molotov"
+		texturefile = "gfx/interface/ideas/SOV_vyacheslav_molotov.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_SOV_nikolai_voznesensky"
+		texturefile = "gfx/interface/ideas/SOV_nikolai_voznesensky.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SOV_nikolai_yezhov"
+		texturefile = "gfx/interface/ideas/SOV_nikolai_yezhov.dds"
+	}
+	
+
+}

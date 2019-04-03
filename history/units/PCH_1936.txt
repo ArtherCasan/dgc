@@ -1,0 +1,590 @@
+﻿division_template = {
+	name = "中央局特战部队"				
+	regiments = {				
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0 # garrison
+}
+division_template = {
+	name = "国防军标准步兵"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+		support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "国民警备队"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "骑兵师团"		# Represents two-division cavalry corps (generally poorly-equipped)
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "国防军标准摩托化步兵"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	        motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+                recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+                maintenance_company = { x = 0 y = 2 }			
+	}
+}
+
+### OOB ###
+units = {
+	###### Kuomintang Army (CO: Chang Kai-shek) ######
+	##### Beiping-Tianjin Area (CO: ) #####
+	
+	## 国防军 ##
+	# division = {
+		# name = "国防军26师"
+		# location = 11913
+		# division_template = "中央局特战部队"
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "国防军27师"
+		# location = 11913
+		# division_template = "国防军标准步兵"
+		# start_experience_factor = 0.3
+		# start_equipment_factor = 1.0
+
+	# }	
+	# division = {
+		# name = "国防军24师"
+		# location = 1036
+		# division_template = "中央局特战部队"
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "国防军25师"
+		# location = 7637
+		# division_template = "中央局特战部队"
+		# start_equipment_factor = 1.0
+
+	# }
+	division = {
+		name = "国防军5师"
+		location = 7256
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军6师"
+		location = 7256
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军7师"
+		location = 2091
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军8师"
+		location = 8072
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军9师"
+		location = 10144
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+
+	}
+
+	division = {
+		name = "国防军10师"
+		location = 9958
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军11师"
+		location = 9958
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军12师"
+		location = 10043
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军13师"
+		location = 10043
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军14师"
+		location = 10076
+		division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军28师"
+		location = 10076
+		division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军15师"
+		location = 4925
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军16师"
+		location = 7191
+		division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军17师"
+		location = 7191
+		division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军18师"
+		location = 7191
+		division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军19师"
+		location = 10076
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军20师"
+		location = 12076
+		division_template = "国防军标准步兵"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防军21师"
+		location = 12076
+		division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	# division = {
+		# name = "国防军22师"
+		# location = 7058
+		# division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		# start_experience_factor = 0.3
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "国防军23师"
+		# location = 7058
+		# division_template = "国防军标准步兵"		# German-trained division (frontline infantry, better equipment and experience)
+		# start_experience_factor = 0.3
+		# start_equipment_factor = 1.0
+
+	# }
+	
+	## 中央局特战部队 ##
+	division = {
+		
+		name = "中央局特战部队1队"
+		location = 4205
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		
+	
+		name = "中央局特战部队2队"
+		location = 4205
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}	
+	division = {
+		name = "中央局特战部队3队"
+		location = 9959
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队4队"
+		location = 12408
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队5队"
+		location = 4114
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队6队"
+		location = 7027
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队7队"
+		location = 7014
+		division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队8队"
+		location = 12076
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队9队"
+		location = 12076
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队10队"
+		location = 4042
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队11队"
+		location = 4042
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "中央局特战部队12队"
+		location = 4042
+		division_template = "中央局特战部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	# division = {
+		# name = "中央局特战部队13队"
+		# location = 1096
+		# division_template = "中央局特战部队"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "中央局特战部队14队"
+		# location = 1069
+		# division_template = "中央局特战部队"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 1.0
+
+	# }
+
+	## 警备队 ##	
+	# 青岛警备 #
+	division = {
+		name = "青岛警备"
+		location = 10000
+		division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		start_equipment_factor = 1.0
+
+	}
+	# 南京警备 #
+	# division = {
+		# name = "第一南京警备队"
+		# location = 11913
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "第二南京警备队"
+		# location = 11913
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+	# }
+	# division = {
+		# name = "第三南京警备队"
+		# location = 11913
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+	# }
+	# division = {
+		# name = "第四南京警备队"
+		# location = 11913
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+	# }
+	# 武汉警备 #
+	division = {
+		name = "武汉第一警备队"
+		location = 4619
+		division_template = "国防军标准摩托化步兵"		
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		name = "武汉第二警备队"
+		location = 4619
+		division_template = "国防军标准摩托化步兵"		
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+
+	}
+	# 福建警备 #
+	# division = {
+		# name = "福建第一警备队"
+		# location = 9974
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "福建第二警备队"
+		# location = 4169
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+
+	# }
+	# division = {
+		# name = "福建第三警备队"
+		# location = 4196
+		# division_template = "中央局特战部队"		# Garrison unit (poor equipment and training)
+		# start_equipment_factor = 1.0
+
+	# }
+	# 上海警备 #
+	# division = {
+		# name = "上海第一警备队"
+		# location = 7014
+		# division_template = "国防军标准摩托化步兵"		
+		# start_equipment_factor = 1.0
+		# start_experience_factor = 0.3
+
+	# }
+	# division = {
+		# name = "上海第二警备队"
+		# location = 7014
+		# division_template = "国防军标准摩托化步兵"		
+		# start_equipment_factor = 1.0
+		# start_experience_factor = 0.3
+
+	# }
+
+	## 国防机动军 ##
+	division = {
+		name = "国防机动军1师"
+		location = 10000
+		division_template = "骑兵师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防机动军2师"
+		location = 4925
+		division_template = "骑兵师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "国防机动军3师"
+		location = 1069
+		division_template = "骑兵师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防机动军4师"
+		location = 1069
+		division_template = "骑兵师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "国防机动军5师"
+		location = 4114
+		division_template = "骑兵师团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	### 北京边境 ###
+	division = {
+		name = "国防军1师"
+		location = 10022
+		division_template = "国防军标准步兵"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "国防军2师"
+		location = 11944
+		division_template = "国防军标准步兵"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "国防军3师"
+		location = 11996
+		division_template = "国防军标准步兵"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "国防军4师"
+		location = 7109
+		division_template = "国防军标准步兵"
+		start_experience_factor = 0.2
+	}
+
+
+	##### ROCN #####
+	navy = {
+		name = "泛中华第一打击群"
+		base = 7014
+		location = 7014 #Shanghai
+		ship = { name = "武昌" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = PCH creator = FRA   } } }
+		ship = { name = "汉口" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = PCH creator = FRA   } } }
+		ship = { name = "汉阳" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = PCH creator = FRA   } } }
+		ship = { name = "首义" definition = battleship equipment = { battleship_1 = {amount = 1 owner = PCH creator = ENG  } } }
+		ship = { name = "应瑞" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = PCH creator = ENG } } }
+		ship = { name = "肇和" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = PCH creator = ENG } } }
+		ship = { name = "宁海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = PCH creator = JAP } } }
+		ship = { name = "平海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = PCH creator = JAP } } }
+	}
+}
+
+
+### Air Forces ###
+air_wings = {
+# Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
+	#Shanghai
+	613 = {
+		fighter_equipment_0 = { owner = "PCH" amount = 100 } 	
+		tac_bomber_equipment_0 =  { owner = "PCH" creator = USA amount = 15 }	
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PCH"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "PCH"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}	
+}

@@ -1,0 +1,792 @@
+﻿capital = 361
+
+oob = "USA_1936"
+
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	superior_firepower = 1
+	base_strike = 1
+
+}
+
+#Monroe Doctrine
+give_guarantee = CAN
+give_guarantee = MEX
+give_guarantee = CUB
+give_guarantee = HAI
+give_guarantee = DOM
+give_guarantee = GUA
+give_guarantee = HON
+give_guarantee = ELS
+give_guarantee = NIC
+give_guarantee = COS
+give_guarantee = PAN
+give_guarantee = VEN
+give_guarantee = COL
+give_guarantee = ECU
+give_guarantee = PRU
+give_guarantee = BRA
+give_guarantee = BOL
+give_guarantee = CHL
+give_guarantee = PAR
+give_guarantee = ARG
+give_guarantee = URG
+
+1939.1.1 = {
+
+	add_political_power = 1199
+	
+	#adding ministers
+	add_ideas = {
+		USA_robert_taft
+		carl_spaatz
+		jimmy_doolittle
+		army_ordnance_department
+		general_electric
+		robert_goddard
+		USA_prepare_intervention
+
+		#laws
+		isolation
+		volunteer_only
+
+		new_deal
+	}
+
+	#focuses
+	unlock_national_focus = USA_wpa
+	unlock_national_focus = USA_war_propaganda
+	unlock_national_focus = USA_prepare_intervention
+	complete_national_focus = USA_military_construction
+	complete_national_focus = USA_air_war_plans_division
+	complete_national_focus = USA_reinforce_monroe_doctrine
+	complete_national_focus = USA_bureau_of_ships
+	complete_national_focus = USA_escort_effort
+	complete_national_focus = USA_amphibious_operations
+	complete_national_focus = USA_expand_the_USMC
+	complete_national_focus = USA_convoy_tactics
+	complete_national_focus = USA_fund_the_navy
+
+	set_global_flag = earhart_disappeared
+	oob = "USA_1939"
+	set_technology = {
+		fighter1 = 1
+		cv_fighter1 = 1
+		heavy_fighter1 = 1
+		tactical_bomber1 = 1
+		CAS2 = 1
+		strategic_bomber1 = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		marines = 1
+		improved_submarine = 1
+		basic_destroyer = 1
+		basic_heavy_cruiser = 1
+		basic_battlecruiser = 1
+
+		#doctrines
+		#Air
+		air_superiority = 1
+		infrastructure_destruction = 1
+		naval_strike_tactics = 1
+
+		sup_delay = 1
+		submarine_operations_bs = 1
+		carrier_primacy = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+	create_equipment_variant = {
+		name = "Martin M166"
+		type = tac_bomber_equipment_0
+		upgrades = {
+			plane_tac_bomb_upgrade = 2
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 3
+		}
+	}
+}
+
+
+
+
+set_convoys = 400
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 99
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 1
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_ideas = {
+	undisturbed_isolation
+	great_depression
+	disarmed_nation
+	free_trade
+	home_of_the_free
+}
+
+
+# DIPLOMACY
+set_autonomy = {
+	target = PHI
+	autonomous_state =  autonomy_puppet
+}
+
+1939.1.1 = {
+
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 99
+			}
+
+			fascism = {
+				popularity = 0
+			}
+			
+			communism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = democratic
+		last_election = "1936.11.3"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+create_country_leader = {
+	name = "爱丽丝·爱迪生"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "Portrait_USA_Generic_1.dds"
+	expire = "1947.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+	}
+}
+
+create_country_leader = {
+	name = "卡罗尔·凯灵"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_USA_Franklin_Roosevelt.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "斯普林菲尔德"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "chuntian.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Super SASS"
+		picture = "124-Super_SASS.tga"
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 5
+
+	attack_skill = 7 
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "XM3"
+		picture = "200-XM3.tga"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Super Shorty"
+		picture = "156-SuperShorty.tga"
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 5
+	id = 602
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "M1873"
+		picture = "001-M1873.tga"
+	traits = { armor_officer career_officer }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "MAC10"
+		picture = "018-MAC10.tga"
+	traits = { trait_engineer commando cavalry_officer }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vector"
+		picture = "020-Vector.tga"
+	traits = { infantry_officer trait_reckless }
+	skill = 4
+
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "M1918"
+	id = 57
+		picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "M1A1"
+		picture = "035-M1A1.tga"
+	traits = { armor_officer career_officer brilliant_strategist }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "M1903"
+		picture = "036-M1903.tga"
+	traits = { old_guard infantry_officer inflexible_strategist }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "M14"
+		picture = "037-M14.tga"
+	traits = {  old_guard career_officer armor_officer }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "M21"
+		picture = "038-M21.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "M16A1"
+		picture = "054-M16A1.tga"
+	traits = { infantry_officer }
+	skill = 1
+	rank = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "M4A1"
+	picture = "055-M4A1.tga"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "M4 SOPMOD II"
+		picture = "056-M4_SOPMOD_II.tga"
+	traits = { armor_officer trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "AR15"
+		picture = "057-AR15.tga"
+	traits = { old_guard harsh_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "M60"
+		picture = "078-M60x.tga"
+	traits = {  commando infantry_officer }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "MKV"
+		picture = "096-MKV.tga"
+	traits = { infantry_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Bren ten"
+		picture = "139-Bren_ten.tga"
+	traits = {  trickster career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "RO635"
+		picture = "143-RO635.tga"
+	traits = {  panzer_leader career_officer infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "M1887"
+		picture = "151-M1887.tga"
+	traits = { politically_connected infantry_officer career_officer harsh_leader }
+	skill = 1 
+	id = 601
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "ColtSCW"
+		picture = "169-ColtSCW.tga"
+	traits = { infantry_officer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "RFB"
+		picture = "172-RFB.tga"
+	traits = { armor_officer trait_reckless brilliant_strategist  }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "亚利桑那"
+		picture = "BB_B_ylsn.tga"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "企业"
+		picture = "CV_B_qy.tga"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "克利夫兰"
+		picture = "CL_B_kelifulan.tga"
+	traits = { superior_tactician spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "长岛"
+		picture = "CVL_B_changdao.tga"
+	traits = { superior_tactician spotter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "火奴鲁鲁"
+		picture = "CL_B_hnll.tga"
+	traits = { superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "波特兰"
+		picture = "CA_B_btl.tga"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "拉菲"
+		picture = "DD_B_lafei.tga"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "赫斯提雅"
+		picture = "AP_B_nzs.tga"
+	traits = {  }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "埃塞克斯"
+		picture = "Portrait_USA_Earnest_King.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "昆西"
+		picture = "kunxi.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "威奇塔"
+		picture = "weiqita.tga"
+	traits = { superior_tactician spotter }
+	skill = 4
+}
+create_navy_leader = {
+	name = "威斯康星"
+		picture = "wskx.tga"
+	traits = { superior_tactician spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "北安普顿"
+		picture = "beianpudun.tga"
+	traits = { superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "萨拉托加"
+		picture = "salatuojia.tga"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "密苏里"
+		picture = "misuli.tga"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "蒙彼利埃"
+		picture = "mengbiliai.tga"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "华盛顿"
+		picture = "huashengdun.tga"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+}
+
+
+
+create_navy_leader = {
+	name = "北卡罗来纳"
+		picture = "beika.tga"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+}
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "梭鱼级"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "法拉格特级"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "波特兰级"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "宾夕法尼亚级"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "新墨西哥级"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "科罗拉多级"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 3
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 4
+	}
+}
+
+create_equipment_variant = {
+	name = "约克城级"
+	type = carrier_2
+	upgrades = {
+		ship_deckspace_upgrade = 1
+		carrier_armor_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_reliability_upgrade = 1
+	}
+
+}
+
+1939.1.1 = {
+	
+	create_equipment_variant = {
+		name = "三文鱼级"
+		type = submarine_2
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "班森级"
+		type = destroyer_2
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+
+	create_equipment_variant = {
+		name = "黄蜂级"
+		type = carrier_2
+		upgrades = {
+			ship_deckspace_upgrade = 2
+			carrier_armor_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_reliability_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "F2A Buffalo"
+		type = cv_fighter_equipment_1
+		upgrades = {
+			cv_plane_gun_upgrade = 5
+			cv_plane_range_upgrade = 0
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 5
+		}
+	}
+
+
+	# 1941
+	#create_equipment_variant = {
+	#	name = "南达科他级"
+	#	type = battleship_2
+	#	upgrades = {
+	#		ship_reliability_upgrade = 3
+	#		ship_engine_upgrade = 3
+	#		ship_armor_upgrade = 3
+
+	#		ship_gun_upgrade = 3
+	#	}
+	#}
+}

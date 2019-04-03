@@ -1,0 +1,154 @@
+﻿division_template = {
+	name = "中央局特战部队"				
+	regiments = {				
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support =	{
+		military_police = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "国防军标准步兵"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }		
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "共和国卫队1队"
+		location = 9959
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队2队"
+		location = 7167
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队3队"
+		location = 7568
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队4队"
+		location = 7540
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队5队"
+		location = 7222
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队6队"
+		location = 10040
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队7队"
+		location = 10008
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队8队"
+		location = 1146
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队9队"
+		location = 1146
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队10队"
+		location = 7035
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队11队"
+		location = 12061
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队12队"
+		location = 10434
+		division_template = "中央局特战部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "共和国卫队13队"
+		location = 7167
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "共和国卫队14队"
+		location = 9959
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "共和国卫队15队"
+		location = 7637
+		division_template = "国防军标准步兵"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+	}
+	
+}

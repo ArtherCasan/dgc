@@ -1,0 +1,151 @@
+ideas = {
+
+	high_command = {
+
+		wuliuban = {
+
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		liusi = {
+
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { army_concealment_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		qijiu = {
+
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { army_chief_maneuver_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jiuqixian = {
+		
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		bayishima = {
+			
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jianliu = {
+
+			allowed = {
+				original_tag = PCH
+			}
+
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jianqi = {
+
+			allowed = {
+				original_tag = PCH
+			}
+
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jianhongqi = {
+
+			allowed = {
+				original_tag = PCH
+			}
+
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		id_pinghai = {
+
+			
+			allowed = {
+				original_tag = PCH
+			}
+						
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+
+		id_changchun = {
+			
+			allowed = {
+				original_tag = PCH
+			}
+
+			traits = { navy_screen_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		id_chongqing = {
+
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+}

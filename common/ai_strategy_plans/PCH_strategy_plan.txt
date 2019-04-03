@@ -1,0 +1,300 @@
+PCH_fascism_plan = {
+	name = "PCH fascist plan"
+	desc = "fascist plan for Pan-China"
+
+	enable = {
+		original_tag = PCH
+		has_game_rule = {
+			rule = PCH_ai_behavior
+			option = DGC_PCH_FASCIST
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GEMINGXUANYAN
+		DAXUAN
+		WEIXIANDESHIHOU
+		HOA_national_defense_council
+		QUDIYIHUI
+		JUNGONGFUHETI
+		industrial_planning
+		MINZHUZHUYI
+		KONGZHIJUNDUI
+		XIAOMIESHISHEN
+		PCH_ids_1
+		QINGNIANJUNDUI
+		GONGNONGGAIGE
+		JUNSHIJIQIAO
+		PCH_ids_2
+		95CHONGBAI
+		ORDER227
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+	
+}
+
+PCH_democratic_plan = {
+	name = "PCH democratic plan"
+	desc = "democratic plan for Pan-China"
+
+	enable = {
+		original_tag = PCH
+		has_game_rule = {
+			rule = PCH_ai_behavior
+			option = DGC_PCH_DEMOCRATIC
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GEMINGXUANYAN
+		DAXUAN
+		MINGZHUZHIGUANG
+		industrial_planning
+		ZHIXIANHUIYI
+		TIAOHE
+		remove_warlords
+		HUIFUWEI
+		PCH_ids_1
+		PCH_ids_2
+		HOA_national_defense_council
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+	
+}
+
+PCH_democratic_learning_plan = {
+	name = "PCH democratic learning plan"
+	desc = "democratic learning plan for Pan-China"
+
+	enable = {
+		original_tag = PCH
+		has_game_rule = {
+			rule = PCH_ai_behavior
+			option = DGC_PCH_DEMOCRATIC_LEARNING
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GEMINGXUANYAN
+		DAXUAN
+		MINGZHUZHIGUANG
+		industrial_planning
+		ZHIXIANHUIYI
+		TIAOHE
+		remove_warlords
+		our_new_deal
+		PCH_ids_1
+		PCH_ids_2
+		HOA_national_defense_council
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+	
+}
+
+PCH_left_com_plan = {
+	name = "PCH left communism plan"
+	desc = "left communism plan for Pan-China"
+
+	enable = {
+		original_tag = PCH
+		has_game_rule = {
+			rule = PCH_ai_behavior
+			option = DGC_PCH_LEFT_COM
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GEMINGXUANYAN
+		DAXUAN
+		MINGGONGLH
+		GONGRENLILIANG
+		industrial_planning
+		TUDIGM
+		HOA_national_defense_council
+		RENMINGLIYI
+		industrial_planning
+		ZDJFSX
+		BTPWDSL
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+	
+}
+
+PCH_right_com_plan = {
+	name = "PCH right communism plan"
+	desc = "right communism plan for Pan-China"
+
+	enable = {
+		original_tag = PCH
+		has_game_rule = {
+			rule = PCH_ai_behavior
+			option = DGC_PCH_RIGHT_COM
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GEMINGXUANYAN
+		DAXUAN
+		MINGGONGLH
+		GONGRENLILIANG
+		industrial_planning
+		TUDIGM
+		HOA_national_defense_council
+		RENMINGLIYI
+		industrial_planning
+		ZDJFSX
+		GMZTYZX
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+	
+}

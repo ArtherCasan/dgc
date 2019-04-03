@@ -1,0 +1,30 @@
+
+ technology_sharing_group = {
+
+	id = dgc_baltic_research
+	name = dgc_baltic_research_name
+	desc = dgc_baltic_research_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = SWE
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = asian_united_research
+	name = asian_united_research_name
+	desc = asian_united_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = JAP
+    }
+
+}

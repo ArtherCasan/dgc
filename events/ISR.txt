@@ -1,0 +1,85 @@
+﻿add_namespace = isr
+
+#犹太人和阿拉伯冲突
+country_event = {
+	id = isr.1
+	title = isr.1.t
+	desc = isr.1.d
+	#picture = 
+
+	trigger = {
+		tag = ISR
+		has_idea = isr_chaos
+	}
+	
+	option = {
+		name = isr.1.a
+		add_stability = -0.05
+		add_manpower = -300
+	}
+	
+	mean_time_to_happen = { days = 7 }
+}
+
+#解救犹太难民
+country_event = {
+	id = isr.2
+	title = isr.2.t
+	desc = isr.2.d
+	#picture = 
+
+	trigger = {
+		tag = ISR
+		has_idea = isr_chaos
+	}
+	
+	option = {
+		name = isr.2.a
+		add_stability = -0.05
+		add_manpower = 100
+	}
+	
+	option = {
+		name = isr.2.b
+		add_stability = -0.1
+		add_manpower = 200
+	}
+	
+	mean_time_to_happen = { 
+		days = 7 
+	}
+}
+#阿拉伯民族起义（隐藏事件）
+country_event = {
+	id = isr.3
+	fire_only_once = yes
+	trigger = {
+		tag = ISR
+		has_idea = isr_chaos
+		has_stability < 0.05
+	}
+	hidden = yes
+	immediate = {
+		country_event = { id = isr.4 }
+	}
+}
+
+#阿拉伯民族起义（显示事件）
+country_event = {
+	id = isr.4
+	title = isr.4.t
+	desc = isr.4.d	
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = ISR
+		has_idea = isr_chaos
+		has_stability < 0.05
+	}
+	option = {
+		name = isr.4.a
+			remove_ideas = isr_chaos
+			add_ideas = arabian_people_uprise
+	}
+}

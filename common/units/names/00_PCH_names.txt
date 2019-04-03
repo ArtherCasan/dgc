@@ -1,0 +1,58 @@
+PCH = {
+	submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = {
+ "夏" "商" "周" "蜀" "魏" "吴" "燕" "赵" "韩" "晋" "齐" "梁" "陈" "隋" "宋" "明"
+}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {
+
+}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Cruiser" }
+		unique = {
+
+}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {
+
+}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Battlecruiser" }
+		unique = {
+
+}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {
+
+}
+	}
+	SH_battleship = {
+		prefix = ""
+		generic = { "Super Heavy Battleship" }
+		unique = {
+
+}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {
+"风暴" "光晕" "台风" "飓风" "荣光" "泛亚洲" "海洋"
+}
+	}
+}

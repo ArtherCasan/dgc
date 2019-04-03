@@ -1,0 +1,289 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_yunru"
+		texturefile = "gfx/interface/ideas/china/company/yunru.dds"
+	}	
+		#### DGC continuous goal icons
+	SpriteType = {
+		name = "GFX_DGC_95_shine"
+		texturefile = "gfx/interface/ideas/china/DGC_95.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/china/DGC_95.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/ideas/china/DGC_95.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_DGC_95"
+		texturefile = "gfx/interface/ideas/china/DGC_95.tga"
+	}
+	SpriteType = {
+		name = "GFX_idea_isr_chaos"
+		texturefile = "gfx/interface/ideas/idea_isr_chaos.tga"
+	}
+	SpriteType = {
+		name = "GFX_DGC_TOM"
+		texturefile = "gfx/event_pictures/DGC_TOM.tga"
+	}
+	SpriteType = {
+		name = "report_event_jap_zaibatsu"
+		texturefile = "gfx/event_pictures/report_event_jap_zaibatsu.tga"
+	}	
+	SpriteType = {
+		name = "report_event_jap_1936_election"
+		texturefile = "gfx/event_pictures/report_event_jap_1936_election.tga"
+	}
+	SpriteType = {
+		name = "report_event_jap_1940_election"
+		texturefile = "gfx/event_pictures/report_event_jap_1940_election.tga"
+	}	
+	SpriteType = {
+		name = "report_event_pch_qbz95_uprising"
+		texturefile = "gfx/event_pictures/report_event_pch_qbz95_uprising.tga"
+	}	
+	SpriteType = {
+		name = "GFX_idea_DGC_mandate_heaven"
+		texturefile = "gfx/interface/ideas/china/idea_DGC_mandate_heaven.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_"
+		texturefile = "gfx/interface/ideas/china/J11.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_advisor_communist_revolutionary"
+		texturefile = "gfx/interface/ideas/china/97.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_advisor_fascist_demagogue"
+		texturefile = "gfx/interface/ideas/china/95.dds"
+	}	
+	#advisor
+	SpriteType = {
+		name = "GFX_idea_dongmengyu"
+		texturefile = "gfx/interface/ideas/china/advisor/dmy.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_dongyueqing"
+		texturefile = "gfx/interface/ideas/china/advisor/dyq.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_wangdanying"
+		texturefile = "gfx/interface/ideas/china/advisor/wdy.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_wangxinyi"
+		texturefile = "gfx/interface/ideas/china/advisor/wxy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_xiahejie"
+		texturefile = "gfx/interface/ideas/china/advisor/xhj.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_yangsixuan"
+		texturefile = "gfx/interface/ideas/china/advisor/ysx.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_yaojingjing"
+		texturefile = "gfx/interface/ideas/china/advisor/yjj.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_zhanyaqin"
+		texturefile = "gfx/interface/ideas/china/advisor/zyq.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_zhanghuiyuan"
+		texturefile = "gfx/interface/ideas/china/advisor/zhy.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_zhaoshiwen"
+		texturefile = "gfx/interface/ideas/china/advisor/zsw.dds"
+	}
+
+	#army
+	SpriteType = {
+		name = "GFX_idea_wuliuban"
+		texturefile = "gfx/interface/ideas/china/56ban.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_wuliuchong"
+		texturefile = "gfx/interface/ideas/china/56chong.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_wujiu"
+		texturefile = "gfx/interface/ideas/china/59.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_liusan"
+		texturefile = "gfx/interface/ideas/china/63.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_liusi"
+		texturefile = "gfx/interface/ideas/china/64.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_qijiu"
+		texturefile = "gfx/interface/ideas/china/79.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_jiuwu"
+		texturefile = "gfx/interface/ideas/china/95.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_jiuqi"
+		texturefile = "gfx/interface/ideas/china/97.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_jiuqixian"
+		texturefile = "gfx/interface/ideas/china/97xian.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_jiujiu"
+		texturefile = "gfx/interface/ideas/china/M99.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_nzqiwu"
+		texturefile = "gfx/interface/ideas/china/NZ75.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_bayishima"
+		texturefile = "gfx/interface/ideas/china/bysm.dds"
+	}
+
+	#navy
+	SpriteType = {
+		name = "GFX_idea_id_ninghai"
+		texturefile = "gfx/interface/ideas/china/nh.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_id_pinghai"
+		texturefile = "gfx/interface/ideas/china/ph.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_id_yixian"
+		texturefile = "gfx/interface/ideas/china/yx.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_id_yingrui"
+		texturefile = "gfx/interface/ideas/china/yr.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_id_changchun"
+		texturefile = "gfx/interface/ideas/china/cc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_id_zhaohe"
+		texturefile = "gfx/interface/ideas/china/zh.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_id_chongqing"
+		texturefile = "gfx/interface/ideas/china/cq.dds"
+	}
+	
+	#air
+	SpriteType = {
+		name = "GFX_idea_jianwu"
+		texturefile = "gfx/interface/ideas/china/J5.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_jianliu"
+		texturefile = "gfx/interface/ideas/china/J6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_jianqi"
+		texturefile = "gfx/interface/ideas/china/J7.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_jianba"
+		texturefile = "gfx/interface/ideas/china/J8.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_jianshiyi"
+		texturefile = "gfx/interface/ideas/china/J11.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_jianhongqi"
+		texturefile = "gfx/interface/ideas/china/JH7.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_qiangwu"
+		texturefile = "gfx/interface/ideas/china/Q5.dds"
+	}
+
+	#extra
+	SpriteType = {
+		name = "GFX_idea_guojiguwen"
+		texturefile = "gfx/interface/ideas/china/bbs.dds"
+	}
+}

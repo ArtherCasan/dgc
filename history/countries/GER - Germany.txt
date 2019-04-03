@@ -1,0 +1,853 @@
+﻿capital = 64
+
+oob = "GER_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	basic_battleship = 1
+	early_battlecruiser = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	transport = 1
+}
+
+
+
+
+set_variable = { var = wehrmacht_anger value = 0 }
+set_variable = { var = ss_anger value = 0 }
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 #TODO_WTT_CD: If stability effects in tree, lower this accordings
+set_war_support = 0.3
+
+#Trade
+create_import = {
+		resource = tungsten
+		factories = 1
+		exporter = SWE
+}
+
+1939.1.1 = {
+	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
+	set_war_support = 0.7
+
+	add_political_power = 1197
+	
+	#adding ministers
+	add_ideas = {
+		henschel
+		ig_faben
+		heinrich_himmler
+		rudolf_hess
+		ludwig_beck
+		gerd_von_rundstedt
+		GER_autarky_idea
+
+		#laws
+		war_economy
+		extensive_conscription
+	}
+	
+	oob = "GER_1939"
+	
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_puppet
+	}
+	
+	give_military_access = SLO
+	create_wargoal = {
+		type = take_state_focus
+		target = POL
+		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
+	}
+
+#Trade
+	create_import = {
+			resource = oil
+			factories = 2
+			exporter = SOV
+	}
+
+	#MR pact effect, Also has a part scripted in soviet history file
+	unlock_national_focus = GER_mol_rib_pact
+	every_other_country = {
+		limit = {
+			has_government = fascism 
+		}
+		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
+	}
+	diplomatic_relation = { country = SOV relation = non_aggression_pact }
+	add_opinion_modifier = { target = SOV modifier = MR_pact }
+	#MR pact end
+
+	#Soviet treaty
+	unlock_national_focus = GER_soviet_treaty
+	add_tech_bonus = {
+		bonus = 0.5
+		uses = 2
+		category = armor
+	}
+	SOV = {
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
+	}
+	#Soviet treaty end
+	
+	unlock_national_focus = GER_rhineland
+	unlock_national_focus = GER_anschluss
+	unlock_national_focus = GER_demand_sudetenland
+	unlock_national_focus = GER_first_vienna_award
+	unlock_national_focus = GER_end_of_czechoslovakia
+	unlock_national_focus = GER_demand_memel
+	unlock_national_focus = GER_four_year_plan
+	unlock_national_focus = GER_autarky
+	unlock_national_focus = GER_synthetic_rubber
+
+	set_global_flag = end_of_czechoslovakia
+	set_global_flag = olympics_1936
+	set_variable = { var = GER_mefo_bill_counter value = 50 }
+	complete_national_focus = GER_autobahn
+	complete_national_focus = GER_west_wall
+	complete_national_focus = GER_army_innovation
+	complete_national_focus = GER_hermann_goring_werke
+	complete_national_focus = GER_kdf_wagen
+	complete_national_focus = GER_coal_liquidization
+	complete_national_focus = GER_extra_tech_slot
+
+	#BUILDINGS
+	
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		basic_heavy_cruiser = 1
+		improved_heavy_cruiser = 1
+		improved_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+		improved_carrier = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 60
+		}
+		
+		communism = {
+			popularity = 20
+			banned = yes #default is no
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+create_faction = Axis
+add_to_faction = GER
+
+
+add_ideas = {
+	sour_loser
+	general_staff
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
+add_ideas = GER_mefo_bills_1
+
+activate_mission = GER_mefo_bills_mission
+
+create_country_leader = {
+	name = "阿道夫·雷蒂亚"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "leidiya.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "HK MG4"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "mg4.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "UMP45"
+	desc = "POLITICS_WILHELM_PIECK_DESC"
+	picture = "ump45.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		stalins_puppet
+		exiled
+	}
+}
+
+
+#create_country_leader = {
+#	name = "Otto Wels"
+#	desc = "POLITICS_OTTO_WELS_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1939.1.16"
+#	ideology = socialism
+#	traits = {
+#		exiled
+#		union_man
+#	}
+#}
+#
+#create_country_leader = {
+#	name = "Ernst Thälmann"
+#	desc = "POLITICS_ERNST_THALMANN_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1956.1.1"
+#	ideology = stalinism
+#	traits = {
+#		assassination_survivor
+#		stalins_puppet
+#		political_prisoner
+#	}
+#}
+
+add_namespace = {
+	name = "ger_unit_leader"
+	type = unit_leader
+}
+
+create_field_marshal = {
+	name = "西住真穗"
+	picture = "xizhuzhensui.tga"
+	traits = { defensive_doctrine offensive_doctrine old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1
+}
+
+create_field_marshal = {
+	name = "逸见·艾丽卡"
+	picture = "yijianailika.tga"
+	traits = {  offensive_doctrine armor_officer }
+	skill = 3
+	id = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "瓦尔特P38"
+	picture = "009-P38.tga"
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "爱丽丝蒂娜·伯恩哈德"
+	picture = "alsdnbehd.tga"
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "丽姿·霍恩施泰因"
+	picture = "lizi.tga"
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "奈乐·隆美尔"
+	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	traits = { trickster trait_reckless war_hero armor_officer media_personality }
+	skill = 4
+	id = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "埃尔温"
+	picture = "songbenlizi.tga"
+	traits = { trickster trait_reckless armor_officer media_personality }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "瓦尔特PPK"
+	picture = "010-PPK.tga"
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	skill = 4
+	id = 5
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "鲁格P08"
+	picture = "011-P08.tga"
+	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+	skill = 4
+	id = 6
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "毛瑟C96"
+	picture = "012-C96.tga"
+	traits = { career_officer inflexible_strategist }
+	skill = 2
+	id = 7
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "MP40"
+	desc = ""
+	picture = "025-MP40.tga"
+	traits = { armor_officer trait_cautious }
+	skill = 2
+	id = 8
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "MP5"
+	picture = "026-MP5.tga"
+	traits = { harsh_leader trait_cautious }
+	skill = 4
+	id = 9
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Kar98k"
+	picture = "046-98Ka.tga"
+	traits = { defensive_doctrine brilliant_strategist trait_cautious politically_connected }
+	skill = 3
+	id = 10
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "瓦尔特G43"
+	picture = "047-G43.tga"
+	traits = { cavalry_officer }
+	skill = 4
+	id = 11
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "瓦尔特WA2000"
+	picture = "048-WA2000.tga"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	id = 13
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "STG44"
+	picture = "061-STG44.tga"
+	traits = { trait_cautious armor_officer }
+	skill = 3
+	id = 14
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "G41"
+	picture = "062-G41.tga"
+	traits = { armor_officer trait_reckless politically_connected}
+	skill = 3
+	id = 15
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "G3"
+	picture = "063-G3.tga"
+	traits = { commando trait_reckless }
+	skill = 4
+	id = 16
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "G36"
+	picture = "064-G36_Left.tga"
+	traits = { infantry_officer career_officer }
+	skill = 4
+	id = 17
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "HK416"
+	picture = "065-HK416.tga"
+	traits = { trait_reckless armor_officer }
+	skill = 3
+	id = 18
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "MG42"
+	picture = "086-MG42.tga"
+	traits = { infantry_officer }
+	skill = 3
+	id = 19
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "MG34"
+	picture = "087-MG34.tga"
+	traits = {  armor_officer politically_connected }
+	skill = 4
+	id = 20
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "MG3"
+	picture = "088-MG3.tga"
+	traits = { infantry_officer }
+	skill = 3
+	id = 21
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "MK23"
+	picture = "099-Mk23.tga"
+	traits = {  }
+	skill = 4
+	id = 22
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "P7"
+	picture = "100-P7.tga"
+	traits = { politically_connected career_officer }
+	skill = 3
+	id = 23
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "UMP9"
+	picture = "101-UMP9.tga"
+	traits = { armor_officer politically_connected brilliant_strategist trait_reckless }
+	skill = 4
+	id = 24
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "UMP40"
+		picture = "102-UMP40.tga"
+	traits = { armor_officer career_officer trait_cautious }
+	skill = 4
+	id = 25
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "UMP45"
+	picture = "ump45.tga"
+	traits = { brilliant_strategist trait_cautious war_hero }
+	skill = 4
+	id = 32
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "G36C"
+	picture = "104-G36C.tga"
+	traits = { trait_engineer infantry_officer trait_cautious }
+	skill = 3
+
+	id = 33
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "MG5"
+	picture = "109-MG5.tga"
+	traits = { winter_specialist trait_engineer war_hero }
+	skill = 3
+	id = 34
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "mg4"
+	picture = "mg4.tga"
+	traits = {  }
+	skill = 3
+	id = 35
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "索菲·阿登"
+	picture = "hhz.tga"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "凯丝·温克勒"
+	picture = "panzer4f2.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "斯特拉·昆特"
+	picture = "4dd.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "温丽·阿诺尔德"
+	picture = "hornisse.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "埃尔米·邓尼茨"
+		picture = "dnc.dds"
+	traits = { seawolf }
+	skill = 5
+	id = 26
+}
+
+create_navy_leader = {
+	name = "提尔比茨"
+		picture = "BB_B_tebc.tga"
+	traits = { blockade_runner }
+	skill = 4
+	id = 27
+}
+
+create_navy_leader = {
+	name = "欧根亲王"
+		picture = "CA_B_og.tga"
+	traits = { old_guard_navy }
+	skill = 4
+	id = 28
+}
+
+create_navy_leader = {
+	name = "斯佩伯爵"
+		picture = "CA_B_sp.tga"
+	traits = { superior_tactician }
+	skill = 4
+	id = 29
+}
+
+create_navy_leader = {
+	name = "希佩尔"
+		picture = "CA_B_xpe.tga"
+	traits = { old_guard_navy }
+	skill = 4
+	id = 30
+}
+create_navy_leader = {
+	name = "欧根亲王"
+		picture = "eugen.tga"
+	traits = { old_guard_navy }
+	skill = 4
+	id = 30
+}
+create_navy_leader = {
+	name = "威廉明娜"
+		picture = "weilianmingna.tga"
+	traits = { superior_tactician }
+	skill = 3
+	id = 31
+}
+
+
+### Ship Variants ###
+## 1936 Start ##
+# Light Cruisers #
+create_equipment_variant = {
+	name = "柯尼斯堡级"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 2
+	}
+	obsolete = yes
+}
+# Heavy Cruisers #
+create_equipment_variant = {
+	name = "德意志级"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 2
+	}
+}
+
+## 1939 Start ##
+1939.1.1 = {
+	# Submarines #
+	create_equipment_variant = {
+		name = "7A型"
+		type = submarine_2
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+	# Destroyer #
+	create_equipment_variant = {
+		name = "1936驱逐舰级"
+		type = destroyer_2
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+	# Heavy Cruisers #
+	#create_equipment_variant = {
+	#	name = "德意志级"
+	#	type = heavy_cruiser_1
+	#	parent_version = 0
+	#	upgrades = {
+	#		ship_reliability_upgrade = 1
+	#		ship_engine_upgrade = 1
+	#		ship_armor_upgrade = 1
+	#		ship_gun_upgrade = 2
+	#	}
+	#	obsolete = yes
+	#}
+}

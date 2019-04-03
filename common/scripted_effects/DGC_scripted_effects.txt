@@ -1,0 +1,43 @@
+#降低全体军阀政治斗争
+antiPS_total = {
+	custom_effect_tooltip = antiPS_total_effect
+	hidden_effect = {	
+		every_country = {
+			limit = {
+				is_warlord = yes
+			}
+			add_to_variable = { var = ROOT.PS_progress value = -30 }
+		}
+	}
+}
+#篡位降低全体军阀政治斗争
+take_leader_antiPS = {
+	custom_effect_tooltip = take_leader_antiPS_effect
+	hidden_effect = {	
+		every_country = {
+			limit = {
+				is_warlord = yes
+			}
+			add_to_variable = { var = ROOT.PS_progress value = -50 }
+		}
+	}
+}
+
+PCH_decrease_level_civilwar = {
+	if = {
+		limit = { has_idea = HOA_DXT }
+		swap_ideas = {
+			remove_idea = HOA_DXT
+			add_idea = HOA_DXT_2
+		}
+		else = {
+			if = {
+				limit = { has_idea = HOA_DXT_2 }
+				remove_ideas = HOA_DXT_2
+					else = {
+						add_political_power = 150
+					}
+			}
+		}
+	}
+}

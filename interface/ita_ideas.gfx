@@ -1,0 +1,210 @@
+spriteTypes = {	
+	
+	#advisor
+	SpriteType = {
+		name = "GFX_idea_andongniao"
+		texturefile = "gfx/interface/ideas/italy/advisor/adna.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_kamiqiya"
+		texturefile = "gfx/interface/ideas/italy/advisor/kmqy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_kayue"
+		texturefile = "gfx/interface/ideas/italy/advisor/ky.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_weineituo"
+		texturefile = "gfx/interface/ideas/italy/advisor/wnt.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_wugelini"
+		texturefile = "gfx/interface/ideas/italy/advisor/wgln.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_carpaccio"
+		texturefile = "gfx/interface/ideas/italy/advisor/Carpaccio.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_pepperoni"
+		texturefile = "gfx/interface/ideas/italy/advisor/Pepperoni.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_spasshier"
+		texturefile = "gfx/interface/ideas/italy/advisor/SPAS12.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_spectremsi"
+		texturefile = "gfx/interface/ideas/italy/advisor/SpectreM4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_anjielina"
+		texturefile = "gfx/interface/ideas/italy/advisor/ajln.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_yanisi"
+		texturefile = "gfx/interface/ideas/italy/advisor/yns.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_luqiya"
+		texturefile = "gfx/interface/ideas/italy/advisor/lqy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_liduoweiya"
+		texturefile = "gfx/interface/ideas/italy/advisor/liduoweiya.dds"
+	}
+	
+
+	#army
+	SpriteType = {
+		name = "GFX_idea_arqiling"
+		texturefile = "gfx/interface/ideas/italy/army/AR70.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_arxyiliuling"
+		texturefile = "gfx/interface/ideas/italy/army/ARX160.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_bmwujiu"
+		texturefile = "gfx/interface/ideas/italy/army/BM59.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mjiu"
+		texturefile = "gfx/interface/ideas/italy/army/M9.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_mshier"
+		texturefile = "gfx/interface/ideas/italy/army/M12.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mabsanba"
+		texturefile = "gfx/interface/ideas/italy/army/MAB38.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_anchovy"
+		texturefile = "gfx/interface/ideas/italy/army/anchovy.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_satba"
+		texturefile = "gfx/interface/ideas/italy/army/SAT8.dds"
+	}
+	
+
+	#navy
+	SpriteType = {
+		name = "GFX_idea_torelli"
+		texturefile = "gfx/interface/ideas/italy/navy/Luigi_Torelli.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_bola"
+		texturefile = "gfx/interface/ideas/italy/navy/bl.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_lituoliao"
+		texturefile = "gfx/interface/ideas/italy/navy/ltla.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_xibeifeng"
+		texturefile = "gfx/interface/ideas/italy/navy/xbf.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_luoma"
+		texturefile = "gfx/interface/ideas/italy/navy/lm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_zhala"
+		texturefile = "gfx/interface/ideas/italy/navy/zl.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_andelieya"
+		texturefile = "gfx/interface/ideas/italy/navy/adly.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_aweiaier"
+		texturefile = "gfx/interface/ideas/italy/navy/awae.dds"
+	}
+	
+	
+	#air
+	SpriteType = {
+		name = "GFX_idea_lujini"
+		texturefile = "gfx/interface/ideas/italy/air/ljn.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_feidelika"
+		texturefile = "gfx/interface/ideas/italy/air/fdlk.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_feiernandiya"
+		texturefile = "gfx/interface/ideas/italy/air/fendy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_luxianna"
+		texturefile = "gfx/interface/ideas/italy/air/lxan.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_madina"
+		texturefile = "gfx/interface/ideas/italy/air/mdn.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_zhusepina"
+		texturefile = "gfx/interface/ideas/italy/air/zspn.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_yaoying"
+		texturefile = "gfx/interface/ideas/italy/air/ying.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_tianying"
+		texturefile = "gfx/interface/ideas/italy/air/ty.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

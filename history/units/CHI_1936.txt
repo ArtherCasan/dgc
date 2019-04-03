@@ -1,0 +1,206 @@
+﻿division_template = {
+	name = "国民革命军"				# Represents: two-division infantry corps (generally poorly-equipped militias), and local militia groups
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+### OOB ###
+units = {
+	#Guangdong/Guangxi units - 21 divisions
+	division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "62 国民革命军"
+		location = 10404
+		start_experience_factor = 0.1
+		division_template = "国民革命军"
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "63 国民革命军"
+		location = 1047
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "63 国民革命军"
+		location = 1047
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "63 国民革命军"
+		location = 1047
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "64 国民革命军"
+		location = 7137
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "64 国民革命军"
+		location = 7137
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "65 国民革命军"
+		location = 9938
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division = {
+		name = "65 国民革命军"
+		location = 9938
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "66 国民革命军"
+		location = 994
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "67 国民革命军"
+		location = 1047
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}	
+	division = {
+		name = "67 国民革命军"
+		location = 1047
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	
+	division = {
+		name = "Guangzhou Jingbei"
+		location = 1047
+		division_template = "国民革命军"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 994
+		division_template = "国民革命军"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Guilin Jingbei"
+		location = 10404
+		division_template = "国民革命军"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	
+	navy = {
+		name = "中华民国第一舰队"
+		base = 9938
+		location = 9938
+		ship = { name = "海容" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Haiqi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "逸仙" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Dadong" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Zejiang" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = CHI } } }
+	}
+}
+
+### STARTING PRODUCTION ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.79
+		efficiency = 100
+	}	
+}

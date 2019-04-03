@@ -1,0 +1,383 @@
+ideas = {
+
+	country = {
+
+		Baltic_Anti_Communism = {
+
+			picture = anti_soviet_pact 
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_goverment = communism 
+				}
+			}
+
+			modifier = {
+				communism_drift = -0.1 
+			}
+		}
+
+		bal_economic_cooperation = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = { 
+			OR = {
+				tag = SWE
+				is_in_faction_with = SWE
+			}
+			}
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		dgc_swe_king = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			modifier = {
+				neutrality_drift = 0.2
+			}
+		}
+		
+		dgc_SWE_Scandinavianism_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.2
+				neutrality_acceptance = 85
+			}
+		}
+
+		SWE_army_staff = {
+
+			picture = general_staff		
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.05
+				planning_speed = 0.25
+				army_leader_cost_factor = -0.5
+				army_leader_start_planning_level = 1
+			}
+		}
+
+		SWE_winter_equip = {
+
+			picture = FRA_army_of_aggression_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				winter_attrition_factor = -0.5
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		SWE_Hemvarnet = {
+
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		SWE_coastal_defense_ships = {
+
+			picture = generic_coastal_defense_ships
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				heavy_cruiser = { 
+					armor_value = 0.2
+					attack = 0.1
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			
+				screen_ship = { 
+					torpedo_attack = 0.2
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+
+		SWE_National_Security_Agency_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				decryption_tech = 0.05
+				encryption_tech = 0.05
+			}			
+
+			modifier = {
+				decryption_factor = 0.2
+			}
+		}
+
+		SWE_War_debt_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor= -0.1
+				stability_factor = 0.10
+			}
+		}
+
+		SWE_industrial_production_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = free_trade
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		SWE_air_force_training = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				CAS_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				cv_CAS_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				cv_nav_bomber_equipment = {
+					air_range = 0.1
+					naval_strike_attack = 0.05
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					air_range = 0.1
+					naval_strike_attack = 0.05
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					air_range = 0.1
+					air_bombing = 0.05
+					instant = yes
+				}
+				transport_plane_equipment = {
+					air_range = 0.1
+					instant = yes
+				}
+			}
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+			}
+		}
+
+		SWE_Joint_command_idea = {
+
+			picture = FRA_motorized_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 5
+				army_leader_start_planning_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+
+	}
+	
+	political_advisor = {
+
+		SWE_staunch_monarchist = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { staunch_monarchist }
+		}
+
+		SWE_communist_revolutionary = {
+
+			picture = generic_communist_europe
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { communist_revolutionary }
+		}
+
+		SWE_democratic_reformer = {
+
+			picture = generic_democratic_europe
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { democratic_reformer }
+		}
+
+		SWE_fascist_demagogue = {
+
+			picture = generic_fascist_europe
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { fascist_demagogue }
+		}
+	}
+
+	
+}

@@ -1,0 +1,20 @@
+dgc_SWE_Defense_plan_decision = {
+	allowed = {
+		original_tag = SWE
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = dgc_SWE_Defense_plan
+	}
+}
+
+dgc_SWE_resource_decision = {
+	allowed = {
+		original_tag = SWE
+	}
+
+	visible = {
+		has_completed_focus = dgc_SWE_resource_focus
+	}
+}

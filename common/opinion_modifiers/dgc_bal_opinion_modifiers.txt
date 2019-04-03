@@ -1,0 +1,16 @@
+opinion_modifiers = {
+
+	swe_railway = {
+		value = 40
+	}
+	swe_industry = {
+		value = 40
+	}
+	dgc_Scandinavianism = {
+		value = 40
+	}
+	dgc_swe_ambition = {
+		value = -40
+	}
+
+}

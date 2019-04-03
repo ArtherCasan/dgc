@@ -1,0 +1,54 @@
+#####################
+##### Testing? ######
+#####################
+#貌似这玩意可以不存在了?
+DGC_expand_railways = {
+	icon = generic_economy
+	allowed = {
+		tag = PCH #如果我没记错tag
+		#has_completed_focus = DGC_# #到时候把焦点补上去,记得去掉井号
+	}
+	visible = {
+		tag = PCH #如果我没记错tag
+		#has_completed_focus = DGC_# #到时候把焦点补上去,记得去掉井号
+	}
+}
+#超强三合一整合决议
+DGC_rails_facs_and_slots = {
+	icon = generic_economy
+	allowed = {
+		tag = PCH #如果我没记错tag
+		#has_completed_focus = DGC_# #到时候把焦点补上去,记得去掉井号
+	}
+	visible = {
+		tag = PCH #如果我没记错tag
+		#has_completed_focus = DGC_# #到时候把焦点补上去,记得去掉井号
+	}
+}
+DGC_building_ships = {
+	icon = generic_navy_battleship
+	allowed = {
+		tag = PCH 
+	}
+	visible = {
+		tag = PCH 
+		has_completed_focus = go_to_ocean
+	}
+}
+DGC_Unite_Chian_Ar = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = PCH
+		has_completed_focus = DGC_unite_china
+	}
+}
+PCH_release = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = PCH
+	}
+}

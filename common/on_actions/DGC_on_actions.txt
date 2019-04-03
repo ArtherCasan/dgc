@@ -1,0 +1,46 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { tag = JAP }
+				country_event = dgc.1
+			}
+}
+
+		}
+	
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { tag = MAN }
+				country_event = dgc.3
+			}
+}
+
+		}
+
+ on_startup = {
+	effect = {
+	 every_country = { 
+			limit = { is_ai = no }
+			news_event = { id = dgc.2 }
+	 }
+	}
+ }
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { tag = PCH }
+				country_event = dgc.4
+			}
+}
+               }
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { tag = CHI }
+				country_event = dgc.5
+			}
+}
+              }		
+}

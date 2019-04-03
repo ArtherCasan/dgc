@@ -1,0 +1,49 @@
+ideas = {
+
+	navy_chief = {
+		
+
+		id_ninghai = {
+			
+			allowed = {
+				original_tag = PCH
+			}
+
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		id_yixian = {
+
+			
+			allowed = {
+				original_tag = PCH
+			}
+						
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+
+		id_yingrui = {
+
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { navy_chief_decisive_battle_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+
+}

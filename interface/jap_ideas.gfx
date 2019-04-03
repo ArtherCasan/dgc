@@ -1,0 +1,189 @@
+spriteTypes = {	
+	
+	#advisor
+	SpriteType = {
+		name = "GFX_idea_bolilingmeng"
+		texturefile = "gfx/interface/ideas/japan/advisor/bllm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_chuanqijing"
+		texturefile = "gfx/interface/ideas/japan/advisor/cqj.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_chuanqiliumei"
+		texturefile = "gfx/interface/ideas/japan/advisor/cqlm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_jap_di"
+		texturefile = "gfx/interface/ideas/japan/advisor/di.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_ermujianaiduo"
+		texturefile = "gfx/interface/ideas/japan/advisor/emjnd.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_lingwulukong"
+		texturefile = "gfx/interface/ideas/japan/advisor/lwlk.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_nanqinli"
+		texturefile = "gfx/interface/ideas/japan/advisor/nql.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_tianwangsitao"
+		texturefile = "gfx/interface/ideas/japan/advisor/tws.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_zhongcunyouli"
+		texturefile = "gfx/interface/ideas/japan/advisor/zcyl.dds"
+	}
+
+	#army
+	SpriteType = {
+		name = "GFX_idea_aierwen"
+		texturefile = "gfx/interface/ideas/japan/army/aew.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_jiaoguxing"
+		texturefile = "gfx/interface/ideas/japan/army/jgx.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_lengquanmazi"
+		texturefile = "gfx/interface/ideas/japan/army/lqmz.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_qiushanyouhuali"
+		texturefile = "gfx/interface/ideas/japan/army/qsyhl.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_wushilinghua"
+		texturefile = "gfx/interface/ideas/japan/army/wslh.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_wubushazhi"
+		texturefile = "gfx/interface/ideas/japan/army/wbsz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_xijuandai"
+		texturefile = "gfx/interface/ideas/japan/army/xjd.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_xizhumeisui"
+		texturefile = "gfx/interface/ideas/japan/army/xzms.dds"
+	}
+	
+
+	#navy
+	SpriteType = {
+		name = "GFX_idea_jiluguodaizi"
+		texturefile = "gfx/interface/ideas/japan/navy/jlgdz.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_jiamingnai"
+		texturefile = "gfx/interface/ideas/japan/navy/jmn.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_lishizhimo"
+		texturefile = "gfx/interface/ideas/japan/navy/lszm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_nashaxingzi"
+		texturefile = "gfx/interface/ideas/japan/navy/nsxz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_xiqiyayi"
+		texturefile = "gfx/interface/ideas/japan/navy/xqyy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_zhichuangling"
+		texturefile = "gfx/interface/ideas/japan/navy/zcl.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_zhimingmengxiang"
+		texturefile = "gfx/interface/ideas/japan/navy/zmmx.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_zongguzhenbai"
+		texturefile = "gfx/interface/ideas/japan/navy/zgzb.dds"
+	}
+	
+	
+	#air
+	SpriteType = {
+		name = "GFX_idea_banbenmeixu"
+		texturefile = "gfx/interface/ideas/japan/air/bbmx.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_beixiangzhangxiang"
+		texturefile = "gfx/interface/ideas/japan/air/bxzx.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_gongtengfangjia"
+		texturefile = "gfx/interface/ideas/japan/air/gtfj.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_guanyezhizhi"
+		texturefile = "gfx/interface/ideas/japan/air/gyzz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_heitiannajia"
+		texturefile = "gfx/interface/ideas/japan/air/htnj.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_xiayuandingzi"
+		texturefile = "gfx/interface/ideas/japan/air/xydz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_yanyuanguang"
+		texturefile = "gfx/interface/ideas/japan/air/yyg.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_yanyuanxiaomei"
+		texturefile = "gfx/interface/ideas/japan/air/yyxm.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

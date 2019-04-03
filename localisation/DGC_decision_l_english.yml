@@ -1,0 +1,90 @@
+﻿l_english:
+  #民族统一决议组
+ DGC_Unite_Chian_Ar:0 "民族统一"
+ PCH_DIQUMINGZI_ZangNan:0 "藏南"
+ PCH_release:0 "东亚的民主灯塔"
+ MAN_banditry_category_dgc:0 "打击反帝力量"
+  
+ #决议标题
+ PCH_penetration_decision_XiBei:0 "渗透西北"
+ PCH_penetration_decision_XiNan:0 "渗透西南"
+ PCH_penetration_decision_MinGuo:0 "渗透民国"
+ PCH_Reunite_China_Ar:0 "一统中华"
+ 
+ PCH_ShuaiBing_LanZhou:0 "兰州起兵"
+ PCH_ShuaiBing_TianShui:0 "天水起兵"
+ PCH_ShuaiBing_YanAn:0 "延安起兵"
+ PCH_ShuaiBing_TaiYuan:0 "太原起兵"
+ PCH_ShuaiBing_GeErMu:0 "格尔木起兵"
+ PCH_ShuaiBing_DaLi:0 "大理起兵"
+ PCH_ShuaiBing_KunMing:0 "昆明起兵"
+ PCH_ShuaiBing_GuangXi:0 "广西起兵"
+ PCH_ShuaiBing_GuangDong:0 "广东起兵"
+ PCH_ShuaiBing_GuangZhou:0 "广州起兵"
+ PCH_ShuaiBing_NanNing:0 "南宁起兵"
+ PCH_ShuaiBing_HaiKou:0 "海口起兵"
+ 
+ #MAN决议的标题
+ MAN_pacify_bandits_in_the_northern_countryside_dgc:0 "彻底清理北方反帝势力"
+ MAN_hunt_down_northern_bandits_dgc:0 "围捕北方反帝势力"
+ MAN_hunt_down_northern_bandits_tt_dgc:0 "正在组织清理任务，反对者将被一个个逮捕\n"
+ MAN_pacify_bandits_in_the_eastern_countryside_dgc:0 "彻底清理东部反帝势力"
+ MAN_hunt_down_eastern_bandits_dgc:0 "围捕东部反帝势力"
+ MAN_hunt_down_eastern_bandits_tt_dgc:0 "正在组织清理任务，反对者将被一个个逮捕\n"
+ MAN_pacify_bandits_in_the_western_countryside_dgc:0 "彻底清理西部反帝势力"
+ MAN_hunt_down_western_bandits_dgc:0 "围捕西部反帝势力"
+ MAN_hunt_down_western_bandits_tt_dgc:0 "正在组织清理任务，反对者将被一个个逮捕\n"
+ 
+ guanshuizhuquan:0 "商讨收回关税主权"
+ bizhegaige:0 "币制改革"
+ kongzhiyinhang:0 "重新控制上海银行"
+ PCH_Reunite_China_Ar_tt:0 "由[PCH.GetName]或附庸控制所有[PCH.GetName]的核心领土"
+ 
+ PCH_release_korea:0 "解放韩国" 
+    
+ #决议的显示
+ 
+ PCH_uprising_in_penetration_province:0 "[PCH.GetName]的民兵将占领这个城市"
+ PCH_not_penetration_now:0 "§H [PCH.GetName] §!没有正在渗透其他省份"
+ MAN_pacify_the_countryside_effect_tooltip_dgc:0 "在特定地区分配部队以清理反帝力量"
+ 
+ #渗透事件
+ dgc.2001.t:0 "兰州被渗透" #西北
+ dgc.2002.t:0 "天水被渗透" #西北
+ dgc.2003.t:0 "太原被渗透" #西北
+ dgc.2004.t:0 "格尔木被渗透" #西南
+ dgc.2005.t:0 "大理被渗透" #西南
+ dgc.2006.t:0 "昆明被渗透" #西南
+ dgc.2007.t:0 "广西机场被渗透" #西南
+ dgc.2008.t:0 "广东海港被渗透" #民国
+ dgc.2009.t:0 "南宁被渗透" #民国
+ dgc.2010.t:0 "广州被渗透" #民国
+ dgc.2011.t:0 "海口被渗透" #民国
+ dgc.2012.t:0 "延安被渗透" #西北
+ 
+ 
+ #政治斗争数据
+ ROOT.PS_progress:"政治斗争进度 §R这关乎委员长是否还能领导R.O.C."
+ ROOT.Anti_PS_power:"镇压点数 §R用于反制各路军阀。"
+ 
+ #校长的反制
+ DGC_PS_antiPS_category:"镇压军阀"
+ DGC_antiPS_total:"弹压骚动"
+ DGC_antiPS_single:"镇压军阀"
+ DGC_antiPS_mission_maintain_control:"维持地方控制"
+ DGC_antiPS_mission_bride_local_officer:"收买地方官员"
+ 
+ #军阀的个人奋斗（笑）
+ DGC_warlord_PS_category:"夺取中国的领导权"
+ DGC_warlord_takedown_leader:"夺取中国的领导权"
+ DGC_warlord_bride_leader_officer:"收买国民政府官员"
+ DGC_warlord_strength_leadership:"巩固内部"
+ DGC_warlord_strength_army:"强化地方军"
+ DGC_warlord_reform_government:"清除腐败"
+ DGC_warlord_negotiate_with_cc:"与中央军交易"
+  
+ #招募青年军
+ PCH_organize_youth_army:0 "招募青年志愿者"
+ PCH_organize_youth_army_desc:0 "大家都来呀！"
+ PCH_organize_youth_army_var:0 "没有超过3次招募"
+ PCH_organize_youth_army_create:0 "在首都出现1个师"

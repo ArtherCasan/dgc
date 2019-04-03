@@ -1,0 +1,120 @@
+ideas = {
+
+	political_advisor = {
+	
+advisor_communist_revolutionary = {
+			allowed = {
+				original_tag = PCH
+			}
+			traits = { communist_revolutionary }
+		}
+
+		advisor_fascist_demagogue = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { fascist_demagogue }
+		}
+
+		dongmengyu = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		dongyueqing = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		wangdanying = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		wangxinyi = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { quartermaster_general }
+		}
+
+		xiahejie = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { armaments_organizer }
+		}
+
+		yangsixuan = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		yaojingjing = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		zhanyaqin = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		zhanghuiyuan = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { ideological_crusader }
+		}
+
+		zhaoshiwen = {
+			allowed = {
+				original_tag = PCH
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

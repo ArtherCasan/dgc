@@ -1,0 +1,133 @@
+spriteTypes = {	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_idea_dgc_swe_king"
+		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_National_Security_Agency_idea"
+		texturefile = "gfx/interface/ideas/office_of_strategic_services.dds"
+	}	
+	
+	#chief
+	spriteType = {
+		name = "GFX_idea_SWE_olof_thornell"
+		texturefile = "gfx/interface/ideas/SWE/M45.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_ivar_holmquist"
+		texturefile = "gfx/interface/ideas/SWE/ak5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_per_sylvan"
+		texturefile = "gfx/interface/ideas/SWE/M45.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_oscar_nygren"
+		texturefile = "gfx/interface/ideas/SWE/ak5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_bengt_nordenskiold"
+		texturefile = "gfx/interface/ideas/SWE/getelan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_torsten_friis"
+		texturefile = "gfx/interface/ideas/SWE/getelan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_gosta_ehrensvard"
+		texturefile = "gfx/interface/ideas/SWE/getexiongshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_fabian_tamm"
+		texturefile = "gfx/interface/ideas/SWE/getexiongshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_charles_de_champs"
+		texturefile = "gfx/interface/ideas/SWE/getexiongshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_axel_rappe"
+		texturefile = "gfx/interface/ideas/SWE/bandeernong.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_archibald_douglas"
+		texturefile = "gfx/interface/ideas/SWE/cbjms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_axel_ljungdahl"
+		texturefile = "gfx/interface/ideas/SWE/getelan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_helge_stromback"
+		texturefile = "gfx/interface/ideas/SWE/gusitafu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_helge_jung"
+		texturefile = "gfx/interface/ideas/SWE/STRV74.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_erik_palmstierna"
+		texturefile = "gfx/interface/ideas/SWE/gusitafu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_thorwald_bergquist"
+		texturefile = "gfx/interface/ideas/SWE/ak5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_osten_unden"
+		texturefile = "gfx/interface/ideas/SWE/STRV74.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_ernst_wigforss"
+		texturefile = "gfx/interface/ideas/SWE/cbjms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_staunch_monarchist"
+		texturefile = "gfx/interface/ideas/SWE/gusitafu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_communist_revolutionary"
+		texturefile = "gfx/interface/ideas/SWE/getelan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_democratic_reformer"
+		texturefile = "gfx/interface/ideas/SWE/lnlxtnw.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SWE_fascist_demagogue"
+		texturefile = "gfx/interface/ideas/SWE/bandeernong.dds"
+	}
+	
+
+
+
+
+
+
+
+}

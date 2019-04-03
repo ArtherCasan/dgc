@@ -1,0 +1,302 @@
+﻿capital = 111
+
+oob = "FIN_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+	Baltic_Anti_Communism
+}
+#Baltic Defence
+SWE = {
+create_faction = Baltic_Defend
+add_to_faction = SWE
+add_to_faction = FIN
+add_to_faction = NOR
+add_to_faction = DEN
+add_to_faction = EST
+add_to_faction = LIT
+add_to_faction = LAT
+}
+NOR = {
+add_to_tech_sharing_group = dgc_baltic_research
+add_ideas = {
+Baltic_Anti_Communism
+	}
+}
+DEN = {
+add_to_tech_sharing_group = dgc_baltic_research
+add_ideas = {
+Baltic_Anti_Communism
+	}
+}
+EST = {
+add_to_tech_sharing_group = dgc_baltic_research
+add_ideas = {
+Baltic_Anti_Communism
+	}
+}
+LIT = {
+add_to_tech_sharing_group = dgc_baltic_research
+add_ideas = {
+Baltic_Anti_Communism
+	}
+}
+LAT = {
+add_to_tech_sharing_group = dgc_baltic_research
+add_ideas = {
+ 
+Baltic_Anti_Communism
+	}
+}
+
+	add_to_tech_sharing_group = dgc_baltic_research
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	early_submarine = 1
+	early_heavy_cruiser = 1
+}
+
+set_convoys = 5
+
+add_ideas = {
+	limited_conscription
+}
+
+1939.1.1 = {
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "FIN_1939"
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+		CAS1 = 1		
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+
+		#doctrines
+		#Air
+		force_rotation = 1
+		fighter_baiting = 1
+
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 55
+		}
+
+		fascism = {
+			popularity = 10
+		}
+		
+		communism = {
+			popularity = 5
+		}
+
+		neutrality = {
+			popularity = 30
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 59
+			}
+
+			fascism = {
+				popularity = 10
+			}
+			
+			communism = {
+				popularity = 1
+			}
+
+			neutrality = {
+				popularity = 30
+			}
+		}
+		
+		ruling_party = democratic
+		last_election = "1939.7.1"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+}
+create_country_leader = {
+	name = "索米"
+	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
+	picture = "115-KP31.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "嘉莉娜·斯维亚托斯拉夫娜"
+	desc = "POLITICS_AIMO_AALTONEN_DESC"
+	picture = "gfx/leaders/FIN/kvones.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "泰莎·涅米宁"
+	desc = "POLITICS_VILHO_ANNALA_DESC"
+	picture = "gfx/leaders/FIN/BT42.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "维那莫依嫩"
+	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+	picture = "gfx/leaders/FIN/wnmyn.tga"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+
+add_ideas = {
+	sisu
+}
+
+create_corps_commander = {
+	name = "索米"
+	portrait_path = "gfx/leaders/FIN/115-KP31.tga"
+	traits = { winter_specialist ranger }
+	skill = 4
+	id = 10301
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "米卡"
+	portrait_path = "gfx/leaders/FIN/mika.tga"
+	traits = { panzer_leader winter_specialist commando }
+	skill = 3
+	id = 10302
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 4
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "米可"
+	portrait_path = "gfx/leaders/FIN/mike.tga"
+	traits = { armor_officer winter_specialist commando }
+	skill = 2
+	id = 10303
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "亚纪"
+	portrait_path = "gfx/leaders/FIN/yaji.tga"
+	traits = { armor_officer winter_specialist commando }
+	skill = 2
+	id = 10304
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "泰莎·涅米宁"
+	portrait_path = "gfx/leaders/FIN/BT42.tga"
+	traits = { armor_officer winter_specialist }
+	skill = 2
+	id = 10305
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "维那莫依嫩"
+	portrait_path = "gfx/leaders/FIN/wnmyn.tga"
+	traits = {  }
+	skill = 1
+	id = 10306
+}
