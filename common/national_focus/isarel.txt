@@ -36,7 +36,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
+			add_political_power = 120
 		}
 
 	}
@@ -581,8 +581,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
-			unlock_decision_category_tooltip = JAP_pacific_guardian
 		}
 
 	}
