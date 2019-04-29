@@ -1,10 +1,25 @@
 ﻿capital = 361
 
 oob = "USA_1936"
+set_naval_oob = "USA_1936_naval_mtg"
 
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
+
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+USA_recalc_congress_icon_frames = yes
+USA = {
+	country_event = { id = usa.50 days = 2 }
+	country_event = { id = usa.51 days = 2 }
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -13,6 +28,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
+	interwar_antiair = 1
 	gwtank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
@@ -21,19 +37,38 @@ set_technology = {
 	naval_bomber1 = 1
 	CAS1 = 1
 	early_bomber = 1
-	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
-	basic_carrier = 1
-	transport = 1
 	superior_firepower = 1
 	base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	
+	#naval
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	basic_depth_charges = 1
+	basic_secondary_battery = 1
+	improved_secondary_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	improved_airplane_launcher = 1
 
 }
 
@@ -197,6 +232,7 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	MTG_naval_treaty_adherent
 }
 
 
@@ -527,6 +563,10 @@ create_navy_leader = {
 		picture = "BB_B_ylsn.tga"
 	traits = { blockade_runner superior_tactician }
 	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 5
 }
 
 create_navy_leader = {
@@ -534,6 +574,10 @@ create_navy_leader = {
 		picture = "CV_B_qy.tga"
 	traits = { superior_tactician spotter }
 	skill = 5
+	attack_skill = 6
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 4
 }
 
 create_navy_leader = {
@@ -541,6 +585,10 @@ create_navy_leader = {
 		picture = "CL_B_kelifulan.tga"
 	traits = { superior_tactician spotter }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 5
 }
 
 create_navy_leader = {
@@ -548,6 +596,10 @@ create_navy_leader = {
 		picture = "CVL_B_changdao.tga"
 	traits = { superior_tactician spotter }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -555,6 +607,10 @@ create_navy_leader = {
 		picture = "CL_B_hnll.tga"
 	traits = { superior_tactician }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 6
 }
 
 create_navy_leader = {
@@ -562,6 +618,10 @@ create_navy_leader = {
 		picture = "CA_B_btl.tga"
 	traits = { blockade_runner spotter }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -569,6 +629,10 @@ create_navy_leader = {
 		picture = "DD_B_lafei.tga"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
+	attack_skill = 5
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -576,6 +640,10 @@ create_navy_leader = {
 		picture = "AP_B_nzs.tga"
 	traits = {  }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 1
 }
 
 create_navy_leader = {
@@ -583,6 +651,10 @@ create_navy_leader = {
 		picture = "Portrait_USA_Earnest_King.dds"
 	traits = { blockade_runner superior_tactician }
 	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
 }
 
 create_navy_leader = {
@@ -590,6 +662,10 @@ create_navy_leader = {
 		picture = "kunxi.dds"
 	traits = { superior_tactician spotter }
 	skill = 5
+	attack_skill = 6
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -597,12 +673,20 @@ create_navy_leader = {
 		picture = "weiqita.tga"
 	traits = { superior_tactician spotter }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 5
 }
 create_navy_leader = {
 	name = "威斯康星"
 		picture = "wskx.tga"
 	traits = { superior_tactician spotter }
 	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -610,6 +694,10 @@ create_navy_leader = {
 		picture = "beianpudun.tga"
 	traits = { superior_tactician }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -617,6 +705,10 @@ create_navy_leader = {
 		picture = "salatuojia.tga"
 	traits = { blockade_runner spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 6 #钢板防御
+	maneuvering_skill = 1
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -624,6 +716,10 @@ create_navy_leader = {
 		picture = "misuli.tga"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
+	attack_skill = 2
+	defense_skill = 5
+	maneuvering_skill = 4
+	coordination_skill = 5
 }
 
 create_navy_leader = {
@@ -631,6 +727,10 @@ create_navy_leader = {
 		picture = "mengbiliai.tga"
 	traits = { blockade_runner spotter }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -638,6 +738,10 @@ create_navy_leader = {
 		picture = "huashengdun.tga"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
 
 
@@ -647,146 +751,318 @@ create_navy_leader = {
 		picture = "beika.tga"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
 }
 ### Ship Variants ###
 
-create_equipment_variant = {
-	name = "梭鱼级"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+	create_equipment_variant = {			# represents O/R class, S class
+		name = "S Class"
+		type = ship_hull_submarine_1
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
 	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "法拉格特级"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 3
-		destroyer_engine_upgrade = 3
-		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
-	}
-}
-
-create_equipment_variant = {
-	name = "波特兰级"
-	type = heavy_cruiser_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "宾夕法尼亚级"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "新墨西哥级"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "科罗拉多级"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 3
-		ship_armor_upgrade = 3
-		ship_gun_upgrade = 4
-	}
-}
-
-create_equipment_variant = {
-	name = "约克城级"
-	type = carrier_2
-	upgrades = {
-		ship_deckspace_upgrade = 1
-		carrier_armor_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_reliability_upgrade = 1
-	}
-
-}
-
-1939.1.1 = {
-	
 	create_equipment_variant = {
-		name = "三文鱼级"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
+		name = "Barracuda Class"			# represents Barracuda, Dolphin, Cachalot classes
+		type = ship_hull_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Porpoise Class"				# represents Porpoise, Shark, and Perch classes
+		type = ship_hull_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
 		}
 	}
-
+	# Destroyers #
 	create_equipment_variant = {
-		name = "班森级"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 3
+		name = "Clemson Class"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Farragut Class"				# represents Farragut, Porter, Mahan classes
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-
+	# Light Cruisers #
 	create_equipment_variant = {
-		name = "黄蜂级"
-		type = carrier_2
-		upgrades = {
-			ship_deckspace_upgrade = 2
-			carrier_armor_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_reliability_upgrade = 2
+		name = "Omaha Class"
+		type = ship_hull_cruiser_1
+		name_group = USA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Brooklyn Class"
+		type = ship_hull_cruiser_2
+		name_group = USA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_3
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_2
 		}
 	}
-
 	create_equipment_variant = {
-		name = "F2A Buffalo"
-		type = cv_fighter_equipment_1
-		upgrades = {
-			cv_plane_gun_upgrade = 5
-			cv_plane_range_upgrade = 0
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 5
+		name = "Oglala Class"				#cruiser minelayers
+		type = ship_hull_cruiser_1
+		name_group = USA_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
-
-
-	# 1941
-	#create_equipment_variant = {
-	#	name = "南达科他级"
-	#	type = battleship_2
-	#	upgrades = {
-	#		ship_reliability_upgrade = 3
-	#		ship_engine_upgrade = 3
-	#		ship_armor_upgrade = 3
-
-	#		ship_gun_upgrade = 3
-	#	}
-	#}
-}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Pensacola Class"			# Pensacola and Northampton classes
+		type = ship_hull_cruiser_1
+		name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Portland Class"				# Portland and New Orleans classes
+		type = ship_hull_cruiser_2
+		name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "New Orleans Class"
+		type = ship_hull_cruiser_2
+		name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+	# Heavy Cruisers #
+		create_equipment_variant = {
+			name = "Wichita Class"
+			type = ship_hull_cruiser_2
+			name_group = USA_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_3
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_medium_battery_2
+			}
+		}
+	# Battleships #
+	create_equipment_variant = {
+		name = "New York Class"					# represents Wyoming (Arkansas) and New York classes
+		type = ship_hull_heavy_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Pennsylvania Class"				# represents Pennsylvania, Nevada, Tennessee, and New Mexico classes
+		type = ship_hull_heavy_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Colorado Class"				
+		type = ship_hull_heavy_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+	# Carriers #
+	create_equipment_variant = {
+		name = "Lexington Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ranger Class"
+		type = ship_hull_carrier_1
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
+			
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Yorktown Class"
+		type = ship_hull_carrier_1
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
+		}
+	}
