@@ -1,6 +1,16 @@
 #####################
 ##### Testing? ######
 #####################
+DGC_test_in_here = {
+	icon = generic_economy
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+}
+
 #貌似这玩意可以不存在了?
 DGC_expand_railways = {
 	icon = generic_economy
