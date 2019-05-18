@@ -1,0 +1,31 @@
+guiTypes = {
+	containerWindowType = {
+		name = "DGC_customed_container"
+		position = { x = 1000 y = 4 }
+		
+		buttonType = {
+			name = "DGC_customed_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x = 0 y = 0 }
+		}
+		
+		iconType = {
+			name = "DGC_customed_icon"
+			spriteType = "GFX_air_experience"
+			position = { x = 5 y = 6 }
+		}
+		
+		instantTextBoxType = {
+			name ="DGC_customed_text"
+			position = { x = 15 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?customed_power|12]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize =	no
+			
+			pdx_tooltip = "DGC_customed_tooltip"
+		}
+	}
+}

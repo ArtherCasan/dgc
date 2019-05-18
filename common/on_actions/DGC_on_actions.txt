@@ -1,6 +1,22 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			PCH = {
+				set_variable = { customed_power = 0 }
+			}
+		}
+	}
+	
+	on_daily = {
+		effect = {
+			PCH = {
+				add_to_variable = { customed_power = 0.5 }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
 			every_country = {
 				limit = { tag = JAP }
 				country_event = dgc.1

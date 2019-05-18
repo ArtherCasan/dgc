@@ -1,0 +1,19 @@
+scripted_gui = {
+
+	customd_number = {
+		window_name = "DGC_customed_container"
+		
+		context_type = player_context
+		
+		visible = {
+			tag = PCH
+		}
+		
+		effects = {
+			
+		}
+		
+	}
+	
+}
+

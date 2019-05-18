@@ -3,3 +3,5 @@
  DGC_customed_number:0 "合成玉"
  DGC_HELP_BUTTON_desc:0 "DGC帮助"
  DGC_HELP_BUTTON:0 "DGC帮助"
+ DGC_customed_tooltip:0 "合成玉数量"
+ DGC_TEST_get_general_tooltip:0 "合成玉数量大于§G600§!"
