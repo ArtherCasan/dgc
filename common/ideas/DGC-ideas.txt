@@ -1,42 +1,5 @@
 ideas = {
-	country = {
-	isr_chaos = {
-		allowed = {
-		always = yes
-		}
-
-		allowed_civil_war = {
-		always = yes
-		}
-
-		picture = idea_isr_chaos
-
-		removal_cost = -1
-
-		modifier = {
-		stability_factor = -0.1
-		}
-
-		}
-	arabian_people_uprise = {
-		allowed = {
-		always = yes
-		}
-
-		allowed_civil_war = {
-		always = yes
-		}
-
-		picture = FRA_matignon_agreements
-
-		removal_cost = -1
-
-		modifier = {
-		stability_factor = -0.5
-		conscription_factor = -0.7
-		}
-
-		}			
+	country = {	
 	jap_zaibatsu_drift = {
 		allowed = {
 		always = yes
@@ -103,7 +66,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 		}
 		
@@ -285,7 +248,7 @@ ideas = {
 
 		modifier = {
 		training_time_factor = -0.15
-		foreign_subversive_activities = -0.5 
+		#foreign_subversive_activities = -0.5 
 		drift_defence_factor = 0.5
 		decryption_factor = 0.2
 		encryption_factor = 0.2
@@ -357,7 +320,7 @@ ideas = {
 
 		modifier = {
 		subversive_activites_upkeep = 0.1
-		foreign_subversive_activities = 0.05
+		#foreign_subversive_activities = 0.05
 		drift_defence_factor = -0.1
 		justify_war_goal_time = 0.25
 		training_time_factor = 0.15
@@ -402,7 +365,7 @@ ideas = {
 
 		modifier = {
 		subversive_activites_upkeep = -0.5
-		foreign_subversive_activities = -0.5 
+		#foreign_subversive_activities = -0.5 
 		drift_defence_factor = 0.5
 		stability_factor = 0.1
 		justify_war_goal_time = -0.25
@@ -458,28 +421,6 @@ ideas = {
 
 		}
 
-		Baltic_Anti_Communism = {
-
-		picture = anti_soviet_pact 
-		allowed = {
-		always = no
-		}
-
-		allowed_civil_war = {
-			NOT = {
-			has_goverment = communism 
-			}
-		}
-
-		modifier = {
-		communism_drift = -0.1 
-		}
-		}
-
-
-
-
-
 		MRYHHZTY = {
 		removal_cost = -1
 
@@ -510,7 +451,8 @@ ideas = {
 		}
 
 		modifier = {
-		LOCAL_MANPOWER = -0.5
+		monthly_population = -0.5
+		conscription_factor = -0.5
 		production_speed_buildings_factor = -0.1
 		}
 		}
@@ -546,7 +488,7 @@ ideas = {
 		}
 
 		modifier = {
-		foreign_subversive_activities = -0.25 
+		#foreign_subversive_activities = -0.25 
 		drift_defence_factor = 0.25
 		subversive_activites_upkeep = -0.25
 		}
@@ -564,7 +506,7 @@ ideas = {
 		}
 
 		modifier = {
-		foreign_subversive_activities = -0.5 
+		#enemy_spy_negative_status_factor = -0.5 
 		drift_defence_factor = 0.5
 		decryption_factor = 0.2
 		encryption_factor = 0.2
@@ -698,9 +640,9 @@ ideas = {
 
 		modifier = {
 		attrition = 0.15
-		enemy_partisan_effect = 0.5
+		#enemy_partisan_effect = 0.5
 		stability_factor = -0.1
-		research_time_factor = 0.1
+		research_speed_factor = 0.1
 		}
 		}
 
@@ -922,7 +864,7 @@ ideas = {
 		picture = generic_research_bonus
 
 		modifier = {
-		research_time_factor = -0.05
+			research_speed_factor = -0.05
 		}
 		}
 		HOA_GSHY = {

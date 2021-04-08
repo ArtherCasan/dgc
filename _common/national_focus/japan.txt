@@ -1,4 +1,9 @@
 focus_tree = {
+	continuous_focus_position = {
+		x = 1
+		y = 2000
+	}
+
 	id = japan
 	country = {
 		factor = 0
@@ -31,9 +36,6 @@ focus_tree = {
 			bypass = {
 					has_government = communism
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -72,10 +74,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+			}
 			complete_tooltip = {
 
 }
@@ -105,9 +104,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -140,9 +136,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -190,9 +183,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -225,9 +215,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -256,9 +243,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -354,9 +338,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -402,9 +383,7 @@ focus_tree = {
 			bypass = {
 					has_government = communism
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -447,9 +426,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -489,9 +466,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -530,9 +505,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -561,9 +534,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -641,7 +612,8 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+
+focus = {
 		id = JAP_purge_the_militarists
 		icon = GFX_goal_generic_political_pressure
 		cost = 10.00
@@ -651,9 +623,6 @@ focus_tree = {
 		}
 		x = 23
 		y = 2
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			ai_will_do = {
 					factor = 1
 				}
@@ -661,11 +630,7 @@ focus_tree = {
 					democratic > 0.3
 				}
 			bypass = {
-
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -714,9 +679,6 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
 			complete_tooltip = {
 
 }
@@ -746,9 +708,7 @@ focus_tree = {
 							has_war_with = ENG
 						}
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			completion_reward = {
 					if = {
 							limit = {
@@ -1043,9 +1003,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					MAN = {
 							random_state = {
@@ -1130,19 +1088,17 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
 			completion_reward = {
 					MAN = {
-							add_ideas = jap_settlement
-							add_autonomy_ratio = {
-									value = -0.1
-								}
+						add_ideas = jap_settlement
+						add_autonomy_ratio = {
+							value = -0.1
 						}
+					}
 				}
 
 	}
@@ -1208,9 +1164,7 @@ focus_tree = {
 			bypass = {
 					has_government = communism
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1285,9 +1239,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1318,9 +1270,7 @@ focus_tree = {
 			bypass = {
 					has_government = communism
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1538,9 +1488,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1568,9 +1516,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1598,9 +1544,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1637,9 +1581,7 @@ focus_tree = {
 							has_war_with = MAN
 						}
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1680,9 +1622,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1746,9 +1686,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1776,9 +1714,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1828,9 +1764,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1883,9 +1817,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -1949,9 +1881,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -1981,9 +1911,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2034,9 +1962,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2069,9 +1995,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2102,9 +2026,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2153,9 +2075,7 @@ focus_tree = {
 						}
 				}
 			will_lead_to_war_with = PCH
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			ai_will_do = {
 					factor = 10
 					modifier = {
@@ -2214,9 +2134,7 @@ focus_tree = {
 								}
 						}
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2253,9 +2171,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2312,9 +2228,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2348,9 +2262,7 @@ focus_tree = {
 			bypass = {
 					has_non_aggression_pact_with = SOV
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2385,9 +2297,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2436,9 +2346,7 @@ focus_tree = {
 							has_wargoal_against = PHI
 						}
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2516,9 +2424,7 @@ focus_tree = {
 							has_war_with = FRA
 						}
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2603,9 +2509,7 @@ focus_tree = {
 			bypass = {
 					is_in_faction_with = SIA
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2644,9 +2548,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2753,9 +2655,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2792,9 +2692,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -2861,9 +2759,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -2951,9 +2847,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -2995,9 +2889,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3039,9 +2931,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3072,9 +2962,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -3157,9 +3045,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3201,9 +3087,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3239,9 +3123,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3283,9 +3165,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3318,9 +3198,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 					random_state = {
 							limit = {
@@ -3387,9 +3265,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3424,9 +3300,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3458,9 +3332,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3561,9 +3433,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3630,9 +3500,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3711,9 +3579,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3777,9 +3643,7 @@ focus_tree = {
 			bypass = {
 					has_non_aggression_pact_with = PCH
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3893,9 +3757,7 @@ focus_tree = {
 			bypass = {
 					has_war_with = GER
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -3954,9 +3816,7 @@ focus_tree = {
 							has_wargoal_against = SOV
 						}
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4006,9 +3866,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4091,9 +3949,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4150,9 +4006,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4201,9 +4055,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4240,9 +4092,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4281,9 +4131,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4323,9 +4171,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4353,9 +4199,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4388,9 +4232,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4424,9 +4266,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4460,9 +4300,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4497,9 +4335,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4527,9 +4363,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4562,9 +4396,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4600,9 +4432,7 @@ focus_tree = {
 			bypass = {
 					has_tech = cv_fighter2
 				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4636,9 +4466,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4675,9 +4503,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4713,9 +4539,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4744,9 +4568,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4786,9 +4608,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4826,9 +4646,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4866,9 +4684,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4897,9 +4713,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4935,9 +4749,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -4972,9 +4784,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -5007,9 +4817,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }
@@ -5037,9 +4845,7 @@ focus_tree = {
 			bypass = {
 
 }
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+ 
 			complete_tooltip = {
 
 }

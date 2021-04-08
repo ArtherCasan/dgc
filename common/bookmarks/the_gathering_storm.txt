@@ -38,6 +38,7 @@ bookmarks = {
 			}
 		}
 		"ENG"={
+			minor = yes
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -120,10 +121,6 @@ bookmarks = {
 			}	
 		}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
 
 		# minors from DLC ####
 	 		"CHI"={
@@ -143,7 +140,6 @@ bookmarks = {
 		}
 
 		"MAN"={
-			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
@@ -157,24 +153,22 @@ bookmarks = {
 				MAN_claim_the_mandate_of_heaven
 			}
 		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
 			"ISR"={
 			minor = yes
 			history = "ISR_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				
-			}
 			focuses = {
 
 			}
 		}
-	"POL"={
+		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
-			ideas = {
-				
-			}
 			focuses = {
 				POL_the_baltic_alliance
 				POL_draw_closer_to_britain
@@ -212,9 +206,6 @@ bookmarks = {
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				
-			}
 			focuses = {
 				NZL_bob_semple_tank
 				NZL_independent_new_zealand

@@ -77,16 +77,12 @@ set_politics = {
 	elections_allowed = no
 }
 
-
 create_country_leader = {
 	name = "蒋介石"
 	desc = ""
 	picture = "jiangjieshi.tga"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -95,9 +91,6 @@ create_country_leader = {
 	picture = "huangxin.tga"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -106,8 +99,6 @@ create_country_leader = {
 	picture = "gfx/leaders/CHI/Portrait_China_Mao_Zedong.DDS"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -116,9 +107,6 @@ create_country_leader = {
 	picture = "wjw.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology 
-	traits = {
-		#
-	}
 }
 
 add_opinion_modifier = { target = PRC modifier = hostile_status }

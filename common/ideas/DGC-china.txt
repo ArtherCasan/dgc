@@ -1,23 +1,5 @@
 ideas = {
 	country = {
-		german_advisors = {
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-		}
 
 		CHI_civil_war_deserters = {
 

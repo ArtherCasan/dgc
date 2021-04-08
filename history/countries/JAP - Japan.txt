@@ -152,8 +152,6 @@ create_country_leader = {
 	picture = "Portrait_JAPAN_Hakurei_Reimu.dds"
 	expire = "1989.1.1"
 	ideology = marxism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -162,8 +160,6 @@ create_country_leader = {
 	picture = "nanqinli.tga"
 	expire = "1989.1.1"
 	ideology = liberalism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -172,9 +168,6 @@ create_country_leader = {
 	picture = "gfx/leaders/JAP/dtwo.tga"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 create_corps_commander = {

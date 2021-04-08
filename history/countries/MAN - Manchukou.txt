@@ -15,11 +15,11 @@ oob = "MAN_1936"
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
-	# set_country_flag = MAN_northern_bandits
-	# set_country_flag = MAN_eastern_bandits
-	# set_country_flag = MAN_western_bandits
-	# add_ideas = MIN_people_against_empire
-	# add_ideas = CHI_CBSOT_POLICE
+	set_country_flag = MAN_northern_bandits
+	set_country_flag = MAN_eastern_bandits
+	set_country_flag = MAN_western_bandits
+	#add_ideas = MIN_people_against_empire
+	#add_ideas = CHI_CBSOT_POLICE
 }
 
 give_military_access = JAP
@@ -59,8 +59,6 @@ create_country_leader = {
 	picture = "zhudi.tga"
 	expire = "1965.1.1"
 	ideology = despotism 
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -68,8 +66,6 @@ create_country_leader = {
 	picture = "hml.tga"
 	expire = "1965.1.1"
 	ideology = marxism 
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -77,8 +73,6 @@ create_country_leader = {
 	picture = "srx-M-MZ.dds"
 	expire = "1965.1.1"
 	ideology = conservatism 
-	traits = {
-	}
 }
 
 create_field_marshal = {

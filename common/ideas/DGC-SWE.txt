@@ -11,8 +11,9 @@ ideas = {
 			}
 
 			allowed_civil_war = {
+				
 				NOT = {
-					has_goverment = communism 
+					has_government = communism 
 				}
 			}
 
@@ -161,7 +162,7 @@ ideas = {
 			equipment_bonus = {
 				heavy_cruiser = { 
 					armor_value = 0.2
-					attack = 0.1
+					#attack = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}

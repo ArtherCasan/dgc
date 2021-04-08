@@ -95,7 +95,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_torpedo_range_factor = 1 # double the range
+				naval_torpedo_screen_penetration_factor = 0.2
 			}
 		}
 		
@@ -1265,7 +1265,7 @@ ideas = {
 			traits = { democratic_reformer }
 	
 			on_add = {
-				country_event = political.13
+				country_event = political.14
 			}
 	
 			do_effect = {
@@ -1513,6 +1513,7 @@ ideas = {
 	high_command = {
 		
 		wubushazhi = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1529,6 +1530,7 @@ ideas = {
 		}
 		
 		wushilinghua = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1551,6 +1553,7 @@ ideas = {
 		}
 		
 		xijuandai = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1567,6 +1570,7 @@ ideas = {
 		}	
 		
 		heitiannajia = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1583,6 +1587,7 @@ ideas = {
 		}
 		
 		gongtengfangjia = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1599,6 +1604,7 @@ ideas = {
 		}
 		
 		banbenmeixu = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1616,6 +1622,8 @@ ideas = {
 		
 		zongguzhenbai = {
 			
+			ledger = navy
+			
 			
 			allowed = {
 				original_tag = JAP
@@ -1631,6 +1639,7 @@ ideas = {
 		}
 		
 		lishizhimo = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1647,6 +1656,7 @@ ideas = {
 		}
 		
 		nashaxingzi = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1835,7 +1845,8 @@ ideas = {
 				original_tag = JAP
 			}
 			available = {
-				has_completed_focus = synth_oil_focus
+				#has_completed_focus = synth_oil_focus
+				always = no
 			}
 						
 			research_bonus = {
@@ -1900,6 +1911,7 @@ ideas = {
 	theorist = {
 		
 		xizhumeisui = {
+			ledger = army
 						
 			allowed = {
 				original_tag = JAP
@@ -1915,6 +1927,7 @@ ideas = {
 		}
 		
 		qiushanyouhuali = {
+			ledger = army
 						
 			allowed = {
 				original_tag = JAP
@@ -1928,6 +1941,7 @@ ideas = {
 		}
 		
 		jiamingnai = {
+			ledger = navy
 						
 			allowed = {
 				original_tag = JAP
@@ -1943,6 +1957,7 @@ ideas = {
 		}
 		
 		jiluguodaizi = {
+			ledger = navy
 						
 			allowed = {
 				original_tag = JAP
@@ -1956,6 +1971,7 @@ ideas = {
 		}
 		
 		beixiangzhangxiang = {
+			ledger = army
 						
 			allowed = {
 				original_tag = JAP
@@ -1971,6 +1987,7 @@ ideas = {
 		}
 		
 		yanyuanxiaomei = {
+			ledger = air
 						
 			allowed = {
 				original_tag = JAP
@@ -1984,6 +2001,7 @@ ideas = {
 		}
 		
 		lingwulukong = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2000,6 +2018,7 @@ ideas = {
 		}
 		
 		tianwangsitao = {
+			ledger = army
 			
 			
 			allowed = {
