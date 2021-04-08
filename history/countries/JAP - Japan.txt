@@ -1,0 +1,1319 @@
+﻿capital = 282
+
+oob = "JAP_1936"
+
+set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.8
+
+set_research_slots = 4
+
+give_military_access = MAN
+
+add_ideas = {
+	#state_shintoism
+	#limited_exports
+	#limited_conscription
+	#partial_economic_mobilisation
+	
+	#JAP_zaibatsus
+	#JAP_duplicate_research_efforts
+	#JAP_militarism
+}
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	add_ideas = {
+		JAP_interservice_rivalry_balanced		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	add_ideas = MTG_naval_treaty_adherent
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	
+	trench_warfare = 1
+	base_strike = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}
+	set_naval_oob = "JAP_1936_naval"
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+	set_naval_oob = "JAP_1936_naval_legacy"
+}
+
+create_import = {
+	resource = oil
+	factories = 2
+	exporter = USA
+}
+
+set_convoys = 400
+
+set_popularities = {
+	democratic = 45
+	fascism = 30
+	communism = 25
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.8.30"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "帝"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "Portrait_Japan_Hirohito.dds"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
+	traits = {
+		warrior_code
+		emperor_showa
+		imperial_sanction
+	}
+	id = 700 #Hirohito
+}
+
+create_country_leader = {
+	name = "博丽灵梦"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "Portrait_JAPAN_Hakurei_Reimu.dds"
+	expire = "1989.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "南琴梨"
+	desc = "POLITICS_Hirohito_DESC"
+	picture = "nanqinli.tga"
+	expire = "1989.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "帝"
+	desc = ""
+	picture = "gfx/leaders/JAP/dtwo.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "西住真穗"
+		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
+	traits = {
+		trickster trait_engineer brilliant_strategist politically_connected
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+ create_field_marshal = {
+	name = "八重樱"
+	picture = "bcy.tga"
+	traits = { offensive_doctrine 
+ trickster trait_engineer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+ create_field_marshal = {
+	name = "百式冲锋枪"
+	picture = "baishi.tga"
+	traits = { offensive_doctrine 
+ trickster trait_engineer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_field_marshal = {
+	name = "西住美穗"
+	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
+	traits = { 
+		offensive_doctrine
+		JAP_samurai_lineage   # hakushaku
+		politically_connected
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "岛田爱里寿"
+		picture = "Portrait_Japan_Shunroku_Hata.dds"
+	traits = { offensive_doctrine JAP_samurai_lineage }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "武部沙织"
+		picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { career_officer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "大野绫"
+		picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { JAP_samurai_lineage }
+	skill = 1 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "秋山优花里"
+		picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
+	traits = { trickster career_officer infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "冷泉麻子"
+		picture = "Portrait_Japan_Yasuji_Okamura.dds"
+	traits = { trait_reckless }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "五十铃华" #Toshizo
+		picture = "Portrait_Japan_Toshizo_Nishio.dds"
+	traits = { brilliant_strategist infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "河嶋桃" #Ando
+		picture = "Portrait_Japan_Rikichi_Ando.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "仲村由理"
+	picture = "Portrait_Japan_Naruhiko_Higashikuni.dds"
+	traits = { JAP_samurai_lineage politically_connected }
+	skill = 3 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "立华奏"
+		picture = "Portrait_Japan_Seishiro_Itagaki.dds"
+	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "朱鹭户沙耶"
+		picture = "Portrait_Japan_Takashi_Sakai.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "二木佳奈多"
+		picture = "Portrait_Japan_Kenji_Doihara.dds"
+	traits = { career_officer substance_abuser }
+	skill = 1 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "高坂穗乃果"
+		picture = "Portrait_Japan_Shigeru_Honjo.dds"
+	traits = { old_guard war_hero }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "四糸乃"
+		picture = "Portrait_Japan_Yoshijiro_Umezu.dds"
+	traits = { trait_cautious politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "或守鞠亚"
+		picture = "Portrait_Japan_Otozo_Yamada.dds"
+	traits = { cavalry_officer career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "香风智乃"
+		picture = "Portrait_Japan_Hatazo_Adachi.dds"
+	traits = { trickster JAP_samurai_lineage trait_reckless infantry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "来栖乃乃"
+		picture = "Portrait_Japan_Iwane_Matsui.dds"
+	traits = { old_guard trait_reckless }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "尾上世莉架"
+		picture = "Portrait_Japan_Sadao_Araki.dds"
+	traits = { JAP_samurai_lineage }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "久远"
+		picture = "Portrait_Japan_Keisuke_Fujie.dds"
+	traits = { fortress_buster career_officer politically_connected } 
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "佐仓千代"
+		picture = "Portrait_Japan_Kiichiro_Higuchi.dds"
+	traits = { career_officer trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "绫地宁宁"
+		picture = "Portrait_Japan_Masaharu_Homma.dds"
+	traits = { media_personality trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "游佐"
+		picture = "Portrait_Japan_Harukichi_Hyakutake.dds"
+	traits = { infantry_officer  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "古宫乃乃香"
+		picture = "Portrait_Japan_Jo_Iimura.dds"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "向井户爱花"
+		picture = "Portrait_Japan_Hitoshi_Imamura.dds"
+	traits = {  commando career_officer infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "千反田爱瑠"
+		picture = "Portrait_Japan_Masatane_Kanda.dds"
+	traits = { trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "风浦可符香"
+		picture = "Portrait_Japan_Kuniaki_Koiso.dds"
+	traits = { JAP_samurai_lineage old_guard politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "岬明乃"
+		picture = "Portrait_Japan_Isoroku_Yamamoto.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 6
+}
+
+create_navy_leader = {
+	name = "阳炎"
+		picture = "Portrait_Japan_Mineichi_Koga.dds"
+	traits = { superior_tactician spotter }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "翔鹤"
+		picture = "xianghe.tga"
+	traits = { air_controller }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+
+create_navy_leader = {
+	name = "吹雪"
+		picture = "chuixue.dds"
+	traits = { air_controller }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "雪风"
+		picture = "xuefeng.dds"
+	traits = { fly_swatter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "扶桑"
+		picture = "fusang.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "夕立"
+		picture = "Portrait_Japan_Hasegawa_Kiyoshi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+# Keen on planes
+create_navy_leader = {
+	name = "纳沙幸子"
+		picture = "Portrait_Japan_Shigeyoshi_Inoue.dds"
+	traits = { air_controller }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "立石志摩"
+		picture = "Portrait_Japan_Nobutake_Kondo.dds"
+	traits = { fly_swatter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "大和"
+		picture = "dahe.tga"
+	traits = { fly_swatter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+
+ create_navy_leader = {
+	name = "赤城"
+		picture = "chicheng.tga"
+	traits = { fly_swatter }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "西崎芽依"
+		picture = "Portrait_Japan_Takeo_Takagi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "潮"
+		picture = "Portrait_Japan_Soemu_Toyoda.dds"
+	traits = { old_guard_navy }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "知名萌香"
+		picture = "Portrait_Japan_Jisaburo_Ozawa.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	maneuvering_skill = 5
+	coordination_skill = 5
+	}
+
+create_navy_leader = {
+	name = "时雨"
+		picture = "Portrait_Japan_Zengo_Yoshida.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "熊野"
+		picture = "xiongye.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "秋月"
+		picture = "qiuyue.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "铃谷"
+		picture = "linggu.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "凉月"
+		picture = "liangyue.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "鸟海"
+		picture = "niaohai.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "不知火"
+		picture = "Portrait_Japan_Hiroaki_Abe.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "知床铃"
+		picture = "Portrait_Japan_Tadashige_Daigo.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "宗谷真白"
+		picture = "Portrait_Japan_Gengo_Hyakutake.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+### VARIANTS ###
+	# 1936 Start #
+		### Carrier Variants
+		create_equipment_variant = {
+			name = "Akagi Class"
+			type = carrier_1
+			parent_version = 0
+			upgrades = {
+				ship_deckspace_upgrade = 5
+				carrier_armor_upgrade = 2
+				ship_engine_upgrade = 2
+				ship_reliability_upgrade = 3
+			}
+			obsolete = yes
+		}
+		### Battleship Variants	
+		create_equipment_variant = {
+			name = "Ise Class"
+			type = battleship_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 3
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Nagato Class"
+			type = battleship_1
+			parent_version = 1
+			upgrades = {
+				ship_reliability_upgrade = 3
+				ship_engine_upgrade = 4
+				ship_armor_upgrade = 3
+				ship_gun_upgrade = 4
+			}
+			obsolete = yes
+		}
+		### Heavy Cruiser Variants	
+		create_equipment_variant = {
+			name = "Myoko Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 2
+				ship_armor_upgrade = 2
+				ship_gun_upgrade = 3
+			}
+			obsolete = yes
+		}
+		### Light Cruiser Variants	
+		create_equipment_variant = {
+			name = "Kuma Class"
+			type = light_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 2
+				ship_gun_upgrade = 1
+				ship_anti_air_upgrade = 1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Sendai Class"
+			type = light_cruiser_1
+			parent_version = 1
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 3
+				ship_gun_upgrade = 1
+				ship_anti_air_upgrade = 2
+			}
+			obsolete = yes
+		}
+		### Destroyer Variants
+		create_equipment_variant = {
+			name = "Fubuki Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 2
+				destroyer_engine_upgrade = 4
+				ship_ASW_upgrade = 2
+				ship_anti_air_upgrade = 2
+			}
+		}	
+		### Submarine Variants	
+		create_equipment_variant = {
+			name = "Kaidai III Class"
+			type = submarine_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 3
+				sub_engine_upgrade = 3
+				sub_stealth_upgrade = 1
+				sub_torpedo_upgrade = 2
+			}
+			obsolete = yes
+		}	
+}
+	if = {
+	limit = { has_dlc = "Man the Guns"}
+	### VARIANTS ###
+	# 1936 Start #
+		### Carrier Variants
+		create_equipment_variant = {
+			name = "Akagi Class"
+			type = ship_hull_carrier_conversion_bb
+			name_group = JAP_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = ship_deck_space
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Kaga Class"
+			type = ship_hull_carrier_conversion_bb
+			name_group = JAP_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = ship_deck_space
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Soryu Class"
+			type = ship_hull_carrier_1
+			name_group = JAP_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_deck_space
+			}
+		}
+		create_equipment_variant = {
+			name = "Zuiho Class"
+			type = ship_hull_carrier_conversion_ca
+			name_group = JAP_CVL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Hosho Class"
+			name_group = JAP_CVL_HISTORICAL
+			type = ship_hull_carrier_conversion_ca
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = empty
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Ryujo Class"
+			name_group = JAP_CVL_HISTORICAL
+			type = ship_hull_carrier_1
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		### Battleship Variants	
+		create_equipment_variant = {
+			name = "Nagato Class"
+			name_group = JAP_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+		create_equipment_variant = {
+			name = "Kongo Class"
+			name_group = JAP_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bc_2
+				front_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Fuso/Ise Class"
+			type = ship_hull_heavy_1
+			name_group = JAP_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_1
+			}
+			obsolete = yes
+		}
+			
+		### Heavy Cruiser Variants			
+		create_equipment_variant = {
+			name = "Myoko Class"
+			type = ship_hull_cruiser_2
+			name_group = JAP_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Aoba Class"
+			type = ship_hull_cruiser_1
+			name_group = JAP_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Chikuma Class"
+			type = ship_hull_cruiser_1
+			name_group = JAP_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Izumo Class"
+			type = ship_hull_cruiser_coastal_defense_ship
+			name_group = JAP_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_secondaries_1
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Tone Class"
+			type = ship_hull_cruiser_2
+			name_group = JAP_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_2
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Mogami Class"
+			type = ship_hull_cruiser_2
+			name_group = JAP_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_2
+				mid_2_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Yubari Class"
+			type = ship_hull_cruiser_1
+			name_group = JAP_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = ship_mine_layer_1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Sendai Class"
+			type = ship_hull_cruiser_1
+			name_group = JAP_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_mine_layer_1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Tenryu Class"
+			type = ship_hull_cruiser_1
+			name_group = JAP_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = ship_mine_layer_1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Kuma/Nagara Class"
+			type = ship_hull_cruiser_1
+			name_group = JAP_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_light_medium_battery_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_mine_layer_1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Okinoshima Class"					# cruiser minelayer
+			type = ship_hull_cruiser_1
+			name_group = JAP_MINELAYERS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = empty
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = ship_mine_layer_1
+			}
+		}
+		### Destroyer Variants
+		create_equipment_variant = {
+			name = "Mutsuki Class" #collection of various WWI and early interwar ships with similiar capabilities
+			type = ship_hull_light_1
+			name_group = JAP_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Momi Class" 
+			type = ship_hull_light_1
+			name_group = JAP_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Fubuki Class"
+			type = ship_hull_light_1
+			name_group = JAP_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				mid_1_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Katsuriki Class" 				# collection of interwar DD-sized minelayers
+			type = ship_hull_light_1
+			name_group = JAP_MINELAYERS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = empty
+				mid_1_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_mine_layer_1
+			}
+		}	
+		### Submarine Variants	
+		create_equipment_variant = {
+			name = "Kaidai III Class"
+			type = ship_hull_submarine_1
+			name_group = JAP_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_torpedo_sub_1
+			}
+		}	
+		create_equipment_variant = {
+			name = "Ro-26 Class"
+			type = ship_hull_submarine_1
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "I-121 Class"
+			type = ship_hull_submarine_1
+			name_group = JAP_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
+}

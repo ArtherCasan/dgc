@@ -287,10 +287,10 @@ create_navy_leader = {
 		picture = "Portrait_CHI_Ninghai.dds"
 	traits = { old_guard_navy spotter }
 	skill = 2
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -298,48 +298,48 @@ create_navy_leader = {
 		picture = "Portrait_CHI_Changchun.tga"
 	traits = { old_guard_navy spotter }
 	skill = 5
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "爱丽"
 	picture = "aili.tga"
 	traits = { superior_tactician }
 	skill = 3
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "鞍山"
 	picture = "anshan.tga"
 	traits = { superior_tactician }
 	skill = 3
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "长春"
 	picture = "changchun.tga"
 	traits = { superior_tactician }
 	skill = 3
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "抚顺"
 	picture = "fushun.tga"
 	traits = { superior_tactician }
 	skill = 3
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }

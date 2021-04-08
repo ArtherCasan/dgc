@@ -23,9 +23,9 @@ if = {
 
 give_military_access = JAP
 add_ideas = {
-             MAN_low_legitimacy_5
-             FJTZ
-             MRYHHZTY
+    #MAN_low_legitimacy_5
+    #FJTZ
+    #MRYHHZTY
 }
 set_convoys = 5
 

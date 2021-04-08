@@ -227,8 +227,8 @@ create_navy_leader = {
 		picture = "chongqing.dds"
 	traits = { old_guard_navy spotter }
 	skill = 2
-	attack_skill = 3
+ 	attack_skill = 3
 	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
 }

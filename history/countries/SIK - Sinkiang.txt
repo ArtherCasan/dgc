@@ -2,7 +2,7 @@
 
 oob = "SIK_1936"
 add_ideas = {
-    shengshicai
+    #shengshicai
 }
 set_technology = {
 	infantry_weapons = 1

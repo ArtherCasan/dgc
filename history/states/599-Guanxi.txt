@@ -11,7 +11,7 @@ state= {
 
 	history= {
 		owner = CHI
-				add_core_of = CHI		add_core_of = PRC
+		add_core_of = CHI
 		add_core_of = PCH
 		buildings = {
 			infrastructure = 3
@@ -28,7 +28,7 @@ state= {
 				limit = {
 					NOT = { has_dlc = "Waking the Tiger" }
 				}
-				PCH = { transfer_state = PREV }
+				CHI = { transfer_state = PREV }
 			}
 		}
 
