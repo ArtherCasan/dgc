@@ -1,0 +1,202 @@
+#
+# List of options showing in the Game Rules screen
+#
+# format is:
+# rule_token = {
+#	name = "TEXT_KEY_FOR_NAME"
+#	required_dlc = "Name of the Required DLC"
+#	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
+#	icon = gfx_option_token							# Optional icon
+#	option = {										# Unless other specified, the first option is the default option
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
+#													# If not specified, this is set to yes for default options and no for all other options.
+#	}
+#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		...
+#	}
+# }
+
+ ##  ###     ###  ### #  #  ##  #   # ###  ##  ###  
+#  #  #      #  # #   #  # #  # #   #  #  #  # #  # 
+####  #      ###  ##  #### ####  # #   #  #  # ###  
+#  #  #      #  # #   #  # #  #  # #   #  #  # #  # 
+#  # ###     ###  ### #  # #  #   #   ###  ##  #  # 
+
+PCH_ai_behavior = {
+	name = "PCH_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DGC_PCH_DEFAULT
+		text = "DGC_RULE_OPTION_DEFAULT"
+		desc = "DGC_RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_PCH_FASCIST
+		text = "DGC_RULE_OPTION_FASCIST"
+		desc = "DGC_RULE_OPTION_FASCIST_PCH_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_PCH_DEMOCRATIC
+		text = "DGC_RULE_OPTION_DEMOCRATIC"
+		desc = "DGC_RULE_OPTION_DEMOCRATIC_PCH_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_PCH_DEMOCRATIC_LEARNING
+		text = "DGC_RULE_OPTION_DEMOCRATIC_LEARNING"
+		desc = "DGC_RULE_OPTION_DEMOCRATIC_LEARNING_PCH_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_PCH_LEFT_COM
+		text = "DGC_RULE_OPTION_LEFT_COM"
+		desc = "DGC_RULE_OPTION_LEFT_COM_PCH_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_PCH_RIGHT_COM
+		text = "DGC_RULE_OPTION_RIGHT_COM"
+		desc = "DGC_RULE_OPTION_RIGHT_COM_PCH_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+MAN_ai_behavior = {
+	name = "MAN_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DGC_MAN_DEFAULT
+		text = "DGC_MAN_RULE_OPTION_DEFAULT"
+		desc = "DGC_MAN_RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_MAN_D
+		text = "DGC_MAN_RULE_OPTION_D"
+		desc = "DGC_MAN_RULE_OPTION_D_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_MAN_F
+		text = "DGC_MAN_RULE_OPTION_F"
+		desc = "DGC_MAN_RULE_OPTION_F_DESC"
+		allow_achievements = yes
+	}
+}
+
+CHI_ai_behavior = {
+	name = "CHI_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DGC_CHI_DEFAULT
+		text = "DGC_CHI_RULE_OPTION_DEFAULT"
+		desc = "DGC_CHI_RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_CHI_NORTH
+		text = "DGC_CHI_RULE_OPTION_NORTH"
+		desc = "DGC_CHI_RULE_OPTION_NORTH_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_MAN_COM
+		text = "DGC_CHI_RULE_OPTION_COM"
+		desc = "DGC_CHI_RULE_OPTION_COM_DESC"
+		allow_achievements = yes
+	}
+}
+
+JAP_ai_behavior = {
+	name = "JAP_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DGC_JAP_DEFAULT
+		text = "DGC_JAP_RULE_OPTION_DEFAULT"
+		desc = "DGC_JAP_RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_JAP_UNTHINKABLE
+		text = "DGC_JAP_RULE_OPTION_UNTHINKABLE"
+		desc = "DGC_JAP_RULE_OPTION_UNTHINKABLE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_JAP_PURGE
+		text = "DGC_JAP_RULE_OPTION_PURGE"
+		desc = "DGC_JAP_RULE_OPTION_PURGE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_JAP_KODOHA
+		text = "DGC_JAP_RULE_OPTION_KODOHA"
+		desc = "DGC_JAP_RULE_OPTION_KODOHA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_JAP_CIVILIAN
+		text = "DGC_JAP_RULE_OPTION_CIVILIAN"
+		desc = "DGC_JAP_RULE_OPTION_CIVILIAN_DESC"
+		allow_achievements = yes
+	}
+}
+
+ISR_ai_behavior = {
+	name = "ISR_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DGC_ISR_DEFAULT
+		text = "DGC_ISR_RULE_OPTION_DEFAULT"
+		desc = "DGC_ISR_RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_ISR_COMMUNISM
+		text = "DGC_ISR_RULE_OPTION_COMMUNISM"
+		desc = "DGC_ISR_RULE_OPTION_COMMUNISM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_ISR_JEW
+		text = "DGC_ISR_RULE_OPTION_JEW"
+		desc = "DGC_ISR_RULE_OPTION_JEW_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_ISR_DEMOCRATIC
+		text = "DGC_ISR_RULE_OPTION_DEMOCRATIC"
+		desc = "DGC_ISR_RULE_OPTION_DEMOCRATIC_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DGC_ISR_GLORY
+		text = "DGC_ISR_RULE_OPTION_GLORY"
+		desc = "DGC_ISR_RULE_OPTION_GLORY_DESC"
+		allow_achievements = yes
+	}
+}
+
+SWE_ai_behavior = {
+	name = "SWE_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DGC_SWE_DEFAULT
+		text = "DGC_SWE_RULE_OPTION_DEFAULT"
+		desc = "DGC_SWE_RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+}
