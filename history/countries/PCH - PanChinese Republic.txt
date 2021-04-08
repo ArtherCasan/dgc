@@ -6,6 +6,7 @@ set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	gwtank = 1
+	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -21,6 +22,8 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
+	tech_military_police = 1
+	motorised_infantry = 1
 }
 oob = "PCH_1936"
 add_ideas = {

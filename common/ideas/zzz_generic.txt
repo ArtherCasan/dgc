@@ -1261,7 +1261,7 @@ ideas = {
 					has_idea = generic_head_of_intelligence
 					NOT = {
 						OR = {
-							# ignore if a (historical) minister already available
+							#ignore if a (historical) minister already available
 							has_allowed_idea_with_traits = { 
 								idea = head_of_intelligence 
 								limit = 1
