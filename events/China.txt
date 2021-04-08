@@ -37,11 +37,6 @@ country_event = {
 			}
 			modifier = { #默认会为每一个加10
 				add = 10
-				
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_DEFAULT
-				}
 			}
 		}
 		set_country_flag = CHI_support_QBZ97
@@ -74,11 +69,6 @@ country_event = {
 			}
 			modifier = { #默认会为每一个加10
 				add = 10
-				
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_DEFAULT
-				}
 			}
 		}
 		set_country_flag = CHI_support_QBZ95
@@ -116,11 +106,6 @@ country_event = {
 			}
 			modifier = { #默认会为每一个加10
 				add = 10
-				
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_DEFAULT
-				}
 			}
 		}
 		custom_effect_tooltip = PCH_MZ
