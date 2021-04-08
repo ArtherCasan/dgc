@@ -6048,11 +6048,9 @@ news_event = {
 				has_war = no
 			}
 			NOT = {
-				OR = {
-					tag = FRA
-					tag = ENG
-					tag = GER
-				}
+				tag = FRA
+				tag = ENG
+				tag = GER
 			}
 		}
 	}
@@ -6079,11 +6077,9 @@ news_event = {
 				has_war_with = FRA
 			}
 			NOT = {
-				OR = {
-					tag = FRA
-					tag = ENG
-					tag = GER
-				}
+				tag = FRA
+				tag = ENG
+				tag = GER
 			}
 		}
 	}
@@ -6125,10 +6121,9 @@ news_event = {
 		name = news.176.b
 		trigger = {
 			NOT = {
-				OR = {
-					tag = ENG
-					tag = GER
-				}
+				tag = ENG
+				tag = GER
+				
 			}
 		}
 	}
@@ -6528,10 +6523,8 @@ news_event = {
 		name = news.183.c
 		trigger = {
 			NOT = {
-				OR = {
-					tag = FRA
-					tag = FROM
-				}
+				tag = FRA
+				tag = FROM
 			}
 		}
 	}
@@ -6595,17 +6588,13 @@ news_event = {
 		name = news.185.b
 		trigger = {
 			NOT = {
-				OR = {
-					tag = ITA
-					is_in_faction_with = ITA
-				}
+				tag = ITA
+				is_in_faction_with = ITA
 			}
 			NOT = {
-				OR = {
-					tag = YUG
-					tag = BUL
-					tag = ALB
-				}
+				tag = YUG
+				tag = BUL
+				tag = ALB
 			}
 		}
 	}

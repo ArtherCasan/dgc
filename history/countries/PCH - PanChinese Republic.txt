@@ -27,11 +27,11 @@ set_technology = {
 }
 oob = "PCH_1936"
 add_ideas = {
-	# HOA_DXT
-	# HOA_FLDZG
-	# HOA_CCDJFSL
-	# HOA_HLDTDZD
-    # CBSOT
+	HOA_DXT
+	HOA_FLDZG
+	HOA_CCDJFSL
+	HOA_HLDTDZD
+    CBSOT
 }
 
 set_rule = { can_create_factions = yes }

@@ -10,14 +10,14 @@ set_research_slots = 4
 give_military_access = MAN
 
 add_ideas = {
-	#state_shintoism
-	#limited_exports
-	#limited_conscription
-	#partial_economic_mobilisation
+	state_shintoism
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
 	
-	#JAP_zaibatsus
-	#JAP_duplicate_research_efforts
-	#JAP_militarism
+	JAP_zaibatsus
+	JAP_duplicate_research_efforts
+	JAP_militarism
 }
 
 if = {

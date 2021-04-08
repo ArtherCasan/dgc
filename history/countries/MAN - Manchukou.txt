@@ -18,15 +18,15 @@ if = {
 	set_country_flag = MAN_northern_bandits
 	set_country_flag = MAN_eastern_bandits
 	set_country_flag = MAN_western_bandits
-	#add_ideas = MIN_people_against_empire
-	#add_ideas = CHI_CBSOT_POLICE
+	add_ideas = MIN_people_against_empire
+	add_ideas = CHI_CBSOT_POLICE
 }
 
 give_military_access = JAP
 add_ideas = {
-    #MAN_low_legitimacy_5
-    #FJTZ
-    #MRYHHZTY
+    MAN_low_legitimacy_5
+    FJTZ
+    MRYHHZTY
 }
 set_convoys = 5
 

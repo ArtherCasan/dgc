@@ -178,19 +178,19 @@ country_event = {
 # 文化渗透成功
 country_event = {
 	id = japan.23
-	title = 日本帝国完成对满洲教育援助
+	title = "日本帝国完成对满洲教育援助"
 	desc = japan.23.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { 	
-		name = 满洲将会成为日本人的新家园
-every_state = {
+		name = "满洲将会成为日本人的新家园"
+		every_state = {
 				limit = {
 					OR = {
-										is_core_of = MAN
-										is_core_of = KOR
+						is_core_of = MAN
+						is_core_of = KOR
 					}
 				}
 				add_core_of = JAP
@@ -201,14 +201,14 @@ every_state = {
 # 对明指导
 country_event = {
 	id = japan.22
-	title = 日本帝国提倡对明指导
+	title = "日本帝国提倡对明指导"
 	desc = japan.22.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { 	
-		name = 我们对此认同
+		name = "我们对此认同"
 							ai_chance = { factor = 75 }
 						JAP = {
 					set_autonomy = {
@@ -218,7 +218,7 @@ country_event = {
 						}	
 	}
 		option = { 	
-		name = 任何人休想对陛下指手画脚！
+		name = "任何人休想对陛下指手画脚！"
 		ai_chance = { factor = 25 }
 JAP = {
 				create_wargoal = {
@@ -233,14 +233,14 @@ JAP = {
 # 阳光下的地盘
 country_event = {
 	id = japan.21
-	title = 德国向我们索取冲绳
+	title = "德国向我们索取冲绳"
 	desc = japan.21.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { 	
-		name = 去他的阳光下的地盘吧！
+		name = "去他的阳光下的地盘吧！"
 							ai_chance = { factor = 75 }
 GER = {
 				create_wargoal = {
@@ -252,7 +252,7 @@ GER = {
 }
 	}
 		option = { 	
-		name = 我们只能接受
+		name = "我们只能接受"
 		ai_chance = { factor = 25 }
 GER = {
 				transfer_state = 526
@@ -263,14 +263,14 @@ GER = {
 # 226 Incident
 country_event = {
 	id = japan.20
-	title = 二二六兵变
+	title = "二二六兵变"
 	desc = japan.20.d
 	picture = GFX_report_event_japanese_soldiers_02
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { 	
-		name = 皇道派的阴谋被挫败！
+		name = "皇道派的阴谋被挫败！"
 		ai_chance = { 
 									modifier = {
 									factor = 60 
@@ -298,13 +298,14 @@ create_country_leader = {
 }
 	}
 		option = { 	
-		name = 皇道派胜利了！ 
-							hidden_effect = {
-							news_event = {
-									id = wtt_japan.108
-								}
-						}
-									ai_chance = { factor = 40 }
+		name = "皇道派胜利了！"
+			hidden_effect = {
+			news_event = {
+				id = wtt_japan.108
+			}
+
+			}
+			ai_chance = { factor = 40 }
       set_politics = {
 			ruling_party = neutrality 
 			elections_allowed = no
@@ -493,7 +494,7 @@ country_event = {
 			generator = owned_states
 		}
 	}
-
+}
 # Chinese Refuse Concessions
 country_event = {
 	id = japan.1
@@ -762,7 +763,10 @@ country_event = {
 	option = {
 		name = japan.7.a
 		hidden_effect = {
-			country_event = { days = 5 id = news.6 }
+			country_event = {
+				id = news.6
+				days = 5
+			}
 		}
 	}
 }
@@ -860,7 +864,9 @@ country_event = {
 			}
 		}
 		JAP = { 
-			country_event = { id = japan.13 }
+			country_event = {
+				id = japan.13
+			}
 			effect_tooltip = { puppet = SIA }
 		}
 	}
@@ -951,10 +957,4 @@ country_event = {
 			}
 		}
 	}
-}
-
-	
-
-
-	
 }

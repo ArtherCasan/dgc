@@ -1,28 +1,27 @@
 state={
-	id=747
-	name="STATE_747"
+	id=755
+	name="STATE_755"
 	provinces={
-		4559 4937 5009 7965 7976 8126 10413 10863 12789 12898 
+		2053 2099 7997 10750 10796 10834 10865 12846 12890 13146
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = YUN
-		add_core_of = YUN
+		owner = XSM
+		add_core_of = XSM
 		add_core_of = CHI
 		add_core_of = PCH
-		victory_points = {
-			7965 3 
-		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
+			industrial_complex = 1
+
 		}
 		1938.10.25 = {
 			if = {
 				limit = {
 					NOT = {
-						has_dlc = "Waking the Tiger" 
+						has_dlc = "Waking the Tiger"
 					}
 
 				}

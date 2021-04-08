@@ -83,9 +83,9 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				#Total_War
-				#world_revolution
-				#DGC_ycshycx
+				Total_War
+				world_revolution
+				DGC_ycshycx
 			}
 			focuses = {	
 				#GJZYWS
@@ -143,9 +143,9 @@ bookmarks = {
 			history = "MAN_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-	        	#LMOH
-             	#CHI_CBSOT_POLICE
-             	#MRYHHZTY
+	        	LMOH
+             	CHI_CBSOT_POLICE
+             	MRYHHZTY
 			}
 			focuses = {
 				MAN_obedience

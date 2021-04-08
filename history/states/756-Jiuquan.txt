@@ -1,22 +1,20 @@
 state={
-	id=747
-	name="STATE_747"
+	id=756
+	name="STATE_756"
 	provinces={
-		4559 4937 5009 7965 7976 8126 10413 10863 12789 12898 
+		1778 2028 4783 5076 7727 7803 7971 8102 10770 10899 12596 12820 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category = pastoral
+	state_category = wasteland
 	history={
-		owner = YUN
-		add_core_of = YUN
+		owner = XSM
+		add_core_of = XSM
 		add_core_of = CHI
 		add_core_of = PCH
-		victory_points = {
-			7965 3 
-		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
+
 		}
 		1938.10.25 = {
 			if = {
