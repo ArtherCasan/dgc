@@ -1,1 +1,0 @@
-PCH		= "countries/PCH - PanChinese Republic.txt"

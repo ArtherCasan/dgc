@@ -1,14 +1,13 @@
 opinion_modifiers = {
-
 	TYZX = {
 		value = 100
 	}
-HOA_PCH_SOV
- = {
+
+	HOA_PCH_SOV = {
 		value = 100
 	}
-HOA_ZSJL
- = {
+	
+	HOA_ZSJL = {
 		value = -100
 	}
 	}
