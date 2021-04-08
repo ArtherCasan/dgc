@@ -64,4 +64,11 @@ civilian_zaibatsu = {
 		}
 	}
 
+	PCH_ar_208_lab = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

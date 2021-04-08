@@ -1147,7 +1147,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR tag = PCH} }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -1244,7 +1244,7 @@ ideas = {
 			allowed = { 
 				has_dlc = "La Resistance"
 				# china gets a special one via focus
-				NOT = { original_tag = CHI }
+				NOT = { OR = {original_tag = CHI original_tag = PCH} }
 				NOT = { is_chinese_warlord = yes }
 				if = {
 					limit = {
@@ -1301,7 +1301,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = PCH} }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}
@@ -1354,7 +1354,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = HUN tag = CZE } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = HUN tag = CZE  tag = PCH} }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
 				}
@@ -1756,7 +1756,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = PCH } }
 				NOT = {
 					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
 				}
