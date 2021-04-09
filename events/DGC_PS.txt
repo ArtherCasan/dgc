@@ -4,200 +4,200 @@
 
 add_namespace = DGC_PS
 
-#篡位,给当前领袖的通知
-country_event = {
-	id =  DGC_PS.1
-	title =  DGC_PS.1.t
-	desc =  DGC_PS.1.d
-	picture = GFX_report_event_generic_funeral
-
-	mean_time_to_happen = {
-		days = 30
-		modifier = {
-			factor = 0.5
-			date > 1938.12.1
-		}
-		modifier = {
-			factor = 0.2
-			date > 1939.1.1
-		}
-	}
-
-	option = {
-		#同意
-		name = DGC_PS.1.a
-		FROM = { country_event = { id = DGC_PS.2 } }
-		custom_effect_tooltip = PS_end_game_tt
-	}
-	option = {
-		#拒绝
-		name = DGC_PS.1.b
-		FROM = { country_event = { id = DGC_PS.3 } }
-		custom_effect_tooltip = PS_war_tt
-	}
-}
-
-#篡位通过
-country_event = {
-	id =  DGC_PS.2
-	title =  DGC_PS.2.t
-	desc =  DGC_PS.2.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	option = {
-		name = DGC_PS.2.a
-		FROM = { clr_country_flag = china_leader }
-		FROM = { set_country_flag = out_of_PS }
-		ROOT = { set_country_flag = china_leader }
-		if = {
-			limit = { FROM = { tag = CHI } }
-			FROM = { set_cosmetic_tag = CHI_noleader }
-			else = { FROM = { drop_cosmetic_tag = yes } }
-		}
-		ROOT = { annex_country = { target = FROM transfer_troops = yes } }
-		every_country = {
-			limit = { has_war_with = FROM }
-			ROOT = { add_to_war = { targeted_alliance = FROM enemy = PREV hostility_reason = asked_to_join } }
-		}		
-	}
-}
-
-#篡位失败
-country_event = {
-	id =  DGC_PS.3
-	title =  DGC_PS.3.t
-	desc =  DGC_PS.3.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	option = {
-		name = DGC_PS.3.a
-		declare_war_on = { target = FROM type = annex_everything }
-		set_global_flag = stop_PS
-	}
-}
-
-#镇压地区任务
-state_event = {
-	id =  DGC_PS.4
-	title =  DGC_PS.4.t
-	desc =  DGC_PS.4.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_global_flag = DGC_antiPS_mission_maintain_control_flag
-	}
-
-	#接受(给你10天转移兵力)
-	option = {
-		name = DGC_PS.4.a
-		custom_effect_tooltip = mission_maintain_control_ready
-		hidden_effect = {
-			owner = {
-				country_event = { id = DGC_PS.5 days = 10 random = 5 }
-			}
-		}
-	}
-	#放弃任务
-	option = {
-		name = DGC_PS.4.b
-		clr_global_flag = DGC_antiPS_mission_maintain_control_flag
-	}
-}
-
-#隐藏事件,无需文本
-country_event = {
-	id =  DGC_PS.5
-	title =  DGC_PS.5.t
-	desc =  DGC_PS.5.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		activate_mission = DGC_antiPS_mission_maintain_control
-	}
-}
-
-#收买官员任务
-country_event = {
-	id =  DGC_PS.6
-	title =  DGC_PS.6.t
-	desc =  DGC_PS.6.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_global_flag = DGC_antiPS_mission_bride_local_officer_flag
-	}
-
-	#接受
-	option = {
-		name = DGC_PS.6.a
-		activate_mission = DGC_antiPS_mission_bride_local_officer
-	}
-	#放弃任务
-	option = {
-		name = DGC_PS.6.b
-		clr_global_flag = DGC_antiPS_mission_bride_local_officer_flag
-	}
-}
-
-#任务结果(镇压地区)
-country_event = {
-	id =  DGC_PS.7
-	title =  DGC_PS.7.t
-	desc =  DGC_PS.7.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	#敲你mua的校长
-	option = {
-		name = DGC_PS.7.a
-		custom_effect_tooltip = mission_maintain_control_result
-		add_to_variable = { var = ROOT.PS_progress value = -10 }
-		add_war_support = -0.05
-	}
-}
-
-#任务结果(收买官员)
-country_event = {
-	id =  DGC_PS.8
-	title =  DGC_PS.8.t
-	desc =  DGC_PS.8.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	#敲你mua的校长
-	option = {
-		name = DGC_PS.8.a
-		custom_effect_tooltip = mission_bride_local_officer_result
-		add_to_variable = { var = ROOT.PS_progress value = -10 }
-		add_stability = -0.05
-	}
-}
-
-#军阀决议(收买中央政府官员)
-country_event = {
-	id =  DGC_PS.9
-	title =  DGC_PS.9.t
-	desc =  DGC_PS.9.d
-	picture = GFX_report_event_generic_funeral
-
-	is_triggered_only = yes
-
-	#娘希匹
-	option = {
-		name = DGC_PS.8.a
-		add_stability = -0.05
-	}
-}
+##篡位,给当前领袖的通知
+#country_event = {
+#	id =  DGC_PS.1
+#	title =  DGC_PS.1.t
+#	desc =  DGC_PS.1.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	mean_time_to_happen = {
+#		days = 30
+#		modifier = {
+#			factor = 0.5
+#			date > 1938.12.1
+#		}
+#		modifier = {
+#			factor = 0.2
+#			date > 1939.1.1
+#		}
+#	}
+#
+#	option = {
+#		#同意
+#		name = DGC_PS.1.a
+#		FROM = { country_event = { id = DGC_PS.2 } }
+#		custom_effect_tooltip = PS_end_game_tt
+#	}
+#	option = {
+#		#拒绝
+#		name = DGC_PS.1.b
+#		FROM = { country_event = { id = DGC_PS.3 } }
+#		custom_effect_tooltip = PS_war_tt
+#	}
+#}
+#
+##篡位通过
+#country_event = {
+#	id =  DGC_PS.2
+#	title =  DGC_PS.2.t
+#	desc =  DGC_PS.2.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = DGC_PS.2.a
+#		FROM = { clr_country_flag = china_leader }
+#		FROM = { set_country_flag = out_of_PS }
+#		ROOT = { set_country_flag = china_leader }
+#		if = {
+#			limit = { FROM = { tag = CHI } }
+#			FROM = { set_cosmetic_tag = CHI_noleader }
+#			else = { FROM = { drop_cosmetic_tag = yes } }
+#		}
+#		ROOT = { annex_country = { target = FROM transfer_troops = yes } }
+#		every_country = {
+#			limit = { has_war_with = FROM }
+#			ROOT = { add_to_war = { targeted_alliance = FROM enemy = PREV hostility_reason = asked_to_join } }
+#		}		
+#	}
+#}
+#
+##篡位失败
+#country_event = {
+#	id =  DGC_PS.3
+#	title =  DGC_PS.3.t
+#	desc =  DGC_PS.3.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = DGC_PS.3.a
+#		declare_war_on = { target = FROM type = annex_everything }
+#		set_global_flag = stop_PS
+#	}
+#}
+#
+##镇压地区任务
+#state_event = {
+#	id =  DGC_PS.4
+#	title =  DGC_PS.4.t
+#	desc =  DGC_PS.4.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		set_global_flag = DGC_antiPS_mission_maintain_control_flag
+#	}
+#
+#	#接受(给你10天转移兵力)
+#	option = {
+#		name = DGC_PS.4.a
+#		custom_effect_tooltip = mission_maintain_control_ready
+#		hidden_effect = {
+#			owner = {
+#				country_event = { id = DGC_PS.5 days = 10 random = 5 }
+#			}
+#		}
+#	}
+#	#放弃任务
+#	option = {
+#		name = DGC_PS.4.b
+#		clr_global_flag = DGC_antiPS_mission_maintain_control_flag
+#	}
+#}
+#
+##隐藏事件,无需文本
+#country_event = {
+#	id =  DGC_PS.5
+#	title =  DGC_PS.5.t
+#	desc =  DGC_PS.5.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#	hidden = yes
+#
+#	immediate = {
+#		activate_mission = DGC_antiPS_mission_maintain_control
+#	}
+#}
+#
+##收买官员任务
+#country_event = {
+#	id =  DGC_PS.6
+#	title =  DGC_PS.6.t
+#	desc =  DGC_PS.6.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		set_global_flag = DGC_antiPS_mission_bride_local_officer_flag
+#	}
+#
+#	#接受
+#	option = {
+#		name = DGC_PS.6.a
+#		activate_mission = DGC_antiPS_mission_bride_local_officer
+#	}
+#	#放弃任务
+#	option = {
+#		name = DGC_PS.6.b
+#		clr_global_flag = DGC_antiPS_mission_bride_local_officer_flag
+#	}
+#}
+#
+##任务结果(镇压地区)
+#country_event = {
+#	id =  DGC_PS.7
+#	title =  DGC_PS.7.t
+#	desc =  DGC_PS.7.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	#敲你mua的校长
+#	option = {
+#		name = DGC_PS.7.a
+#		custom_effect_tooltip = mission_maintain_control_result
+#		add_to_variable = { var = ROOT.PS_progress value = -10 }
+#		add_war_support = -0.05
+#	}
+#}
+#
+##任务结果(收买官员)
+#country_event = {
+#	id =  DGC_PS.8
+#	title =  DGC_PS.8.t
+#	desc =  DGC_PS.8.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	#敲你mua的校长
+#	option = {
+#		name = DGC_PS.8.a
+#		custom_effect_tooltip = mission_bride_local_officer_result
+#		add_to_variable = { var = ROOT.PS_progress value = -10 }
+#		add_stability = -0.05
+#	}
+#}
+#
+##军阀决议(收买中央政府官员)
+#country_event = {
+#	id =  DGC_PS.9
+#	title =  DGC_PS.9.t
+#	desc =  DGC_PS.9.d
+#	picture = GFX_report_event_generic_funeral
+#
+#	is_triggered_only = yes
+#
+#	#娘希匹
+#	option = {
+#		name = DGC_PS.8.a
+#		add_stability = -0.05
+#	}
+#}

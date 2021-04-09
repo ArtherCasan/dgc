@@ -65,10 +65,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/cze_superheavy_tank.dds"
 	}
 
-#	SpriteType = {
-#		name = "GFX_SWE_basic_equipment_medium"
-#		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
-#	}
+	SpriteType = {
+		name = "GFX_SWE_basic_equipment_medium"
+		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_SWE_infantry_weapons1_medium"
@@ -270,10 +270,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/cze_superheavy_tank.dds"
 	}
 
-#	SpriteType = {
-#		name = "GFX_FIN_basic_equipment_medium"
-#		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
-#	}
+	SpriteType = {
+		name = "GFX_FIN_basic_equipment_medium"
+		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_FIN_infantry_weapons1_medium"
@@ -475,10 +475,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/cze_superheavy_tank.dds"
 	}
 
-#	SpriteType = {
-#		name = "GFX_NOR_basic_equipment_medium"
-#		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
-#	}
+	SpriteType = {
+		name = "GFX_NOR_basic_equipment_medium"
+		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_NOR_infantry_weapons1_medium"
@@ -680,10 +680,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/cze_superheavy_tank.dds"
 	}
 
-#	SpriteType = {
-#		name = "GFX_DEN_basic_equipment_medium"
-#		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
-#	}
+	SpriteType = {
+		name = "GFX_DEN_basic_equipment_medium"
+		texturefile = "gfx/interface/technologies/CZE_basic_equipment.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_DEN_infantry_weapons1_medium"

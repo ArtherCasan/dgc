@@ -12,8 +12,7 @@ ideas = {
 			}			
 			
 			available = {
-				# has_completed_focus = tank_production
-				always = no
+				has_completed_focus = tank_production
 			}
 			
 			cost = 200
@@ -186,8 +185,7 @@ ideas = {
 			}
 			
 			available = {
-				# has_completed_focus = capital_support_208
-				always = no
+				has_completed_focus = capital_support_208
 			}
 			
 			research_bonus = {
