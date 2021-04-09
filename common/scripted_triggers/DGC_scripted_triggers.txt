@@ -1,0 +1,61 @@
+
+#是中国领袖
+is_china_leader = {
+	custom_trigger_tooltip = {
+		tooltip = is_china_leader_tt
+		has_country_flag = china_leader
+	}
+}
+#是军阀
+is_warlords = {
+	custom_trigger_tooltip = {
+		tooltip = is_warlords_tt
+		OR = {
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+		}
+		NOT = { has_country_flag = china_leader }
+		NOT = { has_country_flag = out_of_PS }
+	}
+}
+#政治斗争值都超50
+#average_PS_progress_more_than_50 = {
+#	custom_trigger_tooltip = {
+#		tooltip = average_PS_progress_more_than_50_tt
+#		check_variable = { var = (YUN.PS_progress value > 49 }
+#		check_variable = { var = (XSM.PS_progress value > 49 }
+#		check_variable = { var = (SHX.PS_progress value > 49 }
+#		check_variable = { var = (SIK.PS_progress value > 49 }
+#	}
+#}
+##政治斗争值都超60
+#average_PS_progress_more_than_60 = {
+#	custom_trigger_tooltip = {
+#		tooltip = average_PS_progress_more_than_60_tt
+#		check_variable = { var = (YUN.PS_progress value > 59 }
+#		check_variable = { var = (XSM.PS_progress value > 59 }
+#		check_variable = { var = (SHX.PS_progress value > 59 }
+#		check_variable = { var = (SIK.PS_progress value > 59 }
+#	}
+#}
+##政治斗争值都超70
+#average_PS_progress_more_than_70 = {
+#	custom_trigger_tooltip = {
+#		tooltip = average_PS_progress_more_than_70_tt
+#		check_variable = { var = (YUN.PS_progress value > 69 }
+#		check_variable = { var = (XSM.PS_progress value > 69 }
+#		check_variable = { var = (SHX.PS_progress value > 69 }
+#		check_variable = { var = (SIK.PS_progress value > 69 }
+#	}
+#}
+##开启政治斗争
+#open_DGC_PS = {
+#	custom_trigger_tooltip = {
+#		tooltip = open_DGC_PS_tt
+#		has_completed_focus = CHI_join_the_republican_government
+#		NOT = { has_war_with = event_target:china_leader }
+#		NOT = { has_global_flag = stop_PS }
+#	}
+#}

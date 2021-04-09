@@ -1,0 +1,388 @@
+#ROOT.PS_progress 此为军阀政治斗争进度
+#ROOT.Anti_PS_power 此为校长镇压点数
+
+
+#校长反制
+#DGC_PS_antiPS_category = {
+#	##这个是整体压制,没错是大招
+#	DGC_antiPS_total = {
+#
+#		icon = GFX_decision_generic_nationalism
+#
+#		allowed = {
+#			
+#		}
+#
+#		available = {
+#			check_variable = { var = ROOT.Anti_PS_power value > 100 }
+#			average_PS_progress_more_than_50 = yes
+#		}
+#
+#		visible = {
+#			is_china_leader = yes
+#		}
+#
+#		cost = 200
+#		days_remove = 30
+#		days_re_enable = 120
+#
+#		modifier = {
+#			political_power_cost = 0.25
+#		}
+#
+#		ai_will_do = {
+#			factor = 100
+#			modifier = {
+#				average_PS_progress_more_than_60 = yes
+#				factor = 10
+#			}
+#			modifier = {
+#				average_PS_progress_more_than_70 = yes
+#				factor = 10
+#			}
+#		}
+#
+#		remove_effect = {
+#			custom_effect_tooltip = DGC_antiPS_total_result
+#			hidden_effect = {
+#				antiPS_total = yes
+#				add_to_variable = { var = ROOT.Anti_PS_power value = -100 }
+#			}
+#		}
+#
+#	}
+#	##单体压制,针对特定军阀
+#	DGC_antiPS_single = {
+#
+#		icon = GFX_decision_generic_nationalism
+#
+#		allowed = {
+#			
+#		}
+#
+#		available = {
+#			check_variable = { var = ROOT.Anti_PS_power value > 50 }
+#		}
+#
+#		visible = {
+#			is_china_leader = yes
+#		}
+#
+#		cost = 50
+#		days_remove = 30
+#		days_re_enable = 120
+#
+#		target_trigger = {
+#			FROM = {
+#				is_warlords = yes
+#				check_variable = { var = PS_progress value > 40 }
+#			}
+#		}
+#
+#		modifier = {
+#			political_power_cost = 0.1
+#		}
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		remove_effect = {
+#			custom_effect_tooltip = DGC_antiPS_result
+#			hidden_effect = {
+#				add_to_variable = { var = ROOT.Anti_PS_power value = -50 }
+#				FROM = {
+#					add_to_variable = { var = FROM.PS_progress value = -10 }
+#				}
+#			}
+#		}
+#	}
+#	#压制军阀任务:维持地方控制
+#	DGC_antiPS_mission_maintain_control = {
+#
+#		icon = generic_prepare_civil_war
+#		
+#		
+#		available = {
+#			always = no
+#		}
+#		
+#		highlight_states = {
+#			state = event_target:mission_state
+#		}
+#		
+#		days_mission_timeout = 60
+#		is_good = yes
+#		
+#		activation = {
+#			always = no #靠事件
+#		}
+#
+#		cancel_trigger = {
+#			ROOT = { divisions_in_state = { state = event_target:mission_state	size < 5 } }
+#		}
+#
+#		visible = {
+#			
+#		}
+#		
+#		timeout_effect = {
+#			custom_effect_tooltip = DGC_antiPS_mission_maintain_control_result
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = YUN } }
+#				YUN = { country_event = DGC_PS.7 }	#这个事件等你们填
+#			}
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = XSM } }
+#				XSM = { country_event = DGC_PS.7 }	#这个事件等你们填
+#			}
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = SIK } }
+#				SIK = { country_event = DGC_PS.7 }	#这个事件等你们填
+#			}
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = SHX } }
+#				SHX = { country_event = DGC_PS.7 }	#这个事件等你们填
+#			}
+#			clr_global_flag = DGC_antiPS_mission_maintain_control_flag
+#		}	
+#	}
+#	#压制军阀任务:收买地方官员
+#	DGC_antiPS_mission_bride_local_officer = {
+#
+#		icon = generic_prepare_civil_war
+#		
+#		
+#		available = {
+#			always = no
+#		}
+#		
+#		days_mission_timeout = 60
+#		is_good = yes
+#		
+#		activation = {
+#			always = no #靠事件
+#		}
+#
+#		visible = {
+#			
+#		}
+#
+#		modifier = {
+#			political_power_cost = 0.2
+#		}
+#		
+#		timeout_effect = {
+#			custom_effect_tooltip = DGC_antiPS_mission_bride_local_officer_result
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = YUN } }
+#				YUN = { country_event = DGC_PS.8 }	#这个事件等你们填
+#			}
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = XSM } }
+#				XSM = { country_event = DGC_PS.8 }	#这个事件等你们填
+#			}
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = SIK } }
+#				SIK = { country_event = DGC_PS.8 }	#这个事件等你们填
+#			}
+#			if = {
+#				limit = { event_target:mission_state = { is_controlled_by = SHX } }
+#				SHX = { country_event = DGC_PS.8 }	#这个事件等你们填
+#			}
+#			clr_global_flag = DGC_antiPS_mission_bride_local_officer_flag
+#		}	
+#	}
+#	#暂时先这四个
+#}
+##军阀的政治斗争(也要靠个人的奋斗的嘛)
+#DGC_warlord_PS_category = {
+#	##夺权的决议
+#	DGC_warlord_takedown_leader = {
+#
+#		icon = generic_nationalism
+#
+#		available = {
+#			check_variable = { var = PS_progress value > 99 }
+#			NOT = { has_global_flag = taking_leadership }
+#		}
+#
+#		visible = {
+#			
+#		}
+#
+#		cost = 0
+#
+#		fire_only_once = yes
+#
+#		complete_effect = {
+#			custom_effect_tooltip = DGC_warlord_takedown_leader_result
+#			take_leader_antiPS = yes
+#			event_target:china_leader = {
+#				WTT_political_struggle_remove_current_country = yes
+#				set_global_flag = { flag = taking_leadership value = 1 days =  14 }
+#				country_event = { id = DGC_PS.1 }
+#			}
+#			custom_effect_tooltip = DGC_leader_accept_result
+#			custom_effect_tooltip = DGC_leader_refuse_result
+#		}
+#
+#		ai_will_do = {
+#			factor = 1000
+#		}	 
+#	}
+#	##先决准备:收买国民政府官员
+#	DGC_warlord_bride_leader_officer = {
+#
+#		icon = generic_nationalism
+#
+#		available = {
+#			event_target:china_leader = { has_stability < 0.5 }
+#		}
+#
+#		visible = {
+#			open_DGC_PS = yes
+#		}
+#
+#		cost = 50
+#		days_remove = 60
+#		days_re_enable = 120
+#
+#		modifier = {
+#			political_power_cost = 0.1
+#		}
+#
+#		remove_effect = {
+#			event_target:china_leader = { country_event = { id = DGC_PS.9 } }
+#			add_to_variable = { var = PS_progress value = 10 }
+#		}
+#
+#		ai_will_do = {
+#			factor = 10
+#		}	 
+#	}
+#	##先决准备:巩固自身统治
+#	DGC_warlord_strength_leadership = {
+#
+#		icon = generic_nationalism
+#
+#		available = {
+#			has_stability > 0.5
+#		}
+#
+#		visible = {
+#			open_DGC_PS = yes
+#		}
+#
+#		cost = 50
+#		days_remove = 60
+#		days_re_enable = 120
+#
+#		modifier = {
+#			political_power_cost = 0.1
+#		}
+#
+#		remove_effect = {
+#			add_stability = 0.02
+#			add_war_support = 0.02
+#			add_to_variable = { var = PS_progress value = 10 }
+#		}
+#
+#		ai_will_do = {
+#			factor = 10
+#		}	 
+#	}
+#	##先决准备:强化私军
+#	DGC_warlord_strength_army = {
+#
+#		icon = generic_nationalism
+#
+#		available = {
+#			has_war_support > 0.25
+#		}
+#
+#		visible = {
+#			open_DGC_PS = yes
+#		}
+#
+#		cost = 50
+#		days_remove = 90
+#
+#		fire_only_once = yes
+#
+#		modifier = {
+#			political_power_cost = 0.1
+#		}
+#
+#		remove_effect = {
+#			add_war_support = 0.1
+#			#add_ideas = ###
+#			add_to_variable = { var = PS_progress value = 20 }
+#		}
+#
+#		ai_will_do = {
+#			factor = 10
+#		}	 
+#	}
+#	##先决准备:改革政府
+#	DGC_warlord_reform_government = {
+#
+#		icon = generic_nationalism
+#
+#		available = {
+#			
+#		}
+#
+#		visible = {
+#			open_DGC_PS = yes
+#		}
+#
+#		cost = 50
+#		days_remove = 90
+#
+#		fire_only_once = yes
+#
+#		modifier = {
+#			political_power_cost = 0.5
+#		}
+#
+#		remove_effect = {
+#			add_stability = 0.1
+#			add_to_variable = { var = PS_progress value = 20 }
+#		}
+#
+#		ai_will_do = {
+#			factor = 10
+#		}	 
+#	}
+#	##先决准备:与中央军协商
+#	DGC_warlord_negotiate_with_cc = {
+#
+#		icon = generic_nationalism
+#
+#		available = {
+#			
+#		}
+#
+#		visible = {
+#			open_DGC_PS = yes
+#		}
+#
+#		cost = 50
+#		days_remove = 90
+#
+#		fire_only_once = yes
+#
+#		modifier = {
+#			political_power_cost = 0.5
+#		}
+#
+#		remove_effect = {
+#			add_to_variable = { var = PS_progress value = 20 }
+#		}
+#
+#		ai_will_do = {
+#			factor = 10
+#		}	 
+#	}
+#}

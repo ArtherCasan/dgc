@@ -1,0 +1,560 @@
+add_namespace = dgc 
+	
+		
+country_event = {
+	id = dgc.1 
+	title = dgc.1.t
+	desc = dgc.1.d
+	#picture = GFX_report_event_japanese_officers 
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = dgc.1.a
+	}
+}
+news_event = {
+	id = dgc.2 
+	title = dgc.2.t
+	desc = dgc.2.d
+	#picture = GFX_DGC_TOM
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = dgc.2.a
+	}
+}
+country_event = {
+	id = dgc.3 
+	title = dgc.3.t
+	desc = dgc.3.d
+	#picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = dgc.3.a
+	}
+}
+country_event = {
+	id = dgc.4 
+	title = dgc.4.t
+	desc = dgc.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = dgc.4.a
+	}
+	#picture =
+}
+country_event = {
+	id = dgc.5 
+	title = dgc.5.t
+	desc = dgc.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.5.a
+	}
+	#picture = 
+}
+
+country_event = {
+	id = dgc.10
+	title = dgc.10.t
+	desc = dgc.10.d
+	
+	trigger = {
+		tag = PCH
+		PCH = { has_idea = JZDN }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = dgc.10.a
+		add_political_power = -20
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = dgc.11
+	title = dgc.11.t
+	desc = dgc.11.d
+	
+	trigger = {
+		tag = PCH
+		PCH = { has_idea = JZDN }
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = dgc.11.a
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+
+#苏联的回复
+country_event = {
+	id = dgc.1000
+	title = dgc.1000.t
+	desc = dgc.1000.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.1000.a
+		ai_chance =  {
+			factor = 30
+		}
+		PCH = {
+			country_event = {
+				id = dgc.1001
+				days = 5
+				random = 5
+			}
+		}
+	}
+	option = {
+		name = dgc.1000.b
+		ai_chance =  {
+			factor = 70
+		}
+		PCH = {
+			country_event = {
+				id = dgc.1002
+				days = 2
+			}
+		}
+	}
+	#picture =
+}
+#获得北方领土
+country_event = {	
+	id = dgc.1001
+	title = dgc.1001.t
+	desc = dgc.1001.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.1001.a
+		PCH = {
+			hidden_effect = {
+				transfer_state = 330
+				transfer_state = 329
+				transfer_state = 561
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 409
+				transfer_state = 408
+				transfer_state = 655
+				transfer_state = 537
+				add_state_core = 330
+				add_state_core = 329
+				add_state_core = 561
+				add_state_core = 560
+				add_state_core = 657
+				add_state_core = 409
+				add_state_core = 408
+				add_state_core = 655
+				add_state_core = 537
+			}
+		}
+	}
+	#picture =
+}
+#拿到宣战理由--对苏联
+country_event = {
+	id = dgc.1002
+	title = dgc.1002.t
+	desc = dgc.1002.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.1002.a
+		PCH = {
+			create_wargoal = {
+			    type = take_claimed_state
+				target = SOV
+			}
+		}
+	}
+	#picture =
+}
+#法国的回复
+country_event = {
+	id = dgc.1003
+	title = dgc.1003.t
+	desc = dgc.1003.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.1003.a
+		ai_chance = {
+			factor = 70
+		}
+		PCH = {
+			country_event = {
+				id = dgc.1004
+				days = 10
+				random = 10
+			}
+		}
+	}
+	option = {
+		name = dgc.1003.b
+		ai_chance = {
+			factor = 30
+		}
+		PCH = {
+			country_event = {
+				id = dgc.1005
+				days = 3
+			}
+		}
+	}
+	#picture =
+}
+#获得三傀儡
+country_event = {	
+	id = dgc.1004
+	title = dgc.1004.t
+	desc = dgc.1004.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.1001.a
+		custom_effect_tooltip = dgc.1004.desc
+		hidden_effect = {
+			FRA = {
+				release = LAO
+				release = VIN
+				release = CAM
+			}
+			PCH = {
+				puppet = LAO
+				puppet = VIN
+				puppet = CAM
+			}
+		}
+	}
+	#picture =
+}
+#宣战理由--对法国
+country_event = {
+	id = dgc.1005
+	title = dgc.1005.t
+	desc = dgc.1005.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = dgc.1005.a
+		PCH = {
+			create_wargoal = {
+			    type = take_claimed_state
+				target = FRA
+			}
+		}
+	}
+	#picture =
+}
+
+#兰州
+country_event = {
+	id = dgc.2001
+	title = dgc.2001.t
+	desc = dgc.2001.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2001.a
+		set_global_flag = PCH_penetration_LanZhou
+	}
+	#picture =
+}
+#天水
+country_event = {
+	id = dgc.2002
+	title = dgc.2002.t
+	desc = dgc.2002.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2002.a
+		set_global_flag = PCH_penetration_TianShui
+	}
+	#picture =
+}
+#太原
+country_event = {
+	id = dgc.2003
+	title = dgc.2003.t
+	desc = dgc.2003.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2003.a
+		set_global_flag = PCH_penetration_TaiYuan
+	}
+	#picture =
+}
+#格尔木
+country_event = {
+	id = dgc.2004
+	title = dgc.2004.t
+	desc = dgc.2004.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2004.a
+		set_global_flag = PCH_penetration_GeErMu
+	}
+	#picture =
+}
+#大理
+country_event = {
+	id = dgc.2005
+	title = dgc.2005.t
+	desc = dgc.2005.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2005.a
+		set_global_flag = PCH_penetration_DaLi
+	}
+	#picture =
+}
+#昆明
+country_event = {
+	id = dgc.2006
+	title = dgc.2006.t
+	desc = dgc.2006.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2006.a
+		set_global_flag = PCH_penetration_KunMing
+	}
+	#picture =
+}
+#广西机场
+country_event = {
+	id = dgc.2007
+	title = dgc.2007.t
+	desc = dgc.2007.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2007.a
+		set_global_flag = PCH_penetration_GuangXi
+	}
+	#picture =
+}
+#广东海港
+country_event = {
+	id = dgc.2008
+	title = dgc.2008.t
+	desc = dgc.2008.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2008.a
+		set_global_flag = PCH_penetration_GuangDong
+	}
+	#picture =
+}
+#南宁
+country_event = {
+	id = dgc.2009
+	title = dgc.2009.t
+	desc = dgc.2009.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2009.a
+		set_global_flag = PCH_penetration_NanNing
+	}
+	#picture =
+}
+#广州
+country_event = {
+	id = dgc.2010
+	title = dgc.2010.t
+	desc = dgc.2010.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2010.a
+		set_global_flag = PCH_penetration_GuangZhou
+	}
+	#picture =
+}
+#海口
+country_event = {
+	id = dgc.2011
+	title = dgc.2011.t
+	desc = dgc.2011.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2011.a
+		set_global_flag = PCH_penetration_HaiKou
+	}
+	#picture =
+}
+#延安
+country_event = {
+	id = dgc.2012
+	title = dgc.2012.t
+	desc = dgc.2012.d
+	is_triggered_only = yes
+	option = {
+		name = dgc.2012.a
+		set_global_flag = PCH_penetration_YanAn
+	}
+	#picture =
+}
+
+#编制
+country_event = {
+	id = dgc.2100
+	title = dgc.2100.t
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		ROOT = {
+		    division_template = {
+                name = "泛中华民兵"
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                }
+            }
+		}
+	}
+}
+
+#用以规避bug，请勿删除
+country_event = {
+	id = dgc.3000
+	is_triggered_only = yes
+	hidden = yes
+}
+
+#如果泛中华对中华民国开战，所有中华民国阵营的国家加入战争
+country_event = {
+	id = dgc.4000
+	title = dgc.4000.t
+	desc = dgc.4000.d
+	# #picture = 
+	# is_triggered_only = yes
+	# hidden = yes
+	# fire_only_once = yes
+	# immediate = {}
+	
+	trigger = {
+		OR = {
+			tag = CHI
+			tag = YUN
+			tag = XSM
+			tag = SHX
+		}
+		CHI = {
+			has_war_with = PCH
+		}
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = dgc.4000.a
+		add_to_war = {
+		    targeted_alliance = CHI
+			enemy = PCH
+		}
+	}
+}
+
+#如果泛中华与中华民国或明帝国处于战争，第三方可以介入战争
+country_event = {
+	id = dgc.4001
+	title = dgc.4001.t
+	desc = dgc.4001.d
+	# #picture = 
+	# is_triggered_only = yes
+	# hidden = yes
+	fire_only_once = yes
+	# immediate = {}
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = CHI
+				PCH = {
+					has_war_with = MAN
+				}
+				NOT = {
+					has_war_with = PCH
+				}
+			}
+			AND = {
+				tag = MAN
+				PCH = {
+					has_war_with = CHI
+				}
+				is_puppet = no
+				NOT = {
+					has_war_with = PCH
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
+	option = {
+		name = dgc.4001.a
+		declare_war_on = {
+			target = PCH
+			type = annex_everything
+		}
+	}
+	
+	option = {
+		name = dgc.4001.b
+		create_wargoal = {
+			target = PCH
+			type = annex_everything
+		}
+	}
+	
+	option = {
+		name = dgc.4001.c
+		add_political_power = -50
+	}
+}
+
+#未知的事件
+#country_event = {
+#	id = dgc.9663
+#	
+#	trigger = {
+#		if = {
+#			limit = {
+#				has_game_rule = {
+#					rule = PCH_ai_behavior
+#					option = DGC_PCH_FASCIST
+#				}
+#			}
+#			always = yes
+#		}
+#		else = {
+#			always = no
+#		}
+#
+#	}
+#}

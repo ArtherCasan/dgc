@@ -1,0 +1,35 @@
+#########################
+##### DGC版政治斗争 ######
+#########################
+#校长的反制政策(要不要国策解锁呢)
+#DGC_PS_antiPS_category = {
+#	icon = generic_fascism
+#	allowed = {
+#
+#	}
+#	visible = {
+#		is_china_leader = yes
+#		#has_completed_focus = 
+#	}
+#}
+##军阀的政治斗争(国策解锁)
+##DGC_warlord_PS_category = {
+##	icon = generic_economy
+##	allowed = {
+##		
+##	}
+##	visible = {
+##		is_warlords = yes
+##		open_DGC_PS = yes
+##	}
+##}
+##备用
+#DGC_PS_backup_category = {
+#	icon = ger_military_buildup
+#	allowed = {
+#		always = no
+#	}
+#	visible = {
+#		
+#	}
+#}
