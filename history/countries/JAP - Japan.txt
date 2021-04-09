@@ -9,13 +9,12 @@ set_research_slots = 4
 
 give_military_access = MAN
 
-
 add_ideas = {
 	state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-
+	
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
@@ -113,167 +112,24 @@ if = {
 }
 
 create_import = {
-		resource = oil
-		factories = 2
-		exporter = USA
-}
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-
-	#adding ministers
-	add_ideas = {
-		JAP_mitsumasa_yonai
-		minoru_genda
-		hajime_sugiyama
-		soemu_toyoda
-		fushimi_hiroyasu
-		kawasaki
-
-		#laws
-		tot_economic_mobilisation
-		service_by_requirement
-		closed_economy
-	}
-
-	complete_national_focus = JAP_purge_the_kodoha_faction
-	complete_national_focus = JAP_army_expansion_law
-	complete_national_focus = JAP_guide_the_zaibatsus
-	complete_national_focus = JAP_new_naval_estimates
-	complete_national_focus = JAP_army_expansion
-	complete_national_focus = JAP_liaison_conference
-	complete_national_focus = JAP_greater_east_asian_co_prosperity_sphere
-	unlock_national_focus = JAP_intervene_in_china
-	complete_national_focus = JAP_fighter_modernization
-	complete_national_focus = JAP_carrier_warfare_experiments
-	complete_national_focus = JAP_supremacy_of_technology
-	complete_national_focus = JAP_national_mobilization_law
-	complete_national_focus = JAP_national_research_policy
-	complete_national_focus = JAP_nationalize_war_industry
-	complete_national_focus = JAP_cruiser_modernization
-	complete_national_focus = JAP_long_lance_torpedoes
-	complete_national_focus = JAP_bicycle_battalions
-	complete_national_focus = JAP_small_arms_modernization
-
-	declare_war_on = {
-		target = CHI
-		type = puppet_focus
-	}
-	#declare_war_on = {
-	#	target = GXC
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = YUN
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = PRC
-	#	type = annex_everything
-	#}
-	oob = "JAP_1939"
-	set_technology = {
-
-		#PLACEHOLDERS for vehicles
-		improved_submarine = 1
-		basic_destroyer = 1
-		improved_destroyer = 1
-		improved_heavy_cruiser = 1
-		improved_carrier = 1
-		heavy_battleship = 1
-		cv_fighter1 = 1
-		fighter1 = 1
-		tactical_bomber1 = 1
-	
-		#doctrines
-		#air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-		grand_battle_plan = 1
-		prepared_defense = 1
-		grand_assault = 1
-		carrier_primacy = 1
-		carrier_task_forces = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
+	resource = oil
+	factories = 2
+	exporter = USA
 }
 
 set_convoys = 400
 
+set_popularities = {
+	democratic = 45
+	fascism = 30
+	communism = 25
+}
+
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 45
-		}
-
-		fascism = {
-			popularity = 30
-		}
-		
-		communism = {
-			popularity = 25
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1932.8.30"
 	election_frequency = 48
 	elections_allowed = yes
-}
-
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 5
-			}
-
-			fascism = {
-				popularity = 90
-			}
-			
-			communism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1936.8.30"
-		election_frequency = 48
-		elections_allowed = no
-	}
 }
 
 create_country_leader = {
@@ -296,8 +152,6 @@ create_country_leader = {
 	picture = "Portrait_JAPAN_Hakurei_Reimu.dds"
 	expire = "1989.1.1"
 	ideology = marxism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -306,8 +160,6 @@ create_country_leader = {
 	picture = "nanqinli.tga"
 	expire = "1989.1.1"
 	ideology = liberalism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -316,9 +168,6 @@ create_country_leader = {
 	picture = "gfx/leaders/JAP/dtwo.tga"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 create_corps_commander = {
@@ -891,150 +740,6 @@ create_navy_leader = {
 	coordination_skill = 3
 }
 
-
-### VARIANTS ###
-	# 1936 Start #
-		### Carrier Variants
-		create_equipment_variant = {
-			name = "赤城级"
-			type = carrier_1
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 5
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 3
-			}
-			obsolete = yes
-		}
-		### Battleship Variants	
-		create_equipment_variant = {
-			name = "伊势级"
-			type = battleship_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_armor_upgrade = 1
-				ship_gun_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "长门级"
-			type = battleship_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 3
-				ship_engine_upgrade = 4
-				ship_armor_upgrade = 3
-				ship_gun_upgrade = 4
-			}
-			obsolete = yes
-		}
-		### Heavy Cruiser Variants	
-		create_equipment_variant = {
-			name = "妙高级"
-			type = heavy_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 3
-			}
-			obsolete = yes
-		}
-		### Light Cruiser Variants	
-		create_equipment_variant = {
-			name = "球磨级"
-			type = light_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "川内级"
-			type = light_cruiser_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 2
-			}
-			obsolete = yes
-		}
-		### Destroyer Variants
-		create_equipment_variant = {
-			name = "吹雪级"
-			type = destroyer_1
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 4
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}	
-		### Submarine Variants	
-		create_equipment_variant = {
-			name = "海大 III级"
-			type = submarine_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 2
-			}
-			obsolete = yes
-		}	
-
-	# 1939 Start #			
-	1939.1.1 = {
-		### Carrier Variants
-		create_equipment_variant = {
-			name = "飞龙级"
-			type = carrier_2
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 1
-				carrier_armor_upgrade = 0
-				ship_engine_upgrade = 0
-				ship_reliability_upgrade = 1
-			}
-		}
-		### Destroyer Variants
-		#create_equipment_variant = {
-		#	name = "吹雪级"
-		#	type = destroyer_1
-		#	parent_version = 0
-		#	upgrades = {
-		#		ship_torpedo_upgrade = 2
-		#		destroyer_engine_upgrade = 4
-		#		ship_ASW_upgrade = 2
-		#		ship_anti_air_upgrade = 2
-		#	}
-		#	obsolete = yes
-		#}	
-		create_equipment_variant = {
-			name = "阳炎级"
-			type = destroyer_2
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 3
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}	
-	}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

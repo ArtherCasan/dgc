@@ -5,7 +5,7 @@ country_event = {
 	id = dgc.1 
 	title = dgc.1.t
 	desc = dgc.1.d
-	picture = GFX_report_event_japanese_officers 
+	#picture = GFX_report_event_japanese_officers 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -17,7 +17,7 @@ news_event = {
 	id = dgc.2 
 	title = dgc.2.t
 	desc = dgc.2.d
-	picture = GFX_DGC_TOM
+	#picture = GFX_DGC_TOM
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -29,7 +29,7 @@ country_event = {
 	id = dgc.3 
 	title = dgc.3.t
 	desc = dgc.3.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -47,7 +47,7 @@ country_event = {
 	option = {
 		name = dgc.4.a
 	}
-	picture =
+	#picture =
 }
 country_event = {
 	id = dgc.5 
@@ -58,7 +58,7 @@ country_event = {
 	option = {
 		name = dgc.5.a
 	}
-	picture = 
+	#picture = 
 }
 
 country_event = {
@@ -135,7 +135,7 @@ country_event = {
 			}
 		}
 	}
-	picture =
+	#picture =
 }
 #获得北方领土
 country_event = {	
@@ -169,7 +169,7 @@ country_event = {
 			}
 		}
 	}
-	picture =
+	#picture =
 }
 #拿到宣战理由--对苏联
 country_event = {
@@ -187,7 +187,7 @@ country_event = {
 			}
 		}
 	}
-	picture =
+	#picture =
 }
 #法国的回复
 country_event = {
@@ -221,7 +221,7 @@ country_event = {
 			}
 		}
 	}
-	picture =
+	#picture =
 }
 #获得三傀儡
 country_event = {	
@@ -246,7 +246,7 @@ country_event = {
 			}
 		}
 	}
-	picture =
+	#picture =
 }
 #宣战理由--对法国
 country_event = {
@@ -264,7 +264,7 @@ country_event = {
 			}
 		}
 	}
-	picture =
+	#picture =
 }
 
 #兰州
@@ -277,7 +277,7 @@ country_event = {
 		name = dgc.2001.a
 		set_global_flag = PCH_penetration_LanZhou
 	}
-	picture =
+	#picture =
 }
 #天水
 country_event = {
@@ -289,7 +289,7 @@ country_event = {
 		name = dgc.2002.a
 		set_global_flag = PCH_penetration_TianShui
 	}
-	picture =
+	#picture =
 }
 #太原
 country_event = {
@@ -301,7 +301,7 @@ country_event = {
 		name = dgc.2003.a
 		set_global_flag = PCH_penetration_TaiYuan
 	}
-	picture =
+	#picture =
 }
 #格尔木
 country_event = {
@@ -313,7 +313,7 @@ country_event = {
 		name = dgc.2004.a
 		set_global_flag = PCH_penetration_GeErMu
 	}
-	picture =
+	#picture =
 }
 #大理
 country_event = {
@@ -325,7 +325,7 @@ country_event = {
 		name = dgc.2005.a
 		set_global_flag = PCH_penetration_DaLi
 	}
-	picture =
+	#picture =
 }
 #昆明
 country_event = {
@@ -337,7 +337,7 @@ country_event = {
 		name = dgc.2006.a
 		set_global_flag = PCH_penetration_KunMing
 	}
-	picture =
+	#picture =
 }
 #广西机场
 country_event = {
@@ -349,7 +349,7 @@ country_event = {
 		name = dgc.2007.a
 		set_global_flag = PCH_penetration_GuangXi
 	}
-	picture =
+	#picture =
 }
 #广东海港
 country_event = {
@@ -361,7 +361,7 @@ country_event = {
 		name = dgc.2008.a
 		set_global_flag = PCH_penetration_GuangDong
 	}
-	picture =
+	#picture =
 }
 #南宁
 country_event = {
@@ -373,7 +373,7 @@ country_event = {
 		name = dgc.2009.a
 		set_global_flag = PCH_penetration_NanNing
 	}
-	picture =
+	#picture =
 }
 #广州
 country_event = {
@@ -385,7 +385,7 @@ country_event = {
 		name = dgc.2010.a
 		set_global_flag = PCH_penetration_GuangZhou
 	}
-	picture =
+	#picture =
 }
 #海口
 country_event = {
@@ -397,7 +397,7 @@ country_event = {
 		name = dgc.2011.a
 		set_global_flag = PCH_penetration_HaiKou
 	}
-	picture =
+	#picture =
 }
 #延安
 country_event = {
@@ -409,7 +409,7 @@ country_event = {
 		name = dgc.2012.a
 		set_global_flag = PCH_penetration_YanAn
 	}
-	picture =
+	#picture =
 }
 
 #编制
@@ -436,8 +436,7 @@ country_event = {
 #用以规避bug，请勿删除
 country_event = {
 	id = dgc.3000
-	title = dgc.3000.t
-	
+	is_triggered_only = yes
 	hidden = yes
 }
 
@@ -446,7 +445,7 @@ country_event = {
 	id = dgc.4000
 	title = dgc.4000.t
 	desc = dgc.4000.d
-	# picture = 
+	# #picture = 
 	# is_triggered_only = yes
 	# hidden = yes
 	# fire_only_once = yes
@@ -466,7 +465,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 4
 	}
 	
 	option = {
@@ -483,7 +482,7 @@ country_event = {
 	id = dgc.4001
 	title = dgc.4001.t
 	desc = dgc.4001.d
-	# picture = 
+	# #picture = 
 	# is_triggered_only = yes
 	# hidden = yes
 	fire_only_once = yes
@@ -539,22 +538,23 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = dgc.9663
-	
-	trigger = {
-		if = {
-			limit = {
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_FASCIST
-				}
-			}
-			always = yes
-		}
-		else = {
-			always = no
-		}
-
-	}
-}
+#未知的事件
+#country_event = {
+#	id = dgc.9663
+#	
+#	trigger = {
+#		if = {
+#			limit = {
+#				has_game_rule = {
+#					rule = PCH_ai_behavior
+#					option = DGC_PCH_FASCIST
+#				}
+#			}
+#			always = yes
+#		}
+#		else = {
+#			always = no
+#		}
+#
+#	}
+#}

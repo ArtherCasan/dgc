@@ -44,131 +44,26 @@ set_technology = {
 }
 
 # DIPLOMACY / WAR 36
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
-	give_guarantee = ALB
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#white_peace = ETH
-
-	#adding ministers
-	add_ideas = {
-		ITA_giovanni_marinelli
-		ITA_giacomo_acerbo
-		emilio_de_bono
-		vittorio_ambrosio
-		fiat
-		beretta
-
-		#laws
-		partial_economic_mobilisation
-		extensive_conscription
-	}
-
-	complete_national_focus = ITA_ethiopian_war_logistics
-	complete_national_focus = ITA_industrial_effort
-	complete_national_focus = ITA_industrial_effort_2
-	complete_national_focus = ITA_victoryinETH
-	complete_national_focus = ITA_yugoslavia_friend
-	unlock_national_focus = ITA_albania_war_goal
-	complete_national_focus = ITA_light_ship_effort
-	complete_national_focus = ITA_escort_effort
-	complete_national_focus = ITA_submarine_effort
-	complete_national_focus = ITA_bulgaria_friend
-	complete_national_focus = ITA_pact_of_steel
-	oob = "ITA_1939"
-	set_technology = {
-		fighter1 = 1
-		fighter2 = 1
-		tactical_bomber1 = 1
-		tactical_bomber2 = 1
-		improved_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		basic_submarine = 1
-		basic_destroyer = 1
-		improved_destroyer = 1
-		basic_light_cruiser = 1
-		basic_battleship = 1
-		improved_battleship = 1
-		tech_recon = 1
-
-		#doctrines
-		grand_battle_plan = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-		
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	
-	set_stability = 0.8
-	GER = { add_to_faction = ITA }
+declare_war_on = {
+	target = ETH
+	type = annex_everything
 }
-
+give_guarantee = ALB
 
 set_convoys = 200
 
+set_popularities = {
+	democratic = 22
+	fascism = 76
+	communism = 2
+}
+
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 22
-		}
-
-		fascism = {
-			popularity = 76
-		}
-		
-		communism = {
-			popularity = 2
-		}
-	}
-	
 	ruling_party = fascism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
-
-
-
 
 create_country_leader = {
 	name = "安德烈亚·多利亚"
@@ -176,9 +71,6 @@ create_country_leader = {
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -187,9 +79,6 @@ create_country_leader = {
 	picture = "ylws.dds"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -198,9 +87,6 @@ create_country_leader = {
 	picture = "zsn.tga"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		
-	}
 }
 
 create_field_marshal = {
@@ -225,24 +111,22 @@ create_field_marshal = {
 	logistics_skill = 1
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "安丘比"
 	picture = "anqiubi.tga"
 	traits = {  old_guard trait_cautious career_officer }
 	skill = 2
-	rank = 1
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 3
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "路易吉·弗兰齐SPAS12"
 	picture = "162-SPAS12.tga"
 	traits = {  armor_officer war_hero }
 	skill = 4
-	rank = 1
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 2
@@ -298,6 +182,10 @@ create_navy_leader = {
 		picture = "Portrait_Italy_Benito_Mussolini.dds"
 	traits = { superior_tactician spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -305,6 +193,10 @@ create_navy_leader = {
 		picture = "BB_R_kydyla.tga"
 	traits = { superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -312,6 +204,10 @@ create_navy_leader = {
 		picture = "BB_R_wnt.tga"
 	traits = { superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -319,6 +215,10 @@ create_navy_leader = {
 		picture = "zsn.tga"
 	traits = { superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -326,6 +226,10 @@ create_navy_leader = {
 		picture = "DD_R_dnl.tga"
 	traits = { superior_tactician }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -333,6 +237,10 @@ create_navy_leader = {
 		picture = "DD_R_wgln.tga"
 	traits = { superior_tactician spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 ### Ship Variants ###

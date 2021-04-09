@@ -1,5 +1,9 @@
 focus_tree = {
-	id = isarel
+	id = isarel_focus
+	continuous_focus_position = {
+		x = 1
+		y = 2000
+	}
 	country = {
 		factor = 0
 		modifier = {

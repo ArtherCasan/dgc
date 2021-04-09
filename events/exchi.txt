@@ -13,13 +13,16 @@ country_event = {
 			tag = GXC
 			tag = XSM
 
- 	     	tag = YUN 
+			tag = YUN 
 			tag = SHX
 		}
 		surrender_progress > 0.2
 		surrender_progress < 0.5
 		NOT = { has_idea = DGC_ycshycx }
 		NOT = { has_idea = DGC_ycshycx_b }
+	}
+	mean_time_to_happen = {
+		days = 30
 	}
 	
 	option = {
@@ -35,7 +38,7 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting 
 	
 	trigger = {
-	OR = {
+		OR = {
 			tag = CHI
 			tag = GXC
 			tag = XSM
@@ -46,6 +49,10 @@ country_event = {
 		surrender_progress > 0.5
 		has_idea = DGC_ycshycx
 		NOT = { has_idea = DGC_ycshycx_b }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
 	}
 	
 	option = {
@@ -77,6 +84,10 @@ country_event = {
 		NOT = { has_idea = DGC_ycshycx }
 	}
 	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
 	option = {
 		name = exchi.12.a
 			swap_ideas = {
@@ -106,6 +117,10 @@ country_event = {
 		has_idea = DGC_ycshycx 
 		has_idea = DGC_ycshycx_b
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
 	}
 	
 	option = {

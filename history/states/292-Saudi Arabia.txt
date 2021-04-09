@@ -10,11 +10,10 @@ state={
 	}
 
 	history={
-		owner = SAU
+		owner = ENG
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 1
 			12702 = {
 				naval_base = 6
 			}
@@ -23,6 +22,7 @@ state={
 			12727 5
 		}
 		add_core_of = SAU
+		add_core_of = IRQ
 	}
 
 	provinces={

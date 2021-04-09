@@ -7,6 +7,12 @@ ideas = {
 				original_tag = "ITA"
 			}
 
+			available = {
+				NOT = {
+					has_government = neutrality #remove if King in power
+				}
+			}
+
 			allowed_civil_war = {
 				NOT = {
 					has_government = communism
@@ -68,9 +74,9 @@ ideas = {
 						}
 					}
 					AND = {
-						has_government = communsim
+						has_government = communism
 						GER = {
-							has_government = communsim
+							has_government = communism
 						}
 					}
 					AND = {
@@ -86,10 +92,8 @@ ideas = {
 
 			research_bonus = {
 				land_doctrine = 0.05
-			}
-			research_bonus = {
 				air_doctrine = 0.05
-			}				
+			}
 		}
 	}
 		
@@ -132,7 +136,7 @@ ideas = {
 			traits = { democratic_reformer }
 	
 			on_add = {
-				country_event = political.13
+				country_event = political.14
 			}
 	
 			do_effect = {
@@ -498,6 +502,7 @@ ideas = {
 	high_command = {
 	
 		mjiu = {
+			ledger = army
 			
 			
 			allowed = {
@@ -514,6 +519,7 @@ ideas = {
 		}
 		
 		mshier = {
+			ledger = army
 			
 			
 			allowed = {
@@ -530,6 +536,7 @@ ideas = {
 		}
 		
 		mabsanba = {
+			ledger = army
 			
 			
 			allowed = {
@@ -546,6 +553,7 @@ ideas = {
 		}	
 		
 		luxianna = {
+			ledger = air
 			
 			
 			allowed = {
@@ -562,6 +570,7 @@ ideas = {
 		}
 		
 		madina = {
+			ledger = air
 			
 			
 			allowed = {
@@ -578,6 +587,7 @@ ideas = {
 		}
 		
 		zhusepina = {
+			ledger = air
 			
 			
 			allowed = {
@@ -594,6 +604,7 @@ ideas = {
 		}
 		
 		xibeifeng = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -610,6 +621,7 @@ ideas = {
 		}
 		
 		luoma = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -626,6 +638,7 @@ ideas = {
 		}
 		
 		zhala = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -656,7 +669,7 @@ ideas = {
 			
 			
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			
 			traits = { tank_manufacturer }
@@ -679,7 +692,7 @@ ideas = {
 
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -694,7 +707,7 @@ ideas = {
 			
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = 0.15
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -710,7 +723,7 @@ ideas = {
 
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -730,7 +743,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -744,7 +757,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -757,7 +770,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { naval_aircraft_manufacturer }
@@ -770,7 +783,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
@@ -786,7 +799,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 				
 			}
 			
@@ -806,7 +819,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { naval_manufacturer }
@@ -815,6 +828,7 @@ ideas = {
 	
 	theorist = {	
 		anchovy = {
+			ledger = army
 						
 			allowed = {
 				original_tag = ITA
@@ -823,13 +837,14 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.10
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { mobile_warfare_expert }
 		}
 		
 		satba = {
+			ledger = army
 						
 			allowed = {
 				original_tag = ITA
@@ -838,7 +853,7 @@ ideas = {
 			cost = 250
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }
@@ -849,6 +864,7 @@ ideas = {
 		}
 		
 		andelieya = {
+			ledger = navy
 						
 			allowed = {
 				original_tag = ITA
@@ -857,26 +873,28 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_fleet_in_being = 0.10
+				cat_fleet_in_being = 0.15
 			}
 			
 			traits = { grand_fleet_proponent }
 		}
 		
 		aweiaier = {
+			ledger = navy
 						
 			allowed = {
 				original_tag = ITA
 			}
 						
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
 		}
 		
 		yaoying = {
+			ledger = air
 			
 			allowed = {
 				original_tag = ITA
@@ -885,13 +903,14 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_operational_integrity = 0.10
+				cat_operational_integrity = 0.15
 			}
 			
 			traits = { assault_avaition }
 		}
 		
 		tianying = {
+			ledger = air
 			
 			
 			allowed = {
@@ -899,13 +918,14 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
 		}
 		
 		liduoweiya = {
+			ledger = air
 			
 			
 			allowed = {
@@ -913,7 +933,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 			
 			traits = { rocket_scientist }

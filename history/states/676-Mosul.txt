@@ -11,15 +11,21 @@ state={
 
 
 	history={
-		owner = SYR
+		owner = FRA
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {
-			10106 1 
+			10106 5 
+		}
+		victory_points = {
+			3916 3 
+		}
+		victory_points = {
+			6826 1
 		}
 		add_core_of = IRQ
-		add_claim_by = PER
+		add_core_of = KUR
 	}
 	
 	provinces={

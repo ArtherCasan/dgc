@@ -1,12 +1,14 @@
-﻿units = {
-	navy = {
-			name = "改装舰队_驱逐舰"
-			base = 7014
-			location = 7014
-			ship = { name = "dd1" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
-			ship = { name = "dd2" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
-			ship = { name = "dd3" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
-			ship = { name = "dd4" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
-			ship = { name = "dd5" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
-		}
-	}
+﻿###
+#units = {
+#	navy = {
+#			name = "改装舰队_驱逐舰"
+#			base = 7014
+#			location = 7014
+#			ship = { name = "dd1" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
+#			ship = { name = "dd2" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
+#			ship = { name = "dd3" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
+#			ship = { name = "dd4" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
+#			ship = { name = "dd5" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = PCH } } }
+#		}
+#	}
+	###

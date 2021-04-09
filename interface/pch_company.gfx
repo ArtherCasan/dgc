@@ -41,7 +41,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/china/company/comac.tga"
 	}		
 	SpriteType = {
-		name = "GFX_idea_208_lab"
+		name = "GFX_idea_PCH_208_lab"
 		texturefile = "gfx/interface/ideas/china/company/208_lab.tga"
 	}	
 	SpriteType = {

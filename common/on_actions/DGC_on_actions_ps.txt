@@ -1,52 +1,52 @@
 on_actions = {
 
-	on_startup = {
-		effect = {
-			CHI = { save_event_target_as = china_leader }
-			CHI = { set_country_flag = china_leader }
-			every_country = {
-				limit = {
-					is_china_leader = yes
-				}
-				set_variable = { var = ROOT.Anti_PS_power value = 10 }
-			}
-			every_country = {
-				limit = {
-					is_warlord = yes
-				}
-				set_variable = { var = ROOT.PS_progress value = 0 }
-			}
-		}
-	}
+	#on_startup = {
+	#	effect = {
+	#		CHI = { save_event_target_as = china_leader }
+	#		CHI = { set_country_flag = china_leader }
+	#		every_country = {
+	#			limit = {
+	#				is_china_leader = yes
+	#			}
+	#			set_variable = { var = ROOT.Anti_PS_power value = 10 }
+	#		}
+	#		every_country = {
+	#			limit = {
+	#				is_warlord = yes
+	#			}
+	#			set_variable = { var = ROOT.PS_progress value = 0 }
+	#		}
+	#	}
+	#}
 
-	on_daily = {
-		effect = {
-			event_target:china_leader = { add_to_variable = { var = ROOT.Anti_PS_power value = 1 } }
-		}
-	}
+	#on_daily = {
+	#	effect = {
+	#		event_target:china_leader = { add_to_variable = { var = ROOT.Anti_PS_power value = 1 } }
+	#	}
+	#}
 
-	on_daily = {
-		effect = {
-			if = {
-				limit = { 
-					OR = {
-						NOT = { has_global_flag = DGC_antiPS_mission_bride_local_officer_flag }
-						NOT = { has_global_flag = DGC_antiPS_mission_maintain_control_flag }
-					}
-				}
-				random_list = {
-					5 = { 
-						random_state = { 
-							limit = { owner = { is_warlords = yes } }
-							save_event_target_as = mission_state
-							state_event = { id = DGC_PS.4 trigger_for = owner }
-						}
-					}
-					5 = { event_target:china_leader = { country_event = { id = DGC_PS.6 } } }
-					90 = {  }
-				}
-			}
-		}
-	}
+	#on_daily = {
+	#	effect = {
+	#		if = {
+	#			limit = { 
+	#				OR = {
+	#					NOT = { has_global_flag = DGC_antiPS_mission_bride_local_officer_flag }
+	#					NOT = { has_global_flag = DGC_antiPS_mission_maintain_control_flag }
+	#				}
+	#			}
+	#			random_list = {
+	#				5 = { 
+	#					random_state = { 
+	#						limit = { owner = { is_warlords = yes } }
+	#						save_event_target_as = mission_state
+	#						state_event = { id = DGC_PS.4 trigger_for = owner }
+	#					}
+	#				}
+	#				5 = { event_target:china_leader = { country_event = { id = DGC_PS.6 } } }
+	#				90 = {  }
+	#			}
+	#		}
+	#	}
+	#}
 
 }

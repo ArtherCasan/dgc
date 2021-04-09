@@ -121,7 +121,7 @@ DGC_rails_facs_and_slots = {
 			}	
 	}
 	#多快好省,跑步进入共产主义
-	DGC_southern_railway = {
+	DGC_southern_building = {
 
 		icon = infiltrate_state
 
@@ -152,7 +152,11 @@ DGC_rails_facs_and_slots = {
 		remove_effect = {
 			#沿海的话那就可能建出船坞
 			if = {
-				limit = { is_coastal = yes }
+				limit = { 
+					613 = {
+						is_coastal = yes 
+					}
+				}
 				random_list = {
 					33 = {
 						613 = {
@@ -185,7 +189,11 @@ DGC_rails_facs_and_slots = {
 			}
 			#当然不沿海没船坞
 			if = {
-				limit = { is_coastal = no }
+				limit = { 
+					613 = {
+						is_coastal = no 
+					}
+				}
 				random_list = {
 					50 = {
 						613 = {

@@ -1,0 +1,345 @@
+﻿capital = 620 # Hubei
+
+# oob = "PCH_1936"
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+add_ideas = {
+	# HOA_DXT
+	# HOA_FLDZG
+	# HOA_CCDJFSL
+	# HOA_HLDTDZD
+    # CBSOT
+}
+
+set_rule = { can_create_factions = yes }
+set_research_slots = 3
+set_convoys = 200
+
+
+set_popularities = {
+	democratic = 40
+	fascism = 10
+	communism = 10
+	neutrality = 40
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.2.23"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "梁凌薇"
+	desc = ""
+	picture = "lianglingwei.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	camarilla_leader
+	}
+}
+
+create_country_leader = {
+	name = "97式"
+	desc = ""
+	picture = "97.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "95式"
+	desc = ""
+	picture = "95.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		staunch_constitutionalist
+	}
+}
+
+create_country_leader = {
+	name = "凰铃音"
+	desc = ""
+	picture = "huanglingyin.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		political_dancer
+	}
+}
+
+create_field_marshal = {
+	name = "63式"
+	portrait_path = "gfx/leaders/PCH/133-63.tga"
+	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "97式"
+	portrait_path = "gfx/leaders/PCH/130-97.tga"
+	traits = {  offensive_doctrine trait_reckless career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "95式"
+	portrait_path = "gfx/leaders/PCH/129-95.tga"
+	traits = { defensive_doctrine trait_cautious infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 10000
+}
+
+create_corps_commander = {
+	name = "56式半自动步枪"
+	portrait_path = "gfx/leaders/PCH/049-56b.tga"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "79式"
+	portrait_path = "gfx/leaders/PCH/127-79type.tga"
+	traits = { politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "56-1式"
+	portrait_path = "gfx/leaders/PCH/066-56-1type.tga"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "汉阳造88式"
+	portrait_path = "gfx/leaders/PCH/095-88type.tga"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "64式"
+	portrait_path = "gfx/leaders/PCH/094-64type.tga"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "NZ75"
+	portrait_path = "gfx/leaders/PCH/126-NZ75.tga"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "M99"
+	portrait_path = "gfx/leaders/PCH/128-M99.tga"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "成都"
+	portrait_path = "gfx/leaders/PCH/chengdu.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "92式"
+	portrait_path = "gfx/leaders/PCH/013-type92.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "59式"
+	portrait_path = "gfx/leaders/PCH/132-59.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "97霰"
+	portrait_path = "gfx/leaders/PCH/161-97xian.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "81式"
+	portrait_path = "gfx/leaders/PCH/174-81typeR.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "JS-127"
+	portrait_path = "gfx/leaders/PCH/192-JS-127.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "80式"
+	portrait_path = "gfx/leaders/PCH/199-80.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_corps_commander = {
+	name = "陈曦"
+	portrait_path = "gfx/leaders/PCH/gongfeng.dds"
+	traits = { armor_officer bearer_of_artillery }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "平海"
+		picture = "Portrait_CHI_Ninghai.dds"
+	traits = { old_guard_navy spotter }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "长春"
+		picture = "Portrait_CHI_Changchun.tga"
+	traits = { old_guard_navy spotter }
+	skill = 5
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "爱丽"
+	picture = "aili.tga"
+	traits = { superior_tactician }
+	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "鞍山"
+	picture = "anshan.tga"
+	traits = { superior_tactician }
+	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "长春"
+	picture = "changchun.tga"
+	traits = { superior_tactician }
+	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "抚顺"
+	picture = "fushun.tga"
+	traits = { superior_tactician }
+	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
+}

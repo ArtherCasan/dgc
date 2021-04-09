@@ -6,20 +6,21 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
+
 		"FRA"={
 			minor = yes
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
+			available = { has_dlc = "La Resistance" } 
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-				FRA_revise_versailles
+				FRA_invite_communist_ministers
+				FRA_utilize_the_leagues
+				FRA_je_suis_la_deluge
 			}
 		}
 		"USA"={
@@ -32,11 +33,12 @@ bookmarks = {
 			}
 			focuses = {
 				USA_war_plan_black
-				USA_strike_at_the_empire
-				USA_pearl_harbor_gambit
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
 			}
 		}
 		"ENG"={
+			minor = yes
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -81,14 +83,14 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-Total_War
-world_revolution
-DGC_ycshycx
+				Total_War
+				world_revolution
+				DGC_ycshycx
 			}
 			focuses = {	
-GJZYWS
-ORDER227
-MINGZHUZHIGUANG
+				GJZYWS
+				ORDER227
+				MINGZHUZHIGUANG
 			}
 		}
 		"JAP"={
@@ -119,10 +121,6 @@ MINGZHUZHIGUANG
 			}	
 		}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
 
 		# minors from DLC ####
 	 		"CHI"={
@@ -135,20 +133,19 @@ MINGZHUZHIGUANG
 				CHI_nine_power_treaty
 			}
 			focuses = {
-				CHI_united_front
+				#CHI_united_front
 				CHI_army_reform
 				CHI_invite_the_flying_tigers
 			}
 		}
 
 		"MAN"={
-			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-	        	  LMOH
-             CHI_CBSOT_POLICE
-             MRYHHZTY
+	        	LMOH
+             	CHI_CBSOT_POLICE
+             	MRYHHZTY
 			}
 			focuses = {
 				MAN_obedience
@@ -156,24 +153,22 @@ MINGZHUZHIGUANG
 				MAN_claim_the_mandate_of_heaven
 			}
 		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
 			"ISR"={
 			minor = yes
 			history = "ISR_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				
-			}
 			focuses = {
 
 			}
 		}
-	"POL"={
+		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
-			ideas = {
-				
-			}
 			focuses = {
 				POL_the_baltic_alliance
 				POL_draw_closer_to_britain
@@ -211,9 +206,6 @@ MINGZHUZHIGUANG
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-				
-			}
 			focuses = {
 				NZL_bob_semple_tank
 				NZL_independent_new_zealand

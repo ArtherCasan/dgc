@@ -6,7 +6,7 @@ country_event = {
 	id = reunite.1 
 	title = reunite.1.t
 	desc = reunite.1.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -28,7 +28,7 @@ country_event = {
 	id = reunite.2 
 	title = reunite.2.t
 	desc = reunite.2.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -47,7 +47,7 @@ country_event = {
 	id = reunite.3 
 	title = reunite.3.t
 	desc = reunite.3.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -76,7 +76,7 @@ country_event = {
 	id = reunite.4 
 	title = reunite.4.t
 	desc = reunite.4.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -106,7 +106,7 @@ country_event = {
 	id = reunite.5 
 	title = reunite.5.t
 	desc = reunite.5.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -126,7 +126,7 @@ country_event = {
 	id = reunite.6 
 	title = reunite.6.t
 	desc = reunite.6.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -149,7 +149,7 @@ country_event = {
 	id = reunite.7 
 	title = reunite.7.t
 	desc = reunite.7.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -169,7 +169,7 @@ country_event = {
 	id = reunite.8 
 	title = reunite.8.t
 	desc = reunite.8.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -205,7 +205,7 @@ country_event = {
 	id = reunite.9 
 	title = reunite.9.t
 	desc = reunite.9.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -231,7 +231,7 @@ country_event = {
 	id = reunite.10 
 	title = reunite.10.t
 	desc = reunite.10.d
-	picture = 
+	##picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -264,7 +264,7 @@ country_event = {
 	id = reunite.11 
 	title = reunite.11.t
 	desc = reunite.11.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -286,7 +286,7 @@ country_event = {
 	id = reunite.12 
 	title = reunite.12.t
 	desc = reunite.12.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -314,7 +314,7 @@ country_event = {
 	id = reunite.13 
 	title = reunite.13.t
 	desc = reunite.13.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -347,13 +347,13 @@ country_event = {
 	id = reunite.14 
 	title = reunite.14.t
 	desc = reunite.14.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = reunite.14.a #接受
-		ai_chance = { factor = 75 }		
+		ai_chance = { factor = 99 }		
 		PCH = {
 			puppet = ROOT  
 			country_event = {
@@ -363,7 +363,7 @@ country_event = {
 	}
 	option = {
 		name = reunite.14.b #拒绝
-		ai_chance = { factor = 25 }		
+		ai_chance = { factor = 1 }		
 		PCH = {
 			country_event = { id = reunite.15 }			
 		}  
@@ -375,7 +375,7 @@ country_event = {
 	id = reunite.15 
 	title = reunite.15.t
 	desc = reunite.15.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -396,7 +396,7 @@ country_event = {
 	id = reunite.16
 	title = reunite.16.t
 	desc = reunite.16.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -410,7 +410,7 @@ country_event = {
 	id = reunite.17
 	title = reunite.17.t
 	desc = reunite.17.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -424,7 +424,7 @@ country_event = {
 	id = reunite.18
 	title = reunite.18.t
 	desc = reunite.18.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -441,7 +441,7 @@ country_event = {
 	id = reunite.19
 	title = reunite.19.t
 	desc = reunite.19.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -458,7 +458,7 @@ country_event = {
 	id = reunite.20
 	title = reunite.20.t
 	desc = reunite.20.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -478,7 +478,7 @@ country_event = {
 	id = reunite.21
 	title = reunite.21.t
 	desc = reunite.21.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -496,7 +496,7 @@ country_event = {
 	id = reunite.22
 	title = reunite.22.t
 	desc = reunite.22.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -517,7 +517,7 @@ country_event = {
 	id = reunite.23
 	title = reunite.23.t
 	desc = reunite.23.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -534,7 +534,7 @@ country_event = {
 	id = reunite.24
 	title = reunite.24.t
 	desc = reunite.24.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -563,7 +563,7 @@ country_event = {
 	id = reunite.25
 	title = reunite.25.t
 	desc = reunite.25.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -583,7 +583,7 @@ country_event = {
 	id = reunite.26
 	title = reunite.26.t
 	desc = reunite.26.d
-	picture = 
+	#picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -600,7 +600,7 @@ country_event = {
 	id = reunite.27
 	title = reunite.27.t
 	desc = reunite.27.d
-	#picture = 
+	##picture = 
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
@@ -628,7 +628,7 @@ country_event = {
 	id = reunite.28
 	title = reunite.28.t
 	desc = reunite.28.d
-	#picture = 
+	##picture = 
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
@@ -666,7 +666,7 @@ country_event = {
 	id = reunite.100
 	title = reunite.100.t
 	desc = reunite.100.d
-	picture = report_event_pch_qbz95_uprising
+	#picture = report_event_pch_qbz95_uprising
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -713,6 +713,7 @@ country_event = {
 country_event = {
 	id = reunite.NaN
 	is_triggered_only = yes
+	hidden = yes
 }
 
 #95式起兵造反（弱）
@@ -720,7 +721,7 @@ country_event = {
 	id = reunite.101
 	title = reunite.101.t
 	desc = reunite.101.d
-	picture = report_event_pch_qbz95_uprising
+	#picture = report_event_pch_qbz95_uprising
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -729,7 +730,6 @@ country_event = {
 		start_civil_war = {
 			ideology = fascism
 			size = 0
-			only_own_territory = no
 			capital = 606
 			states = {
 				606
@@ -780,7 +780,7 @@ country_event = {
 	id = reunite.102
 	title = reunite.102.t
 	desc = reunite.102.d
-	picture = report_event_pch_qbz95_uprising
+	#picture = report_event_pch_qbz95_uprising
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -789,7 +789,6 @@ country_event = {
 		start_civil_war = {
 			ideology = fascism
 			size = 0
-			only_own_territory = no
 			capital = 606
 			states = {
 				606 749

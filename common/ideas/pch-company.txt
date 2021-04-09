@@ -177,7 +177,7 @@ ideas = {
 			
 		designer = yes
 		
-		208_lab = {
+		PCH_208_lab = {
 			
 			
 			allowed = {
@@ -189,7 +189,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			traits = { PCH_ar_208_lab }
@@ -207,12 +207,9 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.10
-			}			
-			research_bonus = {
 				motorized_equipment = 0.10
 			}
-      traits = { motorized_equipment_manufacturer }
-			traits = { artillery_manufacturer }
+      		traits = { motorized_equipment_manufacturer artillery_manufacturer }
 			modifier = {
 			}
 		}
@@ -273,8 +270,8 @@ ideas = {
 		}
 	}
 	theorist = {
-			yunru = {
-			
+		yunru = {
+			ledger = army
 			
 			allowed = {
 				original_tag = PCH
@@ -282,12 +279,9 @@ ideas = {
 			cost = 250
 			research_bonus = {
 				nuclear = 0.10
-			}
-			research_bonus = {
 				rocketry = 0.10
 			}
-			traits = { rocket_scientist }
-			traits = { nuclear_scientist }
+			traits = { rocket_scientist nuclear_scientist }
 		}
 }
                    }

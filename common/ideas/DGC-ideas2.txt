@@ -601,7 +601,7 @@ ideas = {
 			name = PER_civil_unstable_idea_name
 			
 			allowed_civil_war = {
-				allowed = yes
+				always = yes
 			}
 			
 			removal_cost = -1

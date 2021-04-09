@@ -1,5 +1,9 @@
 focus_tree = {
 	id = swedish_focus
+	continuous_focus_position = {
+		x = 1
+		y = 2000
+	}
 	country = {
 		factor = 0
 		modifier = {
@@ -858,6 +862,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					138 = {
+						if = {
 							limit = {
 									is_in_home_area = yes
 									free_building_slots = {
@@ -870,8 +875,11 @@ focus_tree = {
 									level = 1
 									instant_build = yes
 								}
+						}
+							
 						}
 					140 = {
+						if = {
 							limit = {
 									is_in_home_area = yes
 									free_building_slots = {
@@ -885,7 +893,10 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
+							
+					}
 					141 = {
+						if = {
 							limit = {
 									is_in_home_area = yes
 									free_building_slots = {
@@ -898,6 +909,8 @@ focus_tree = {
 									level = 1
 									instant_build = yes
 								}
+						}
+							
 						}
 				}
 
@@ -1871,7 +1884,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ancestor‘s_flag
+		id = ancestors_flag
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {

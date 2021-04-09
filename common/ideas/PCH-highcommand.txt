@@ -3,6 +3,7 @@ ideas = {
 	high_command = {
 
 		wuliuban = {
+			ledger = army
 
 			allowed = {
 				original_tag = PCH
@@ -16,6 +17,7 @@ ideas = {
 		}
 
 		liusi = {
+			ledger = army
 
 			allowed = {
 				original_tag = PCH
@@ -29,6 +31,7 @@ ideas = {
 		}
 
 		qijiu = {
+			ledger = army
 
 			allowed = {
 				original_tag = PCH
@@ -42,6 +45,7 @@ ideas = {
 		}
 
 		jiuqixian = {
+			ledger = army
 		
 			allowed = {
 				original_tag = PCH
@@ -55,6 +59,7 @@ ideas = {
 		}
 
 		bayishima = {
+			ledger = army
 			
 			allowed = {
 				original_tag = PCH
@@ -68,6 +73,7 @@ ideas = {
 		}
 
 		jianliu = {
+			ledger = air
 
 			allowed = {
 				original_tag = PCH
@@ -81,6 +87,7 @@ ideas = {
 		}
 
 		jianqi = {
+			ledger = air
 
 			allowed = {
 				original_tag = PCH
@@ -94,6 +101,7 @@ ideas = {
 		}
 
 		jianhongqi = {
+			ledger = air
 
 			allowed = {
 				original_tag = PCH
@@ -107,6 +115,7 @@ ideas = {
 		}
 
 		id_pinghai = {
+			ledger = navy
 
 			
 			allowed = {
@@ -121,6 +130,7 @@ ideas = {
 		}
 
 		id_changchun = {
+			ledger = navy
 			
 			allowed = {
 				original_tag = PCH
@@ -134,6 +144,7 @@ ideas = {
 		}
 
 		id_chongqing = {
+			ledger = navy
 
 			allowed = {
 				original_tag = PCH

@@ -7,13 +7,16 @@ state={
 
 	history={
 		owner = YUN
-		add_core_of = PCH
-		add_core_of = TIB
-				add_core_of = CHI		add_core_of = PRC
 		add_core_of = YUN
+		add_core_of = CHI
+		add_core_of = TIB
+		add_core_of = PCH
 		buildings = {
 			infrastructure = 1
 
+		}
+		victory_points = {
+			10856 1
 		}
 		1939.1.1 = {
 			buildings = {

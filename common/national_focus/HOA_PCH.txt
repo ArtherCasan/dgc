@@ -1,4 +1,8 @@
 focus_tree = {
+	continuous_focus_position = {
+		x = 1
+		y = 2000
+	}
 	id = HOA_PCH
 	country = {
 		factor = 0
@@ -17,10 +21,10 @@ focus_tree = {
 		y = 3
 		
 		completion_reward = {
-					swap_ideas = {
-							remove_idea = public_iliteracy
-							add_idea = public_iliteracy_2
-						}
+					#swap_ideas = {
+					#		remove_idea = public_iliteracy
+					#		add_idea = public_iliteracy_2
+					#	}
 					add_research_slot = 1
 				}
 		available = {
@@ -604,7 +608,7 @@ focus_tree = {
 	}
 	
 	focus = { #政治线·九七革命主义
-		id = 97GEMING
+		id = DGC_97GEMING
 		icon = GFX_goal_support_fourth_int
 		cost = 10.00
 		prerequisite = {
@@ -630,7 +634,8 @@ focus_tree = {
 							can_guarantee_other_ideologies = yes
 							can_join_opposite_factions = yes
 						}
-					faction_impact_on_world_tension = -0.1
+					#faction_impact_on_world_tension = -0.1
+					add_threat = -0.1
 					add_country_leader_trait = HOA_97ZHUYI
 				}
 	}
@@ -640,7 +645,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10.00
 		prerequisite = {
-			focus = 97GEMING
+			focus = DGC_97GEMING
 		}
 		x = 5
 		y = 11
@@ -1073,7 +1078,7 @@ focus_tree = {
 								has_idea = NYBT
 							}
 						}
-						remove_idea = NYBT
+						remove_ideas = NYBT
 					}
 					every_owned_state = {
 							add_extra_state_shared_building_slots = 1
@@ -1684,7 +1689,7 @@ focus_tree = {
 	}
 	
 	focus = { #政治线·对九五式的个人崇拜
-		id = 95CHONGBAI
+		id = DGC_95CHONGBAI
 		icon = GFX_DGC_95
 		cost = 20.00
 		prerequisite = {

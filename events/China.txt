@@ -37,11 +37,6 @@ country_event = {
 			}
 			modifier = { #默认会为每一个加10
 				add = 10
-				
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_DEFAULT
-				}
 			}
 		}
 		set_country_flag = CHI_support_QBZ97
@@ -74,11 +69,6 @@ country_event = {
 			}
 			modifier = { #默认会为每一个加10
 				add = 10
-				
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_DEFAULT
-				}
 			}
 		}
 		set_country_flag = CHI_support_QBZ95
@@ -116,11 +106,6 @@ country_event = {
 			}
 			modifier = { #默认会为每一个加10
 				add = 10
-				
-				has_game_rule = {
-					rule = PCH_ai_behavior
-					option = DGC_PCH_DEFAULT
-				}
 			}
 		}
 		custom_effect_tooltip = PCH_MZ
@@ -207,8 +192,8 @@ country_event = {
 	
 	trigger = {
 		tag = CHI
-		owned_states = 591
-		owned_states = 524
+		owns_state = 591
+		owns_state = 524
 	}
 	
 	is_triggered_only = yes
@@ -238,30 +223,26 @@ country_event = {
 	desc = china.206.d
 	picture = GFX_report_event_chinese_soldiers_fighting
 	fire_only_once = yes
-		is_triggered_only = yes
+	is_triggered_only = yes
 	trigger = {
-  TAG = MAN
+  		TAG = MAN
 	}
 	
-
-
-
-		option = { 
+	option = {
 		name = china.206.b
 		JAP = { 
-					create_faction = daitoa_kyoeiken
-		      add_to_faction = MAN
-		 }
-		 will_lead_to_war_with = CHI
-		 will_lead_to_war_with = PCH
-		 		declare_war_on = {
-				type = annex_everything
-				target = PCH
-	}
-			declare_war_on = {
-				type = annex_everything
-				target = CHI
-	}
+			create_faction = daitoa_kyoeiken
+		    add_to_faction = MAN
+		}
+		declare_war_on = {
+			type = annex_everything
+			target = PCH
+		}
+
+		declare_war_on = {
+			type = annex_everything
+			target = CHI
+		}
 	}
 }
 	
@@ -285,7 +266,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}	
-                set_party_name = { ideology = democratic long_name = PCH_democratic_party name = PCH_socialist_party }
+        set_party_name = { ideology = democratic long_name = PCH_democratic_party name = PCH_socialist_party }
 	}
 
 	option = { 
@@ -1565,12 +1546,12 @@ country_event = {
 	desc = china.1000.d
 
 	mean_time_to_happen = {
-		days = 1
+		days = 14
 	}
 	
 	trigger = {
 		tag = CHI
-		ai = no
+		is_ai = no
 	}
 
 	option = {
@@ -1588,8 +1569,15 @@ country_event = {
 					target = CHI 
 					transfer_troops = yes
 				}
-				country_event = {
-					id = china.1001
+				#country_event = {
+				#	id = china.1001
+				#}
+				add_tech_bonus = {
+					name = china.1000.a.a
+					bonus = 0.5
+					uses = 5
+					category = infantry_tech
+					category = industry
 				}
 			}
 			every_state = {
@@ -1637,19 +1625,19 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = china.1001
-
-	hidden = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		CHI = {
-			ROOT = { transfer_technology = yes }
-		}
-	}
-}
+#country_event = {
+#	id = china.1001
+#
+#	hidden = yes
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		CHI = {
+#			ROOT = { transfer_technology = yes }
+#		}
+#	}
+#}
 
 #Move capital if PRC wins civil war
 country_event = {

@@ -1,111 +1,111 @@
-defined_text = { # Country
-	name = GetNameSHXprogress
-	text = {
-		trigger = {
-			SHX = { exist = yes }
-			SHX = { has_completed_focus = CHI_join_the_republican_government }
-			NOT = { has_country_flag = china_leader }
-			NOT = { has_country_flag = out_of_PS }
-		}
-		localization_key = SHXprogress_number
-	}
-	text = {
-		trigger = {
-			OR = {
-				SHX = { exist = no }
-				SHX = { has_country_flag = out_of_PS }
-			}
-		}
-		localization_key = SHXprogress_not_exist
-	}
-	text = {
-		trigger = {
-			SHX = { has_country_flag = china_leader }
-		}
-		localization_key = SHXprogress_leader
-	}
-}
-
-defined_text = { # Country
-	name = GetNameXSMprogress
-	text = {
-		trigger = {
-			XSM = { exist = yes }
-			XSM = { has_completed_focus = CHI_join_the_republican_government }
-			NOT = { has_country_flag = china_leader }
-			NOT = { has_country_flag = out_of_PS }
-		}
-		localization_key = XSMprogress_number
-	}
-	text = {
-		trigger = {
-			OR = {
-				XSM = { exist = no }
-				XSM = { has_country_flag = out_of_PS }
-			}
-		}
-		localization_key = XSMprogress_not_exist
-	}
-	text = {
-		trigger = {
-			XSM = { has_country_flag = china_leader }
-		}
-		localization_key = XSMprogress_leader
-	}
-}
-
-defined_text = { # Country
-	name = GetNameYUNprogress
-	text = {
-		trigger = {
-			YUN = { exist = yes }
-			YUN = { has_completed_focus = CHI_join_the_republican_government }
-			NOT = { has_country_flag = china_leader }
-			NOT = { has_country_flag = out_of_PS }
-		}
-		localization_key = YUNprogress_number
-	}
-	text = {
-		trigger = {
-			OR = {
-				YUN = { exist = no }
-				YUN = { has_country_flag = out_of_PS }
-			}
-		}
-		localization_key = YUNprogress_not_exist
-	}
-	text = {
-		trigger = {
-			YUN = { has_country_flag = china_leader }
-		}
-		localization_key = YUNprogress_leader
-	}
-}
-
-defined_text = { # Country
-	name = GetNameSIKprogress
-	text = {
-		trigger = {
-			SIK = { exist = yes }
-			SIK = { has_completed_focus = CHI_join_the_republican_government }
-			NOT = { has_country_flag = china_leader }
-			NOT = { has_country_flag = out_of_PS }
-		}
-		localization_key = SIKprogress_number
-	}
-	text = {
-		trigger = {
-			OR = {
-				SIK = { exist = no }
-				SIK = { has_country_flag = out_of_PS }
-			}
-		}
-		localization_key = SIKprogress_not_exist
-	}
-	text = {
-		trigger = {
-			SIK = { has_country_flag = china_leader }
-		}
-		localization_key = SIKprogress_leader
-	}
-}
+#defined_text = { # Country
+#	name = GetNameSHXprogress
+#	text = {
+#		trigger = {
+#			SHX = { exists = yes }
+#			SHX = { has_completed_focus = CHI_join_the_republican_government }
+#			NOT = { has_country_flag = china_leader }
+#			NOT = { has_country_flag = out_of_PS }
+#		}
+#		localization_key = SHXprogress_number
+#	}
+#	text = {
+#		trigger = {
+#			OR = {
+#				SHX = { exists = no }
+#				SHX = { has_country_flag = out_of_PS }
+#			}
+#		}
+#		localization_key = SHXprogress_not_country_exists
+#	}
+#	text = {
+#		trigger = {
+#			SHX = { has_country_flag = china_leader }
+#		}
+#		localization_key = SHXprogress_leader
+#	}
+#}
+#
+#defined_text = { # Country
+#	name = GetNameXSMprogress
+#	text = {
+#		trigger = {
+#			XSM = { exists = yes }
+#			XSM = { has_completed_focus = CHI_join_the_republican_government }
+#			NOT = { has_country_flag = china_leader }
+#			NOT = { has_country_flag = out_of_PS }
+#		}
+#		localization_key = XSMprogress_number
+#	}
+#	text = {
+#		trigger = {
+#			OR = {
+#				XSM = { exists = no }
+#				XSM = { has_country_flag = out_of_PS }
+#			}
+#		}
+#		localization_key = XSMprogress_not_country_exists
+#	}
+#	text = {
+#		trigger = {
+#			XSM = { has_country_flag = china_leader }
+#		}
+#		localization_key = XSMprogress_leader
+#	}
+#}
+#
+#defined_text = { # Country
+#	name = GetNameYUNprogress
+#	text = {
+#		trigger = {
+#			YUN = { exists = yes }
+#			YUN = { has_completed_focus = CHI_join_the_republican_government }
+#			NOT = { has_country_flag = china_leader }
+#			NOT = { has_country_flag = out_of_PS }
+#		}
+#		localization_key = YUNprogress_number
+#	}
+#	text = {
+#		trigger = {
+#			OR = {
+#				YUN = { exists = no }
+#				YUN = { has_country_flag = out_of_PS }
+#			}
+#		}
+#		localization_key = YUNprogress_not_country_exists
+#	}
+#	text = {
+#		trigger = {
+#			YUN = { has_country_flag = china_leader }
+#		}
+#		localization_key = YUNprogress_leader
+#	}
+#}
+#
+#defined_text = { # Country
+#	name = GetNameSIKprogress
+#	text = {
+#		trigger = {
+#			SIK = { exists = yes }
+#			SIK = { has_completed_focus = CHI_join_the_republican_government }
+#			NOT = { has_country_flag = china_leader }
+#			NOT = { has_country_flag = out_of_PS }
+#		}
+#		localization_key = SIKprogress_number
+#	}
+#	text = {
+#		trigger = {
+#			OR = {
+#				SIK = { exists = no }
+#				SIK = { has_country_flag = out_of_PS }
+#			}
+#		}
+#		localization_key = SIKprogress_not_country_exists
+#	}
+#	text = {
+#		trigger = {
+#			SIK = { has_country_flag = china_leader }
+#		}
+#		localization_key = SIKprogress_leader
+#	}
+#}

@@ -3,7 +3,7 @@ DGC_building_ships = {
 	
 	
 	PCH_building_ships_dd = {
-		visble = {
+		visible = {
 			tag = PCH
 		}
 		cost = 100

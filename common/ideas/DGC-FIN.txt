@@ -138,15 +138,15 @@ ideas = {
 				always = yes
 			}
 			
-			equipment_bonus = {
-				screen_ship = { 
-					attack = 0.2
-					anti_air_attack = 0.2
-					sub_detection = 0.1
-					build_cost_ic = -0.1
-					instant = yes
-				}
-			}
+			#equipment_bonus = {
+			#	screen_ship = { 
+			#		attack = 0.2
+			#		anti_air_attack = 0.2
+			#		sub_detection = 0.1
+			#		build_cost_ic = -0.1
+			#		instant = yes
+			#	}
+			#}
 		}
 
 		FIN_National_Security_Agency_idea = {

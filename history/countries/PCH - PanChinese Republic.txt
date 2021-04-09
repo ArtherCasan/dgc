@@ -1,25 +1,37 @@
 ﻿capital = 620 # Hubei
 
-oob = "PCH_1936"
 set_stability = 0.5
 set_war_support = 0.5
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
+	gwtank = 1
 	gw_artillery = 1
+	interwar_antiair = 1
 	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	basic_naval_mines = 1
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_battery = 1
+	basic_secondary_battery = 1
+	basic_torpedo = 1
+	coastal_defense_ships = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	motorised_infantry = 1
 }
+oob = "PCH_1936"
 add_ideas = {
 	HOA_DXT
 	HOA_FLDZG
 	HOA_CCDJFSL
 	HOA_HLDTDZD
-  CBSOT
+    CBSOT
 }
 
 set_rule = { can_create_factions = yes }
@@ -27,27 +39,14 @@ set_research_slots = 3
 set_convoys = 200
 
 
+set_popularities = {
+	democratic = 40
+	fascism = 10
+	communism = 10
+	neutrality = 40
+}
+
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 40
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		communism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 40
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1932.2.23"
 	election_frequency = 48
@@ -71,8 +70,6 @@ create_country_leader = {
 	picture = "97.tga"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -82,7 +79,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-			staunch_constitutionalist
+		staunch_constitutionalist
 	}
 }
 
@@ -97,9 +94,6 @@ create_country_leader = {
 	}
 }
 
-
-
-
 create_field_marshal = {
 	name = "63式"
 	portrait_path = "gfx/leaders/PCH/133-63.tga"
@@ -110,8 +104,6 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
-
 
 create_field_marshal = {
 	name = "97式"
@@ -305,6 +297,10 @@ create_navy_leader = {
 		picture = "Portrait_CHI_Ninghai.dds"
 	traits = { old_guard_navy spotter }
 	skill = 2
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -312,28 +308,48 @@ create_navy_leader = {
 		picture = "Portrait_CHI_Changchun.tga"
 	traits = { old_guard_navy spotter }
 	skill = 5
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "爱丽"
 	picture = "aili.tga"
 	traits = { superior_tactician }
 	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "鞍山"
 	picture = "anshan.tga"
 	traits = { superior_tactician }
 	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "长春"
 	picture = "changchun.tga"
 	traits = { superior_tactician }
 	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "抚顺"
 	picture = "fushun.tga"
 	traits = { superior_tactician }
 	skill = 3
+ 	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 2
 }

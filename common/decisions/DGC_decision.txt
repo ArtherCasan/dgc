@@ -52,7 +52,7 @@ DGC_expand_railways = {
 						instant_build = yes
 					}
 			}
-			remove_country_flag = in_constructing_railway
+			clr_country_flag = in_constructing_railway
 			set_country_flag = capital_railway_complete
 		}
 		complete_effect = {
@@ -134,7 +134,7 @@ DGC_expand_railways = {
 						instant_build = yes
 					}
 			}
-			remove_country_flag = in_constructing_railway
+			clr_country_flag = in_constructing_railway
 			set_country_flag = coastal_railway_complete
 			
 		}
@@ -188,21 +188,18 @@ DGC_expand_railways = {
 		fire_only_once = yes
 		days_remove = 90
 		modifier = {
-			if = { 
-				limit = { 
-					has_full_control_of_state = 599
-					has_full_control_of_state = 592
-				}
-				civilian_factory_use = 4
-			}
-			if = { 
-				limit = { 
-					has_full_control_of_state = 599
-					has_full_control_of_state = 592
-				}
-				civilian_factory_use = 2
-				GXC = { civilian_factory_use = 2 }
-			}
+			#if = { 
+			#	limit = { 
+			#		has_full_control_of_state = 599
+			#		has_full_control_of_state = 592
+			#	}
+			#	civilian_factory_use = 2
+			#	GXC = { civilian_factory_use = 2 }
+			#}
+            #else = {
+			#	civilian_factory_use = 4
+            #}
+            civilian_factory_use = 2
 		}
 		remove_effect = {
 			620 = {
@@ -233,7 +230,7 @@ DGC_expand_railways = {
 						instant_build = yes
 					}
 			}
-			remove_country_flag = in_constructing_railway
+			clr_country_flag = in_constructing_railway
 			set_country_flag = southern_railway_complete
 			
 		}

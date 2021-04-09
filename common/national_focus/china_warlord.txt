@@ -321,76 +321,76 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CHI_anti_opposition_campaigns
-		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = CHI_cooperation_with_the_nationalists  }
-		x = 3
-		y = 1
-		relative_position_id = CHI_cooperation_with_the_nationalists
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_nationalists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
-					}
-				}
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
-			}
-			if = {
-				limit = {			
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_communists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
-					}
-				}
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_nationalists
-			}
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_nationalists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
-					}
-				} 
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
-			}
-			if = {
-				limit = {			
-					AND = {
-						has_completed_focus = CHI_cooperation_with_the_communists
-						NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
-					}
-				}
-				custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_nationalists
-			}
-		}
-	}
+	#focus = {
+	#	id = CHI_anti_opposition_campaigns
+	#	icon = GFX_focus_generic_provoke_border_clashes
+	#	prerequisite = { focus = CHI_cooperation_with_the_nationalists  }
+	#	x = 3
+	#	y = 1
+	#	relative_position_id = CHI_cooperation_with_the_nationalists
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+#
+	#	available = {
+#
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+#
+	#	complete_tooltip = {
+	#		custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip
+	#		if = {
+	#			limit = {
+	#				AND = {
+	#					has_completed_focus = CHI_cooperation_with_the_nationalists
+	#					#NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
+	#				}
+	#			}
+	#			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
+	#		}
+	#		if = {
+	#			limit = {			
+	#				AND = {
+	#					#has_completed_focus = CHI_cooperation_with_the_communists
+	#					NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
+	#				}
+	#			}
+	#			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_nationalists
+	#		}
+	#	}
+#
+	#	completion_reward = {
+	#		custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip
+	#		if = {
+	#			limit = {
+	#				AND = {
+	#					has_completed_focus = CHI_cooperation_with_the_nationalists
+	#					NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_communists } }
+	#				}
+	#			} 
+	#			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_communists
+	#		}
+	#		if = {
+	#			limit = {			
+	#				AND = {
+	#					has_completed_focus = CHI_cooperation_with_the_communists
+	#					NOT = { any_other_country = { has_completed_focus = CHI_cooperation_with_the_nationalists } }
+	#				}
+	#			}
+	#			custom_effect_tooltip = CHI_anti_opposition_campaigns_effect_tooltip_no_nationalists
+	#		}
+	#	}
+	#}
 
 	focus = {
 		id = CHI_technological_cooperation

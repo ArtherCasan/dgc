@@ -12,3 +12,14 @@ MAN_banditry_category_dgc = {
 	#	has_completed_focus = MAN_pacify_the_countryside
 	#}
 }
+
+MAN_war_preparations = {
+	icon = generic_political_actions
+	picture = generic_political_actions
+	allowed = {
+		tag = MAN
+	}
+	visible = {
+		has_completed_focus = MAN_assertiveness
+	}
+}
