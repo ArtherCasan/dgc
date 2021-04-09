@@ -3237,10 +3237,16 @@ focus_tree = {
 						}
 					}
 				}
-
+				
 			}
 			bypass = {
+				OR = {
+					TIB = {
+						exists = no
+					}
 					has_war_with = TIB
+				}
+
 				}
 			completion_reward = {
 					PCH = {
