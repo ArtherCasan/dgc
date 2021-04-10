@@ -1,6 +1,7 @@
 supported_version="1.10.*"
 name="Destiny Girls In Conflicts"
 path="mod/dgc/"
+replace_path="gfx/loadingscreens"
 dependencies={
 	"52 Chinese Localisation"
 }
@@ -11,3 +12,4 @@ tags={
 	"National Focuses"
 }
 picture="dgc.png"
+remote_file_id="1460144099"
