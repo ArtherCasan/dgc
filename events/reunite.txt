@@ -107,7 +107,6 @@ country_event = {
 	title = reunite.5.t
 	desc = reunite.5.d
 	##picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -127,7 +126,6 @@ country_event = {
 	title = reunite.6.t
 	desc = reunite.6.d
 	##picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -136,11 +134,17 @@ country_event = {
 		PCH = {
 			country_event = { id = reunite.23 days = 10}
 		}
+		ai_chance = {
+			factor = 75
+		}
 	}
 	option = {
 		name = reunite.6.b #拒绝
 		PCH = {
 			country_event = { id = reunite.7 days = 10 }
+		}
+		ai_chance = {
+			factor = 25
 		}
 	}	
 }
@@ -150,7 +154,6 @@ country_event = {
 	title = reunite.7.t
 	desc = reunite.7.d
 	##picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -170,7 +173,6 @@ country_event = {
 	title = reunite.8.t
 	desc = reunite.8.d
 	##picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -206,7 +208,6 @@ country_event = {
 	title = reunite.9.t
 	desc = reunite.9.d
 	##picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -232,7 +233,6 @@ country_event = {
 	title = reunite.10.t
 	desc = reunite.10.d
 	##picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -265,19 +265,24 @@ country_event = {
 	title = reunite.11.t
 	desc = reunite.11.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = reunite.11.a #接受
 		PCH = {
-			country_event = { days= 10 id = reunite.12 }
+			country_event = { id = reunite.12 days = 10}
+		}
+		ai_chance = {
+			factor = 80
 		}
 	}
 	option = {
 		name = reunite.11.b #拒绝
 		PCH = {
-			country_event = { days= 10 id = reunite.15 }
+			country_event = { id = reunite.15 days = 10}
+		}
+		ai_chance = {
+			factor = 20
 		}
 	}		
 }
@@ -287,7 +292,6 @@ country_event = {
 	title = reunite.12.t
 	desc = reunite.12.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -305,7 +309,7 @@ country_event = {
 	option = {
 		name = reunite.12.c #暂时自治
 		FROM= {
-		country_event = { days= 10 id = reunite.14 } 
+			country_event = { days= 10 id = reunite.14 } 
 		}	
 	}		
 }
@@ -315,7 +319,6 @@ country_event = {
 	title = reunite.13.t
 	desc = reunite.13.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -334,12 +337,18 @@ country_event = {
 				id = reunite.16
 			}
 		}
+		ai_chance = {
+			factor = 80
+		}
 	}
 	option = {
 		name = reunite.13.b #拒绝		
 		PCH = {
 			country_event = { id = reunite.15 }			
 		}  
+		ai_chance = {
+			factor = 20
+		}
 	}				
 }		
 #暂时自治
@@ -348,7 +357,6 @@ country_event = {
 	title = reunite.14.t
 	desc = reunite.14.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -376,7 +384,6 @@ country_event = {
 	title = reunite.15.t
 	desc = reunite.15.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -397,7 +404,6 @@ country_event = {
 	title = reunite.16.t
 	desc = reunite.16.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -411,7 +417,6 @@ country_event = {
 	title = reunite.17.t
 	desc = reunite.17.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -459,7 +464,6 @@ country_event = {
 	title = reunite.20.t
 	desc = reunite.20.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -497,7 +501,6 @@ country_event = {
 	title = reunite.22.t
 	desc = reunite.22.d
 	#picture = 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {

@@ -3079,7 +3079,6 @@ focus_tree = {
 					YUN = {
 						country_event = {
 							id = reunite.11
-							days = 2
 						}
 					}
 				}
@@ -3090,7 +3089,6 @@ focus_tree = {
 					XSM = {
 						country_event = {
 							id = reunite.11
-							days = 2
 						}
 					}
 				}
@@ -3101,7 +3099,6 @@ focus_tree = {
 					SHX = {
 						country_event = {
 							id = reunite.11
-							days = 2
 						}
 					}
 				}
@@ -3112,7 +3109,6 @@ focus_tree = {
 					SIK = {
 						country_event = {
 							id = reunite.11
-							days = 2
 						}
 					}
 				}

@@ -1,6 +1,7 @@
 supported_version="1.10.*"
 name="Destiny Girls In Conflicts"
 path="mod/dgc/"
+replace_path="gfx/loadingscreens"
 dependencies={
 	"52 Chinese Localisation"
 }
