@@ -1,0 +1,26 @@
+state = {
+	id = 815
+	name = "STATE_815"
+	manpower = 6000000
+	state_category = town
+	
+	history = {
+		owner = PCH
+		add_core_of = PCH
+		add_core_of = CHI
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			7071 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = { 7071 10 }
+	}
+	provinces = { 
+    1006 4053 7071 7099 7131 10010 10054 10084 10093 11986 12057 12084 
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=328
+	name="STATE_328"
+	manpower = 10000000
+	state_category = city
+	resources = {
+		aluminium = 20
+	}
+	history={
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		add_core_of = PCH
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 4
+			arms_factory = 2
+		}
+		victory_points = { 4572 20 }
+	}
+	provinces = {
+		887 945 1567 3888 3913 3932 3949 4503 4572 6868 6905 6947 7663 9759 9803 9848 9866 11744 11781   
+		916 930 4642 
+	}
+}

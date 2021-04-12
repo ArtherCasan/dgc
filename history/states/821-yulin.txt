@@ -1,0 +1,21 @@
+state = {
+	id = 821
+	name = "STATE_821"
+	manpower = 2000000
+	state_category = rural
+	
+	history = {
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = PCH
+		add_core_of = CHI
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 7314 1 }
+	}
+	provinces = { 
+		1458 4939 7314 7659 10880 12356 
+	}
+}

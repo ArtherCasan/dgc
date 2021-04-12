@@ -1,0 +1,19 @@
+state={
+	id=715
+	name="STATE_715"
+	manpower = 5000000
+	state_category = town
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PCH
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+		}
+	}
+	provinces={
+		1499 1508 1558 1627 1638 3877 3978 4561 4633 7812 10429 11903 12337 12469 12478 
+	}
+}

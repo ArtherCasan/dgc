@@ -1,0 +1,22 @@
+state = {
+	id = 826
+	name = "STATE_826"
+	manpower = 5000000
+	state_category = rural
+	
+	history = {
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = PCH
+		add_core_of = CHI
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = { 12432 2 }
+	}
+	provinces = { 
+      1027 1203 1438 4074 4174 4469 10367 10480 10507 12300 12432 
+	}
+}
