@@ -1,26 +1,24 @@
 state={
 	id=729
 	name="STATE_729"
-	manpower = 157805
-	
-	state_category = enclave
-	
+	manpower = 5000000
+	state_category = town
+	resources={
+		tungsten = 15
+		steel = 15
+		chromium = 5
+	}
 	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PCH
-		victory_points = {
-			4189 1 
-		}
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 4
-			4189 = {
-				naval_base = 1
-			}
 		}
+		victory_points = { 1187 5 }
 	}
-	
 	provinces={
-		4189 
+		1187 7152 11941 4092 1087 1131 12077 9963 11938
 	}
 }

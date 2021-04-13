@@ -1,0 +1,18 @@
+state={
+	id=610
+	name="STATE_610" # Jehol
+	manpower = 1000000
+	state_category = pastoral
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PCH
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces={
+		972 6937 6988 7575 7633 9873 10331 10426 11801
+	}
+}

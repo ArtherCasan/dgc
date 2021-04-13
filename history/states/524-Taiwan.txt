@@ -1,15 +1,13 @@
-state=
-{
+state={
 	id=524
 	name="STATE_524"
-	manpower = 4592537
-	
+	manpower = 5000000
 	state_category = large_town
-	history=
-	{
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PCH
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
@@ -18,15 +16,11 @@ state=
 				naval_base = 10
 			}
 		}
-		victory_points = {
-			7186 5 
-		}
-		victory_points = {
-			12068 1 
-		}
+		victory_points = { 7186 5 }
+		victory_points = { 12068 1 }
 
 	}
 	provinces={
-		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
-		}
+	    1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
+	}
 }

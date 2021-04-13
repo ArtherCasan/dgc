@@ -1,47 +1,28 @@
 state={
 	id=325
 	name="STATE_325"
+	manpower=10000000
+	state_category=town
 	resources={
-		tungsten=2.000
+		tungsten=5.000
 	}
-
 	history={
 		owner = YUN
 		add_core_of = YUN
 		add_core_of = CHI
 		add_core_of = PCH
+		add_core_of = MAN
 		victory_points = {
-			1319 10 
+			1319 20 
 		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
-
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
 	}
 
 	provinces={
 		1114 1172 1196 1319 1383 1522 1653 4501 7446 7606 8023 10346 10776 12262 12282 
 	}
-	manpower=10994500
-	buildings_max_level_factor=1.000
-	state_category=town
 }
