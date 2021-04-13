@@ -9,8 +9,8 @@ DGC_building_ships = {
 		cost = 100
 		available = {
 			has_country_flag = HOA_build_ships_by_industrial_complex
-			num_of_available_civilian_factories  > 5	
-			controls_state = 613								
+			num_of_available_civilian_factories  > 5
+			controls_state = 613
 		}
 		days_remove = 100
 		modifier = {
@@ -18,9 +18,11 @@ DGC_building_ships = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = DGC_decision_PCH_building_ships_dd
-			hidden_effect = {
-				load_oob = "PCH_dd_building"
-			}
+			add_command_power = 50
+			add_political_power = 200
+			#hidden_effect = {
+			#	load_oob = "PCH_dd_building"
+			#}
 		}
 	}
 	
