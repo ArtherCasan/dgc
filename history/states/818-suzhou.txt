@@ -1,0 +1,20 @@
+state = {
+	id = 818
+	name = "STATE_818"
+	manpower = 5000000
+	state_category = town
+	
+	history = {
+		owner = PCH
+		add_core_of = PCH
+		add_core_of = CHI
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = { 10076 10 }
+	}
+	provinces = { 
+	  7120 10076 13142 
+	}
+}

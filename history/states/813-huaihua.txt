@@ -1,0 +1,22 @@
+state = {
+	id = 813
+	name = "STATE_813"
+	manpower = 5000000
+	state_category = rural
+	
+	history = {
+		owner = PCH
+		add_core_of = PCH
+		add_core_of = CHI
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = { 10335 2 }
+	}
+	provinces = { 
+		10006 
+		4480 7665 10335 12017 12053 
+	}
+}

@@ -1,31 +1,18 @@
 state={
 	id=745
 	name="STATE_745"
-	provinces={
-		1150 6851 
-	}
-	state_category = large_town
-	history=
-	{
+	manpower = 2000000
+	state_category = rural
+	history={
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
 		add_core_of = PCH
-		victory_points = {
-			1150 1 
-		}
 		buildings = {
-			infrastructure = 5
-			air_base = 1
-			industrial_complex = 1
-			1150 = {
-				naval_base = 5
-				coastal_bunker = 1
-			}
+			infrastructure = 2
 		}
-
-	
 	}
-	manpower=1000000
-	buildings_max_level_factor=1.000
+	provinces = {
+		800 861 9841 11823 927 11850 3929 944 11862 9883 946 3947 6964 973 9897 783 6806 3944 6811 11906 9766 3791
+	}
 }

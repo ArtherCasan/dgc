@@ -273,6 +273,8 @@ create_country_leader = {
 	}
 }
 
+
+
 add_namespace = {
 	name = "unit_leader_sov"
 	type = unit_leader

@@ -166,7 +166,7 @@
  DGC_building_ships:0 "舰船改造"
  PCH_building_ships_dd:0 "驱逐舰改造计划"
  HOA_build_ships_by_industrial_complex:0 "民间舰船改装计划"
- DGC_decision_PCH_building_ships_dd:0 "五艘驱逐舰加入了我国海军"
+ DGC_decision_PCH_building_ships_dd:0 "§R新版本更新后需要后续修改才可发动效果，如果你现在选择这一决议，只会返回你一些政治点数和指挥点数"
  tank_production_ar_desc:0 "启用§H南方工业集团"
  capital_support_208_ar_desc:0 "启用§H第二零八兵器实验室"
  

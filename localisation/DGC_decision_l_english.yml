@@ -87,6 +87,6 @@
   
  #招募青年军
  PCH_organize_youth_army:0 "招募青年志愿者"
- PCH_organize_youth_army_desc:0 "大家都来呀！"
+ PCH_organize_youth_army_desc:0 "我们在首都地区的招募获得了大量青年的支持，现已编成了队伍，是时候给予他们番号了。"
  PCH_organize_youth_army_var:0 "没有超过3次招募"
  PCH_organize_youth_army_create:0 "在首都出现1个师"

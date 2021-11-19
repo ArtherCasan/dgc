@@ -1,19 +1,19 @@
 state={
 	id=592
 	name="STATE_592"
-	manpower = 17835200
+	manpower = 6000000
 	state_category = city
 	resources={
-		tungsten=8 # was: 10
-		steel= 15 # was: 20
-		chromium = 3 # was: 4
+		tungsten = 10
+		steel = 30
+		chromium = 5
 	}
 
 	history={
 		owner = CHI
-		add_core_of = CHI		add_core_of = PRC
+		add_core_of = CHI		
+		add_core_of = MAN
 		add_core_of = PCH
-		
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -24,15 +24,15 @@ state={
 				coastal_bunker = 1
 				bunker = 1
 			}
-
+			10062 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
 		}
-		victory_points = {
-			1047 5
-		}
+		victory_points = { 1047 20 }
 	}
-
 	provinces={
-		1047 1087 1131 1187 4092 7039 7152 9963 11938 11941 12077 
+		1047 7108 4189 10062
 	}
 }
 

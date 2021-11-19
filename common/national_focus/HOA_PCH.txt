@@ -2313,7 +2313,15 @@ focus_tree = {
 		x = 53
 		y = 7
 			available = {
-					has_tech = early_destroyer
+					if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+						has_tech = basic_ship_hull_light
+					}
+					else = {
+						has_tech = early_destroyer
+					}
 				}
 			completion_reward = {
 					unlock_decision_tooltip = PCH_building_ships_dd

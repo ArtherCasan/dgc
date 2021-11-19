@@ -370,6 +370,16 @@
  TUR_neutrality_ADJ:0 "土耳其"
  TUR_communism_ADJ:0 "土耳其"
 
+#罗马
+ SPQR_UNIFIED_neutrality:0 "罗马帝国"
+ SPQR_UNIFIED_fascism:0 "罗马帝国"
+ SPQR_UNIFIED_democratic:0 "元老院与罗马人民"
+ SPQR_UNIFIED_communism:1 "罗马人民共和国"
+ SPQR_UNIFIED_neutrality_DEF:0 "罗马帝国"
+ SPQR_UNIFIED_fascism_DEF:0 "罗马帝国"
+ SPQR_UNIFIED_democratic_DEF:0 "元老院与罗马人民"
+ SPQR_UNIFIED_communism_DEF:1 "罗马人民共和国"  
+
 #parties
  SAU_communism_party:0 "英国共产党"
  SAU_fascism_party:0 "中东自由主义政党"
